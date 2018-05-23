@@ -1,0 +1,25 @@
+{
+  "name": "ubuntu-setup",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Installing development environment on Ubuntu",
+  "keywords": [
+    "EPFL",
+    "DevRun",
+    "Ubuntu",
+    "Development",
+    "Install"
+  ],
+  "author": "William Belle <william.belle@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/epfl-devrun/ubuntu-setup.git",
+  "scripts": {
+    "build": "npm run prepare && rm -rf src/_book && gitbook build src/",
+    "prepare": "gitbook install",
+    "serve": "npm run prepare && gitbook serve src/"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  },
+  "dependencies": {}
+}
