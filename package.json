@@ -15,10 +15,12 @@
   "repository": "https://github.com/epfl-devrun/ubuntu-setup.git",
   "scripts": {
     "build": "npm run prepare && rm -rf src/_book && gitbook build src/",
+    "deploy": "npm run build && git-directory-deploy --directory src/_book --branch gh-pages",
     "prepare": "gitbook install",
     "serve": "npm run prepare && gitbook serve src/"
   },
   "devDependencies": {
+    "git-directory-deploy": "^1.5.1",
     "gitbook-cli": "^2.3.2"
   },
   "dependencies": {}
