@@ -8,30 +8,30 @@ Setup
 -----
 
 ```bash
-$ git clone git@github.com:epfl-devrun/ubuntu-setup.git
-$ cd ubuntu-setup
-$ npm install
+git clone git@github.com:epfl-devrun/ubuntu-setup.git
+cd ubuntu-setup
+npm i
 ```
 
 Build
 -----
 
 ```bash
-$ npm run build
+npm run build
 ```
 
-or you can use serve task to update source continuously on http://localhost:4000
-with
+or you can use serve task to update source continuously on
+http://localhost:4000 with
 
 ```bash
-$ npm run serve
+npm run serve
 ```
 
 Deploy
 ------
 
 ```bash
-$ npm run deploy
+npm run deploy
 ```
 
 This will automatically deploy the `src/_book` folder on GitHub pages.
