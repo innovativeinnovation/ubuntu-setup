@@ -29,6 +29,11 @@ Contributions are always welcome.
 
 See [Contributing](CONTRIBUTING.md).
 
+See also
+--------
+
+  * [MacOS Setup Guide](https://sourabhbajaj.com/mac-setup/)
+
 Developer
 ---------
 
