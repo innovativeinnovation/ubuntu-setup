@@ -1,4 +1,4 @@
-![logo](../images/logo.png)
+![logo](images/logo.png)
 
 Ubuntu is one of the most easy to use Linux distribution and it's preferred
 by most of the beginner Linux users. It obviously doesn't mean that Linux
