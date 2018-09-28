@@ -4,5 +4,6 @@
   * [Prerequisite](prerequisite/README.md)
   * [Installation](installation/README.md)
   * [System Preferences](settings/README.md)
+  * [Node.js](node.js/README.md)
   * [Apps](apps/README.md)
   * [References](references/README.md)
