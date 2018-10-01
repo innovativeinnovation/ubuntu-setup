@@ -4,6 +4,7 @@
   * [Prerequisite](prerequisite/README.md)
   * [Installation](installation/README.md)
   * [System Preferences](settings/README.md)
+  * [Terminator](terminator/README.md)
   * [Atom](atom/README.md)
   * [Git](git/README.md)
     * [gitk](git/gitk.md)
