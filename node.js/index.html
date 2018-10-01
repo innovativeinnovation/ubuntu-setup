@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>References · GitBook</title>
+        <title>Node.js · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../apps/" />
     
-    <link rel="prev" href="../apps/" />
+    
+    <link rel="prev" href="../git/github.html" />
     
 
     </head>
@@ -210,9 +212,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="../node.js/">
+        <li class="chapter active" data-level="1.8" data-path="./">
             
-                <a href="../node.js/">
+                <a href="./">
             
                     
                     Node.js
@@ -236,9 +238,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.10" data-path="./">
+        <li class="chapter " data-level="1.10" data-path="../references/">
             
-                <a href="./">
+                <a href="../references/">
             
                     
                     References
@@ -279,7 +281,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >References</a>
+        <a href=".." >Node.js</a>
     </h1>
 </div>
 
@@ -294,12 +296,60 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="references">References</h1>
-<ul>
-<li><a href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu" target="_blank">Create a bootable USB stick on Ubuntu</a></li>
-<li><a href="https://sourabhbajaj.com/mac-setup/" target="_blank">MacOS Setup Guide</a></li>
-<li><a href="https://help.ubuntu.com/lts/ubuntu-help/index.html" target="_blank">Ubuntu Desktop Guide</a></li>
-</ul>
+                                <h1 id="nodejs">Node.js</h1>
+<p><a href="https://nodejs.org/en/" target="_blank">Node.js</a> is a JavaScript runtime built on Chrome&apos;s
+V8 JavaScript engine.</p>
+<h3 id="installation">Installation</h3>
+<h6 id="via-package-manager">Via package manager</h6>
+<p>Node.js is available from the NodeSource Debian and Ubuntu binary
+distributions repository.</p>
+<pre><code class="lang-bash">curl <span class="hljs-_">-s</span>L https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt install -y nodejs
+</code></pre>
+<p>To compile and install native addons from npm you may also need to
+install build tools:</p>
+<pre><code class="lang-bash">sudo apt install -y build-essential
+</code></pre>
+<h6 id="via-nvm">Via nvm</h6>
+<p>Node Version Manager is a bash script used to manage multiple released
+Node.js versions. It allows you to perform operations like install,
+uninstall, switch version, etc.</p>
+<p>To install or update nvm, you can use:</p>
+<pre><code class="lang-bash">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+</code></pre>
+<p>To download, compile, and install the latest release of node, do this:</p>
+<pre><code class="lang-bash">nvm install node <span class="hljs-comment"># &quot;node&quot; is an alias for the latest version</span>
+</code></pre>
+<p>To install a specific version of node:</p>
+<pre><code class="lang-bash">nvm install 8.9.1 <span class="hljs-comment"># or 10.10.0, 6.14.4, etc</span>
+</code></pre>
+<p>Useful commands:</p>
+<pre><code class="lang-console">nvm ls                      # list installed Node version
+nvm ls-remote               # list all the Node versions you can install
+nvm alias default 10.11.0   # set the 10.11.0 version as the default Node
+</code></pre>
+<p>See the <a href="https://github.com/creationix/nvm#usage" target="_blank">documentation</a> for more
+examples.</p>
+<h3 id="npm">npm</h3>
+<p><a href="https://docs.npmjs.com/" target="_blank">npm</a> is a package manager for the JavaScript
+programming language.</p>
+<p>To install a package:</p>
+<pre><code class="lang-bash">npm i &lt;package&gt; <span class="hljs-comment"># locally</span>
+npm i -g &lt;package&gt; <span class="hljs-comment"># globally</span>
+</code></pre>
+<p>To remove a package:</p>
+<pre><code class="lang-bash">npm uninstall &lt;package&gt; <span class="hljs-comment"># locally</span>
+npm uninstall -g &lt;package&gt; <span class="hljs-comment"># globally</span>
+</code></pre>
+<p>To update all or a particular package:</p>
+<pre><code class="lang-bash">npm update [-g] [&lt;package&gt;]
+</code></pre>
+<p>To find outdated packages:</p>
+<pre><code class="lang-bash">npm outdated [-g]
+</code></pre>
+<p>To see what&apos;s installed:</p>
+<pre><code class="lang-bash">npm list [-g]
+</code></pre>
 
                                 
                                 </section>
@@ -327,10 +377,14 @@
 
             
                 
-                <a href="../apps/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Apps">
+                <a href="../git/github.html" class="navigation navigation-prev " aria-label="Previous page: GitHub">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../apps/" class="navigation navigation-next " aria-label="Next page: Apps">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -339,7 +393,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"References","level":"1.10","depth":1,"previous":{"title":"Apps","level":"1.9","depth":1,"path":"apps/README.md","ref":"apps/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"references/README.md","mtime":"2018-09-28T16:16:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-01T19:29:29.632Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Node.js","level":"1.8","depth":1,"next":{"title":"Apps","level":"1.9","depth":1,"path":"apps/README.md","ref":"apps/README.md","articles":[]},"previous":{"title":"GitHub","level":"1.7.2","depth":2,"path":"git/github.md","ref":"git/github.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"node.js/README.md","mtime":"2018-09-28T18:08:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-01T19:29:29.632Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>References · GitBook</title>
+        <title>Atom · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../git/" />
     
-    <link rel="prev" href="../apps/" />
+    
+    <link rel="prev" href="../terminator/" />
     
 
     </head>
@@ -152,9 +154,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../atom/">
+        <li class="chapter active" data-level="1.6" data-path="./">
             
-                <a href="../atom/">
+                <a href="./">
             
                     
                     Atom
@@ -236,9 +238,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.10" data-path="./">
+        <li class="chapter " data-level="1.10" data-path="../references/">
             
-                <a href="./">
+                <a href="../references/">
             
                     
                     References
@@ -279,7 +281,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >References</a>
+        <a href=".." >Atom</a>
     </h1>
 </div>
 
@@ -294,11 +296,53 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="references">References</h1>
+                                <h1 id="atom">Atom</h1>
+<p><a href="https://atom.io/" target="_blank">Atom</a> is a free and open-source text and source code
+editor with support for plug-ins written in Node.js, and embedded Git Control,
+developed by GitHub.</p>
+<h3 id="installation">Installation</h3>
+<pre><code class="lang-bash">sudo apt install git gconf2
+wget -O /tmp/atom.deb https://atom.io/download/deb
+sudo dpkg -i /tmp/atom.deb
+</code></pre>
+<h3 id="atom-package-manager-apm">Atom Package Manager (apm)</h3>
+<p>Atom Package Manager is bundled and installed automatically with Atom.</p>
+<h3 id="settings">Settings</h3>
+<p>These settings are all optional, consider them suggestions.</p>
+<h6 id="core-settings">Core Settings</h6>
 <ul>
-<li><a href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu" target="_blank">Create a bootable USB stick on Ubuntu</a></li>
-<li><a href="https://sourabhbajaj.com/mac-setup/" target="_blank">MacOS Setup Guide</a></li>
-<li><a href="https://help.ubuntu.com/lts/ubuntu-help/index.html" target="_blank">Ubuntu Desktop Guide</a></li>
+<li>Allow Pending Pane Items -&gt; Off</li>
+</ul>
+<h6 id="editor-settings">Editor Settings</h6>
+<ul>
+<li>Font Size -&gt; 12px</li>
+<li>Show Invisibles -&gt; On</li>
+</ul>
+<h3 id="themes">Themes</h3>
+<p>You can find your favorite themes on <a href="https://atom.io/themes" target="_blank">https://atom.io/themes</a>.</p>
+<p>UI Theme that I use:</p>
+<ul>
+<li>Seti UI - <code>apm install seti-ui</code><ul>
+<li>Theme Color -&gt; Pink</li>
+<li>Compact Mode -&gt; On</li>
+</ul>
+</li>
+</ul>
+<p>Syntax Theme that I use:</p>
+<ul>
+<li>Seti Syntax - <code>apm install seti-syntax</code><ul>
+<li>Dynamic Theme -&gt; On</li>
+</ul>
+</li>
+</ul>
+<h3 id="packages">Packages</h3>
+<p>You can search packages on <a href="https://atom.io/packages" target="_blank">https://atom.io/packages</a>.</p>
+<p>Packages that I use:</p>
+<ul>
+<li><a href="https://atom.io/packages/atom-beautify" target="_blank">atom-beautify</a> - <code>apm install atom-beautify</code></li>
+<li><a href="https://atom.io/packages/editorconfig" target="_blank">editorconfig</a> - <code>apm install editorconfig</code></li>
+<li><a href="https://atom.io/packages/linter" target="_blank">linter</a> - <code>apm install linter</code></li>
+<li><a href="https://atom.io/packages/teletype" target="_blank">teletype</a> - <code>apm install teletype</code></li>
 </ul>
 
                                 
@@ -327,10 +371,14 @@
 
             
                 
-                <a href="../apps/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Apps">
+                <a href="../terminator/" class="navigation navigation-prev " aria-label="Previous page: Terminator">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../git/" class="navigation navigation-next " aria-label="Next page: Git">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -339,7 +387,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"References","level":"1.10","depth":1,"previous":{"title":"Apps","level":"1.9","depth":1,"path":"apps/README.md","ref":"apps/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"references/README.md","mtime":"2018-09-28T16:16:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-01T19:29:29.632Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Atom","level":"1.6","depth":1,"next":{"title":"Git","level":"1.7","depth":1,"path":"git/README.md","ref":"git/README.md","articles":[{"title":"gitk","level":"1.7.1","depth":2,"path":"git/gitk.md","ref":"git/gitk.md","articles":[]},{"title":"GitHub","level":"1.7.2","depth":2,"path":"git/github.md","ref":"git/github.md","articles":[]}]},"previous":{"title":"Terminator","level":"1.5","depth":1,"path":"terminator/README.md","ref":"terminator/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"atom/README.md","mtime":"2018-10-01T18:20:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-01T19:29:29.632Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

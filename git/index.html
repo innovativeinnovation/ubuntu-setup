@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>References · GitBook</title>
+        <title>Git · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="gitk.html" />
     
-    <link rel="prev" href="../apps/" />
+    
+    <link rel="prev" href="../atom/" />
     
 
     </head>
@@ -165,9 +167,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="../git/">
+        <li class="chapter active" data-level="1.7" data-path="./">
             
-                <a href="../git/">
+                <a href="./">
             
                     
                     Git
@@ -179,9 +181,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="../git/gitk.html">
+        <li class="chapter " data-level="1.7.1" data-path="gitk.html">
             
-                <a href="../git/gitk.html">
+                <a href="gitk.html">
             
                     
                     gitk
@@ -192,9 +194,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="../git/github.html">
+        <li class="chapter " data-level="1.7.2" data-path="github.html">
             
-                <a href="../git/github.html">
+                <a href="github.html">
             
                     
                     GitHub
@@ -236,9 +238,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.10" data-path="./">
+        <li class="chapter " data-level="1.10" data-path="../references/">
             
-                <a href="./">
+                <a href="../references/">
             
                     
                     References
@@ -279,7 +281,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >References</a>
+        <a href=".." >Git</a>
     </h1>
 </div>
 
@@ -294,12 +296,49 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="references">References</h1>
-<ul>
-<li><a href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu" target="_blank">Create a bootable USB stick on Ubuntu</a></li>
-<li><a href="https://sourabhbajaj.com/mac-setup/" target="_blank">MacOS Setup Guide</a></li>
-<li><a href="https://help.ubuntu.com/lts/ubuntu-help/index.html" target="_blank">Ubuntu Desktop Guide</a></li>
-</ul>
+                                <h1 id="git">Git</h1>
+<p><a href="https://git-scm.com/" target="_blank">Git</a> is a version-control system for tracking changes
+in computer files and coordinating work on those files among multiple people.</p>
+<h3 id="installation">Installation</h3>
+<pre><code class="lang-bash">sudo apt install git
+</code></pre>
+<h3 id="configuration">Configuration</h3>
+<p>Every git user should first introduce himself to git, by running these
+two commands:</p>
+<pre><code class="lang-bash">git config --global user.name <span class="hljs-string">&quot;Your Name&quot;</span>
+git config --global user.email <span class="hljs-string">&quot;you@example.com&quot;</span>
+</code></pre>
+<p>We can see all of the configuration items that have been set by typing:</p>
+<pre><code class="lang-bash">git config --list
+</code></pre>
+<h3 id="usage">Usage</h3>
+<p>Create a new repository:</p>
+<pre><code class="lang-bash">git init
+</code></pre>
+<p>Checkout a repository:</p>
+<pre><code>git clone /path/to/repository                 # local
+git clone username@host:/path/to/repository   # remote
+</code></pre><p>Add and commit:</p>
+<pre><code class="lang-bash">git add &lt;filename&gt;
+git add *
+git commit -m <span class="hljs-string">&quot;Commit message&quot;</span>
+</code></pre>
+<p>Status:</p>
+<pre><code class="lang-bash">git status
+</code></pre>
+<p>Pushing changes:</p>
+<pre><code class="lang-bash">git push origin master
+</code></pre>
+<p>Update local:</p>
+<pre><code class="lang-bash">git pull
+</code></pre>
+<h3 id="create-a-global-gitignore">Create a global <code>.gitignore</code></h3>
+<p>You can create a global <code>.gitignore</code> file, which is a list of rules for
+ignoring files in every Git repository on your computer.</p>
+<p>GitHub maintains an official list of recommended <code>.gitignore</code> files for many
+popular operating systems, environments, and languages:</p>
+<pre><code class="lang-bash">curl https://raw.githubusercontent.com/github/gitignore/master/Global/Linux.gitignore -o ~/.gitignore
+</code></pre>
 
                                 
                                 </section>
@@ -327,10 +366,14 @@
 
             
                 
-                <a href="../apps/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Apps">
+                <a href="../atom/" class="navigation navigation-prev " aria-label="Previous page: Atom">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="gitk.html" class="navigation navigation-next " aria-label="Next page: gitk">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -339,7 +382,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"References","level":"1.10","depth":1,"previous":{"title":"Apps","level":"1.9","depth":1,"path":"apps/README.md","ref":"apps/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"references/README.md","mtime":"2018-09-28T16:16:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-01T19:29:29.632Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git","level":"1.7","depth":1,"next":{"title":"gitk","level":"1.7.1","depth":2,"path":"git/gitk.md","ref":"git/gitk.md","articles":[]},"previous":{"title":"Atom","level":"1.6","depth":1,"path":"atom/README.md","ref":"atom/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"git/README.md","mtime":"2018-09-28T19:51:26.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-01T19:29:29.632Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
