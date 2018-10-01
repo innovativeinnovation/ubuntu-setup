@@ -1,7 +1,7 @@
 {
   "name": "ubuntu-setup",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Installing development environment on Ubuntu",
   "keywords": [
     "EPFL",

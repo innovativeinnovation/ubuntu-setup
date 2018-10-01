@@ -1,6 +1,14 @@
 Changelog
 =========
 
+### v1.2.0 / 2018-10-01
+
+  - Add Terminator
+  - Add Atom
+  - Add Git, gitk, GitHub
+  - Add Node.js
+  - Fix image path
+
 ### v1.1.0 / 2018-09-28
 
   - Add introduction
