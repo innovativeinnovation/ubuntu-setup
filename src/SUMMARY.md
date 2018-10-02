@@ -9,6 +9,7 @@
   * [Git](git/README.md)
     * [gitk](git/gitk.md)
     * [GitHub](git/github.md)
+  * [Python](python/README.md)
   * [Node.js](node.js/README.md)
   * [MySQL](mysql/README.md)
   * [Apps](apps/README.md)
