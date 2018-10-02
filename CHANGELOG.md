@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v1.3.0 / 2018-10-02
+
+  - Add MySQL
+  - Add Python
+  - Add Vagrant
+
 ### v1.2.0 / 2018-10-01
 
   - Add Terminator
