@@ -10,5 +10,6 @@
     * [gitk](git/gitk.md)
     * [GitHub](git/github.md)
   * [Node.js](node.js/README.md)
+  * [MySQL](mysql/README.md)
   * [Apps](apps/README.md)
   * [References](references/README.md)
