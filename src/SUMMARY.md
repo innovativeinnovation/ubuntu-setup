@@ -13,5 +13,6 @@
   * [Node.js](node.js/README.md)
   * [MySQL](mysql/README.md)
   * [Vagrant](vagrant/README.md)
+  * [LaTeX](latex/README.md)
   * [Apps](apps/README.md)
   * [References](references/README.md)
