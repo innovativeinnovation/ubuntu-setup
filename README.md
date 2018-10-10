@@ -22,6 +22,8 @@ Overview
 
 This book covers the basics of setting up a development environment on Ubuntu.
 
+https://innovativeinnovation.github.io/ubuntu-setup
+
 Contributing
 ------------
 
