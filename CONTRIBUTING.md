@@ -8,7 +8,7 @@ Setup
 -----
 
 ```bash
-git clone git@github.com:epfl-devrun/ubuntu-setup.git
+git clone git@github.com:innovativeinnovation/ubuntu-setup.git
 cd ubuntu-setup
 npm i
 ```
@@ -35,7 +35,7 @@ npm run deploy
 ```
 
 This will automatically deploy the `src/_book` folder on GitHub pages.
-See [https://epfl-devrun.github.io/ubuntu-setup](https://epfl-devrun.github.io/ubuntu-setup).
+See https://innovativeinnovation.github.io/ubuntu-setup.
 
 License
 -------
@@ -47,6 +47,7 @@ http://creativecommons.org/licenses/by-sa/4.0/.
 
 The code is licensed under the Apache License 2.0
 
-(c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2018.
+Original work (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2018.  
+Modified work (c) William Belle, 2018.
 
 See the [LICENSE](LICENSE) file for more details.

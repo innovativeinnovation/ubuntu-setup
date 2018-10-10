@@ -12,7 +12,7 @@ not, this guide is intended for everyone to use as a reference for
 establishing your environment, installing a languages/libraries or some tools.
 
 This project is an open-source, volunteer effort to create and maintain
-quality documentation for the teams at EPFL.
+quality documentation for teams.
 
 If you notice any errors or think we have left something out, feel free to
-[create an issue](https://github.com/epfl-devrun/ubuntu-setup/issues). 
+[create an issue](https://github.com/innovativeinnovation/ubuntu-setup/issues). 

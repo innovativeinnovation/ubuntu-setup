@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Ubuntu Setup" src="https://raw.githubusercontent.com/epfl-devrun/ubuntu-setup/master/docs/readme/readme-logo.png">
+  <img alt="Ubuntu Setup" src="https://raw.githubusercontent.com/innovativeinnovation/ubuntu-setup/master/docs/readme/readme-logo.png">
 </p>
 
 <p align="center">
@@ -7,11 +7,11 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/epfl-devrun/ubuntu-setup">
-    <img alt="Travis Status" src="https://travis-ci.org/epfl-devrun/ubuntu-setup.svg?branch=master">
+  <a href="https://travis-ci.org/innovativeinnovation/ubuntu-setup">
+    <img alt="Travis Status" src="https://travis-ci.org/innovativeinnovation/ubuntu-setup.svg?branch=master">
   </a>
-  <a href='https://github.com/epfl-devrun/ubuntu-setup/tags'>
-    <img alt="GitHub Tag" src="https://img.shields.io/github/tag/epfl-devrun/ubuntu-setup.svg" />
+  <a href='https://github.com/innovativeinnovation/ubuntu-setup/tags'>
+    <img alt="GitHub Tag" src="https://img.shields.io/github/tag/innovativeinnovation/ubuntu-setup.svg" />
   </a>
 </p>
 
@@ -49,6 +49,7 @@ http://creativecommons.org/licenses/by-sa/4.0/.
 
 The code is licensed under the Apache License 2.0
 
-(c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2018.
+Original work (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2018.  
+Modified work (c) William Belle, 2018.
 
 See the [LICENSE](LICENSE) file for more details.
