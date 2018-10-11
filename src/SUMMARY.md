@@ -12,6 +12,7 @@
   * [Python](python/README.md)
   * [Node.js](node.js/README.md)
   * [Java](java/README.md)
+  * [Perl](perl/README.md)
   * [MySQL](mysql/README.md)
   * [Vagrant](vagrant/README.md)
   * [LaTeX](latex/README.md)
