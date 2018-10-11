@@ -20,14 +20,21 @@ comprehension.
     that's designed for anyone who wants to improve their safety and security
     on the Internet. 
 
+### Image Editors
+
+  * [GIMP](https://www.gimp.org/) - GIMP is a free and open-source raster
+    graphics editor used for image retouching and editing.  
+    `sudo apt install gimp`
+  * [Inkscape](https://inkscape.org) - Inkscape is a free and open-source
+    vector graphics editor; it can be used to create or edit vector graphics
+    such as illustrations, diagrams and complex paintings.  
+    `sudo apt install inkscape`
+
 ### Multimedia
 
   * [Audacity](https://www.audacityteam.org/) - Audacity is an easy-to-use,
     multi-track audio editor and recorder.  
     `sudo apt install audacity`
-  * [GIMP](https://www.gimp.org/) - GIMP is a free and open-source raster
-    graphics editor used for image retouching and editing.  
-    `sudo apt install gimp`
   * [VLC](https://www.videolan.org/) - VLC is a free and open source
     cross-platform multimedia player and framework that plays most multimedia
     files and various streaming protocols.  
@@ -60,6 +67,9 @@ comprehension.
     `sudo apt install filezilla`
   * [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool.  
     `sudo apt install meld`
+  * [Shutter](http://shutter-project.org/) - Shutter is a feature-rich
+    screenshot program.  
+    `sudo apt install shutter`
   * [Trimage](https://trimage.org/) - Trimage is a cross-platform GUI and
     command-line interface to optimize image files.  
     `sudo apt install trimage`
