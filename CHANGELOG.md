@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v1.4.0 / 2018-10-11
+
+  - Add Java
+  - Add Perl
+  - Add LaTeX
+  - Update copyright (transfer from EPFL DevRun)
+
 ### v1.3.0 / 2018-10-02
 
   - Add MySQL
