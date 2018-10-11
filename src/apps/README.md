@@ -41,6 +41,15 @@ comprehension.
   * [Telegram](https://telegram.org/) - Telegram is a cloud-based instant
     messaging and voice over IP service.
 
+### Password Manager
+
+  * [Gorilla](https://github.com/zdia/gorilla) - Gorilla is a cross-platform
+    password manager.  
+    `sudo apt install password-gorilla`
+  * [KeePassX](https://www.keepassx.org/) - KeePassX is an easy-to-use,
+    cross-platform that allows you to store all your passwords.  
+    `sudo apt install keepassx`
+
 ### Development Tools
 
   * [Cluster SSH](https://sourceforge.net/projects/clusterssh/) - Cluster SSH
