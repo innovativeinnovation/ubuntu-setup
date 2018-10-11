@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>GitHub · GitBook</title>
+        <title>LaTeX · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../python/" />
+    <link rel="next" href="../apps/" />
     
     
-    <link rel="prev" href="gitk.html" />
+    <link rel="prev" href="../vagrant/" />
     
 
     </head>
@@ -167,9 +167,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="./">
+        <li class="chapter " data-level="1.7" data-path="../git/">
             
-                <a href="./">
+                <a href="../git/">
             
                     
                     Git
@@ -181,9 +181,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="gitk.html">
+        <li class="chapter " data-level="1.7.1" data-path="../git/gitk.html">
             
-                <a href="gitk.html">
+                <a href="../git/gitk.html">
             
                     
                     gitk
@@ -194,9 +194,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7.2" data-path="github.html">
+        <li class="chapter " data-level="1.7.2" data-path="../git/github.html">
             
-                <a href="github.html">
+                <a href="../git/github.html">
             
                     
                     GitHub
@@ -290,9 +290,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="../latex/">
+        <li class="chapter active" data-level="1.14" data-path="./">
             
-                <a href="../latex/">
+                <a href="./">
             
                     
                     LaTeX
@@ -359,7 +359,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >GitHub</a>
+        <a href=".." >LaTeX</a>
     </h1>
 </div>
 
@@ -374,31 +374,34 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="github">GitHub</h1>
-<p><a href="https://github.com/" target="_blank">GitHub</a> is a web-based hosting service for version
-control using Git.</p>
-<h3 id="connecting-to-github-with-ssh">Connecting to GitHub with SSH</h3>
-<p>The instructions below are referenced from
-<a href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank">the official documentation</a>.</p>
-<p>Using the SSH protocol, you can connect and authenticate to remote servers
-and services. With SSH keys, you can connect to GitHub without supplying
-your username or password at each visit.</p>
-<p>Check for existing SSH keys:</p>
-<pre><code class="lang-bash">ls -al ~/.ssh
+                                <h1 id="latex">LaTeX</h1>
+<p><a href="https://www.latex-project.org/" target="_blank">LaTeX</a> is a high-quality typesetting system;
+it includes features designed for the production of technical and scientific
+documentation. LaTeX is the de facto standard for the communication and
+publication of scientific documents.</p>
+<h3 id="installation">Installation</h3>
+<p>If you have plenty of space:</p>
+<pre><code class="lang-bash">sudo apt install texlive-full
 </code></pre>
-<p>Generate a new SSH key:</p>
-<pre><code class="lang-bash">ssh-keygen -t rsa -b 4096 -C <span class="hljs-string">&quot;you@example.com&quot;</span>
+<p>If space is limited:</p>
+<pre><code class="lang-bash">sudo apt install texlive-latex-extra
 </code></pre>
-<p>Add your SSH key to the ssh-agent:</p>
-<pre><code class="lang-bash"><span class="hljs-built_in">eval</span> <span class="hljs-string">&quot;<span class="hljs-variable">$(ssh-agent -s)</span>&quot;</span>
-ssh-add ~/.ssh/id_rsa
+<h3 id="usage">Usage</h3>
+<p>To produce a DVI file:</p>
+<pre><code class="lang-bash">latex document.tex
 </code></pre>
-<p>Add the SSH key to your GitHub account:</p>
-<pre><code class="lang-bash">sudo apt install xclip
-xclip -sel clip &lt; ~/.ssh/id_rsa.pub
+<p>To produce a PDF file:</p>
+<pre><code class="lang-bash">pdflatex document.tex
 </code></pre>
-<p>and go to your <a href="https://github.com/settings/ssh/new" target="_blank">GitHub settings</a> to add
-the new key.</p>
+<h3 id="editors">Editors</h3>
+<p>A list of some LaTeX editors on Ubuntu 18.04:</p>
+<ul>
+<li><a href="http://www.xm1math.net/texmaker/" target="_blank">Texmaker</a> - <code>sudo apt install texmaker</code></li>
+<li><a href="https://www.texstudio.org/" target="_blank">TeXstudio</a> - <code>sudo apt install texstudio</code></li>
+<li><a href="https://github.com/alexandervdm/gummi" target="_blank">Gummi</a> - <code>sudo apt install gummi</code></li>
+<li><a href="https://www.lyx.org/" target="_blank">LyX</a> - <code>sudo apt install lyx</code></li>
+<li><a href="https://kile.sourceforge.io/" target="_blank">Kile</a> - <code>sudo apt install kile</code></li>
+</ul>
 
                                 
                                 </section>
@@ -426,12 +429,12 @@ the new key.</p>
 
             
                 
-                <a href="gitk.html" class="navigation navigation-prev " aria-label="Previous page: gitk">
+                <a href="../vagrant/" class="navigation navigation-prev " aria-label="Previous page: Vagrant">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../python/" class="navigation navigation-next " aria-label="Next page: Python">
+                <a href="../apps/" class="navigation navigation-next " aria-label="Next page: Apps">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -442,7 +445,7 @@ the new key.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GitHub","level":"1.7.2","depth":2,"next":{"title":"Python","level":"1.8","depth":1,"path":"python/README.md","ref":"python/README.md","articles":[]},"previous":{"title":"gitk","level":"1.7.1","depth":2,"path":"git/gitk.md","ref":"git/gitk.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"git/github.md","mtime":"2018-10-10T18:23:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-11T18:42:15.486Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"LaTeX","level":"1.14","depth":1,"next":{"title":"Apps","level":"1.15","depth":1,"path":"apps/README.md","ref":"apps/README.md","articles":[]},"previous":{"title":"Vagrant","level":"1.13","depth":1,"path":"vagrant/README.md","ref":"vagrant/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"latex/README.md","mtime":"2018-10-10T18:23:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-11T18:42:15.486Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
