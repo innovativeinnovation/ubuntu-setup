@@ -7,7 +7,8 @@ comprehension.
 ### Web Browser
 
   * [Brave](https://brave.com/) - Brave is a free and open-source pay-to-surf
-    web browser.
+    web browser.  
+    `sudo snap install brave`
   * [Chromium](https://www.chromium.org/Home) - Chromium is an open-source
     browser project that aims to build a safer, faster, and more stable way
     for all Internet users to experience the web.  
@@ -15,7 +16,8 @@ comprehension.
   * [Google Chrome](https://www.google.com/intl/en/chrome/) - Chrome is a
     developer friendly browser with powerful development tools.
   * [Opera](https://www.opera.com/) - Opera is an innovative browser with a
-    built-in ad blocker, battery saver and free VPN.
+    built-in ad blocker, battery saver and free VPN.  
+    `sudo snap install opera`
   * [Tor Browser](https://www.torproject.org/) - Tor Browser is a toolset
     that's designed for anyone who wants to improve their safety and security
     on the Internet. 
@@ -44,9 +46,11 @@ comprehension.
 
   * [Skype](https://www.skype.com/en/) - Skype is a telecommunications
     application software that specializes in providing video chat and voice
-    calls between devices.
+    calls between devices.  
+    `sudo snap install skype --classic`
   * [Telegram](https://telegram.org/) - Telegram is a cloud-based instant
-    messaging and voice over IP service.
+    messaging and voice over IP service.  
+    `sudo snap install telegram-desktop`
 
 ### Password Manager
 
