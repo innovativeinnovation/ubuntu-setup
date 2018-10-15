@@ -66,6 +66,26 @@ Update local:
 git pull
 ```
 
+### Diff with meld
+
+To use meld as difftool, add to your `~/.gitconfig`:
+
+```
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+```
+
+Use `git difftool` in exactly the same way as you use `git diff`:
+
+```bash
+git difftool --dir-diff HEAD .
+git difftool --dir-diff master fea-branch
+```
+
 ### Create a global `.gitignore`
 
 You can create a global `.gitignore` file, which is a list of rules for
