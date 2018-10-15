@@ -47,6 +47,10 @@ sudo apt install gnome-tweak-tool
 ###### Desktop
 
   * Show icons -> Off
+  
+###### Fonts
+
+  * Monospace -> 11px
 
 ###### Top Bar
 
