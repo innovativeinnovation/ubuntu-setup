@@ -20,6 +20,12 @@ To check whether the MySQL server is running, type:
 sudo systemctl status mysql
 ```
 
+To install the MySQL database development files:
+
+```bash
+sudo apt install libmysqlclient-dev
+```
+
 ### Security
 
 Run the script:
