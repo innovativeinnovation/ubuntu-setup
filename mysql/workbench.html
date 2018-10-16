@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Java · GitBook</title>
+        <title>MySQL Workbench · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../perl/" />
+    <link rel="next" href="../vagrant/" />
     
     
-    <link rel="prev" href="../node.js/" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -264,9 +264,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.11" data-path="./">
+        <li class="chapter " data-level="1.11" data-path="../java/">
             
-                <a href="./">
+                <a href="../java/">
             
                     
                     Java
@@ -290,9 +290,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="../mysql/">
+        <li class="chapter " data-level="1.13" data-path="./">
             
-                <a href="../mysql/">
+                <a href="./">
             
                     
                     MySQL
@@ -304,9 +304,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.13.1" data-path="../mysql/workbench.html">
+        <li class="chapter active" data-level="1.13.1" data-path="workbench.html">
             
-                <a href="../mysql/workbench.html">
+                <a href="workbench.html">
             
                     
                     MySQL Workbench
@@ -404,7 +404,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Java</a>
+        <a href=".." >MySQL Workbench</a>
     </h1>
 </div>
 
@@ -419,40 +419,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="java">Java</h1>
-<p><a href="https://www.java.com" target="_blank">Java</a> is a general-purpose computer-programming
-language that is concurrent, class-based, object-oriented, and specifically
-designed to have as few implementation dependencies as possible.</p>
+                                <h1 id="mysql-workbench">MySQL Workbench</h1>
+<p><a href="https://www.mysql.com/products/workbench/" target="_blank">MySQL Workbench</a> is a unified
+visual tool for database architects, developers, and DBAs. MySQL Workbench
+provides data modeling, SQL development, and comprehensive administration
+tools for server configuration, user administration, backup, and much more. </p>
 <h3 id="installation">Installation</h3>
-<h6 id="via-package-manager">Via package manager</h6>
-<p>To install Open JDK version 11:</p>
-<pre><code class="lang-bash">sudo apt install openjdk-11-jdk
+<pre><code class="lang-bash">sudo apt install mysql-workbench
 </code></pre>
-<p>To install Open JDK version 8:</p>
-<pre><code class="lang-bash">sudo apt install openjdk-8-jdk
-</code></pre>
-<p>To set default Java version manually:</p>
-<pre><code class="lang-bash">sudo update-alternatives --config java
-</code></pre>
-<h6 id="via-sdkman">Via SDKMAN!</h6>
-<p><a href="https://sdkman.io/" target="_blank">SDKMAN!</a> is a tool for managing parallel versions of
-multiple Software Development Kits. It provides a convenient Command Line
-Interface (CLI) and API for installing, switching, removing and listing
-Candidates.</p>
-<p>To install:</p>
-<pre><code class="lang-bash">curl <span class="hljs-_">-s</span> <span class="hljs-string">&quot;https://get.sdkman.io&quot;</span> | bash
-</code></pre>
-<p>and follow the instruction to load SDKMAN! automatically.</p>
-<p>To list all available versions of Java:</p>
-<pre><code class="lang-bash">sdk list java
-</code></pre>
-<p>To install specific versions:</p>
-<pre><code class="lang-bash">sdk install java 9.0.7-zulu
-sdk install java 7.0.191-zulu
-</code></pre>
-<p>To see what is currently in use:</p>
-<pre><code class="lang-bash">sdk current java
-</code></pre>
+<h3 id="configuration">Configuration</h3>
+<p>Use the built-in Workbench Preferences to adjust settings such as targeted
+MySQL server version, font color, code completion, and others.</p>
+<p>Click the <code>+</code> button to add new connection via <code>Standard TCP/IP over SSH</code>
+and complete the credentials for SSH and MySQL user login.</p>
 
                                 
                                 </section>
@@ -480,12 +459,12 @@ sdk install java 7.0.191-zulu
 
             
                 
-                <a href="../node.js/" class="navigation navigation-prev " aria-label="Previous page: Node.js">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: MySQL">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../perl/" class="navigation navigation-next " aria-label="Next page: Perl">
+                <a href="../vagrant/" class="navigation navigation-next " aria-label="Next page: Vagrant">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -496,7 +475,7 @@ sdk install java 7.0.191-zulu
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Java","level":"1.11","depth":1,"next":{"title":"Perl","level":"1.12","depth":1,"path":"perl/README.md","ref":"perl/README.md","articles":[]},"previous":{"title":"Node.js","level":"1.10","depth":1,"path":"node.js/README.md","ref":"node.js/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/README.md","mtime":"2018-10-11T18:03:43.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-16T18:13:34.022Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"MySQL Workbench","level":"1.13.1","depth":2,"next":{"title":"Vagrant","level":"1.14","depth":1,"path":"vagrant/README.md","ref":"vagrant/README.md","articles":[]},"previous":{"title":"MySQL","level":"1.13","depth":1,"path":"mysql/README.md","ref":"mysql/README.md","articles":[{"title":"MySQL Workbench","level":"1.13.1","depth":2,"path":"mysql/workbench.md","ref":"mysql/workbench.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mysql/workbench.md","mtime":"2018-10-15T18:44:18.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-16T18:13:34.022Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

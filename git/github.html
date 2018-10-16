@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../python/" />
+    <link rel="next" href="bitbucket.html" />
     
     
     <link rel="prev" href="gitk.html" />
@@ -154,7 +154,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../atom/">
+        <li class="chapter " data-level="1.6" data-path="../ssh/">
+            
+                <a href="../ssh/">
+            
+                    
+                    SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../atom/">
             
                 <a href="../atom/">
             
@@ -167,7 +180,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="./">
+        <li class="chapter " data-level="1.8" data-path="./">
             
                 <a href="./">
             
@@ -181,7 +194,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="gitk.html">
+        <li class="chapter " data-level="1.8.1" data-path="gitk.html">
             
                 <a href="gitk.html">
             
@@ -194,7 +207,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7.2" data-path="github.html">
+        <li class="chapter active" data-level="1.8.2" data-path="github.html">
             
                 <a href="github.html">
             
@@ -207,12 +220,25 @@
             
         </li>
     
+        <li class="chapter " data-level="1.8.3" data-path="bitbucket.html">
+            
+                <a href="bitbucket.html">
+            
+                    
+                    Bitbucket
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="../python/">
+        <li class="chapter " data-level="1.9" data-path="../python/">
             
                 <a href="../python/">
             
@@ -225,7 +251,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="../node.js/">
+        <li class="chapter " data-level="1.10" data-path="../node.js/">
             
                 <a href="../node.js/">
             
@@ -238,7 +264,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../java/">
+        <li class="chapter " data-level="1.11" data-path="../java/">
             
                 <a href="../java/">
             
@@ -251,7 +277,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="../perl/">
+        <li class="chapter " data-level="1.12" data-path="../perl/">
             
                 <a href="../perl/">
             
@@ -264,7 +290,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="../mysql/">
+        <li class="chapter " data-level="1.13" data-path="../mysql/">
             
                 <a href="../mysql/">
             
@@ -275,9 +301,28 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../mysql/workbench.html">
+            
+                <a href="../mysql/workbench.html">
+            
+                    
+                    MySQL Workbench
+            
+                </a>
+            
+
+            
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="../vagrant/">
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../vagrant/">
             
                 <a href="../vagrant/">
             
@@ -290,7 +335,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="../latex/">
+        <li class="chapter " data-level="1.15" data-path="../latex/">
             
                 <a href="../latex/">
             
@@ -303,7 +348,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="../apps/">
+        <li class="chapter " data-level="1.16" data-path="../apps/">
             
                 <a href="../apps/">
             
@@ -316,7 +361,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.16" data-path="../references/">
+        <li class="chapter " data-level="1.17" data-path="../references/">
             
                 <a href="../references/">
             
@@ -378,22 +423,9 @@
 <p><a href="https://github.com/" target="_blank">GitHub</a> is a web-based hosting service for version
 control using Git.</p>
 <h3 id="connecting-to-github-with-ssh">Connecting to GitHub with SSH</h3>
-<p>The instructions below are referenced from
-<a href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank">the official documentation</a>.</p>
-<p>Using the SSH protocol, you can connect and authenticate to remote servers
-and services. With SSH keys, you can connect to GitHub without supplying
-your username or password at each visit.</p>
-<p>Check for existing SSH keys:</p>
-<pre><code class="lang-bash">ls -al ~/.ssh
-</code></pre>
-<p>Generate a new SSH key:</p>
-<pre><code class="lang-bash">ssh-keygen -t rsa -b 4096 -C <span class="hljs-string">&quot;you@example.com&quot;</span>
-</code></pre>
-<p>Add your SSH key to the ssh-agent:</p>
-<pre><code class="lang-bash"><span class="hljs-built_in">eval</span> <span class="hljs-string">&quot;<span class="hljs-variable">$(ssh-agent -s)</span>&quot;</span>
-ssh-add ~/.ssh/id_rsa
-</code></pre>
-<p>Add the SSH key to your GitHub account:</p>
+<p>Check the <a href="../ssh/">SSH section</a> to see if you have any existing
+SSH keys.</p>
+<p>To add the SSH key to your GitHub account:</p>
 <pre><code class="lang-bash">sudo apt install xclip
 xclip -sel clip &lt; ~/.ssh/id_rsa.pub
 </code></pre>
@@ -431,7 +463,7 @@ the new key.</p>
                 </a>
                 
                 
-                <a href="../python/" class="navigation navigation-next " aria-label="Next page: Python">
+                <a href="bitbucket.html" class="navigation navigation-next " aria-label="Next page: Bitbucket">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -442,7 +474,7 @@ the new key.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GitHub","level":"1.7.2","depth":2,"next":{"title":"Python","level":"1.8","depth":1,"path":"python/README.md","ref":"python/README.md","articles":[]},"previous":{"title":"gitk","level":"1.7.1","depth":2,"path":"git/gitk.md","ref":"git/gitk.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"git/github.md","mtime":"2018-10-10T18:23:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-11T18:42:15.486Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GitHub","level":"1.8.2","depth":2,"next":{"title":"Bitbucket","level":"1.8.3","depth":2,"path":"git/bitbucket.md","ref":"git/bitbucket.md","articles":[]},"previous":{"title":"gitk","level":"1.8.1","depth":2,"path":"git/gitk.md","ref":"git/gitk.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"git/github.md","mtime":"2018-10-16T17:26:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-16T18:13:34.022Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
