@@ -1,6 +1,17 @@
 Changelog
 =========
 
+### v1.5.0 / 2018-10-16
+
+  - Add SSH
+  - Add image editors
+  - Add password managers
+  - Add fonts setting
+  - Add git diff with meld
+  - Add postman
+  - Add Bitbucket
+  - Add install command with snap
+
 ### v1.4.0 / 2018-10-11
 
   - Add Java
