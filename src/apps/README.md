@@ -71,6 +71,9 @@ comprehension.
     `sudo apt install filezilla`
   * [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool.  
     `sudo apt install meld`
+  * [Postman](https://www.getpostman.com/) - Postman is the complete toolchain
+    for API developers.  
+    `sudo snap install postman`
   * [Shutter](http://shutter-project.org/) - Shutter is a feature-rich
     screenshot program.  
     `sudo apt install shutter`
