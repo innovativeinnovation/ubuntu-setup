@@ -10,6 +10,7 @@
   * [Git](git/README.md)
     * [gitk](git/gitk.md)
     * [GitHub](git/github.md)
+    * [Bitbucket](git/bitbucket.md)
   * [Python](python/README.md)
   * [Node.js](node.js/README.md)
   * [Java](java/README.md)
