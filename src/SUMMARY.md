@@ -17,6 +17,7 @@
   * [Perl](perl/README.md)
   * [MySQL](mysql/README.md)
     * [MySQL Workbench](mysql/workbench.md)
+  * [Docker](docker/README.md)
   * [Vagrant](vagrant/README.md)
   * [LaTeX](latex/README.md)
   * [Apps](apps/README.md)
