@@ -9,7 +9,7 @@ laptops, data center VMs, or the cloud.
 ###### Via package manager
 
 ```bash
-sudo apt install docker.io
+sudo apt install docker.io docker-compose
 ```
 
 ###### Manually
