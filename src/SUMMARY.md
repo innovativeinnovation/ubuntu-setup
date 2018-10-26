@@ -21,4 +21,5 @@
   * [Vagrant](vagrant/README.md)
   * [LaTeX](latex/README.md)
   * [Apps](apps/README.md)
+  * [Security](security/README.md)
   * [References](references/README.md)

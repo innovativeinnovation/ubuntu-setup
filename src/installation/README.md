@@ -17,7 +17,8 @@ and click "Continue". Next screen, select "Normal Installation",
 "Download Updates While Installing Ubuntu" and "Install third party software".
 Click on "Continue" to proceed with installation.
 
-Next the installer presents you some installation options. Choose the
+Next the installer presents you some installation options. See the
+[Security section](../security/README.md) to choose the
 appropriate installation type for you.
 
 Again, click on "Continue" to write all the changes to the disks.
