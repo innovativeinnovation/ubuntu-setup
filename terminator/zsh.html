@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Terminator · GitBook</title>
+        <title>Zsh · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="zsh.html" />
+    <link rel="next" href="../ssh/" />
     
     
-    <link rel="prev" href="../settings/" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -141,7 +141,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="./">
+        <li class="chapter " data-level="1.5" data-path="./">
             
                 <a href="./">
             
@@ -155,7 +155,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="zsh.html">
+        <li class="chapter active" data-level="1.5.1" data-path="zsh.html">
             
                 <a href="zsh.html">
             
@@ -449,7 +449,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Terminator</a>
+        <a href=".." >Zsh</a>
     </h1>
 </div>
 
@@ -464,21 +464,37 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="terminator">Terminator</h1>
-<p><a href="https://gnometerminator.blogspot.com/p/introduction.html" target="_blank">Terminator</a> is a
-terminal emulator that is designed to make arranging terminals within a
-single window easier, with features including a number of keybindings, saving
-of layouts, and the ability to type to multiple terminals at the same time.</p>
+                                <h1 id="zsh">Zsh</h1>
+<p><a href="http://www.zsh.org/" target="_blank">Zsh</a> is a shell designed for interactive use, although
+it is also a powerful scripting language.</p>
 <h3 id="installation">Installation</h3>
-<pre><code class="lang-bash">sudo apt install terminator
+<p>To install Zsh:</p>
+<pre><code class="lang-bash">sudo apt install zsh
 </code></pre>
-<h3 id="configuration">Configuration</h3>
-<p>The configuration file is located in <code>~/.config/terminator/config</code>. </p>
-<p>Configuration file includes all layouts, plugins, custom commands, etc.</p>
-<h3 id="color-schemes">Color Schemes</h3>
-<p>Edit your Terminator configuration file and add the configurations for
-the theme(s) you&apos;d like to use.</p>
-<p>See this set of <a href="https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/terminator" target="_blank">color schemes</a>.</p>
+<p>To set Zsh as the default login shell:</p>
+<pre><code class="lang-bash">sudo usermod <span class="hljs-_">-s</span> /usr/bin/zsh $(whoami)
+</code></pre>
+<p>Now restart your computer and repoen your terminal.</p>
+<p>If you don&apos;t already have a <code>~/.zshrc</code> configuration, copy the recommended
+settings with:</p>
+<pre><code class="lang-bash">cp /etc/zsh/newuser.zshrc.recommended .zshrc
+</code></pre>
+<p>To install Powerline, Powerline fonts and Zsh Powerlevel9k Theme:</p>
+<pre><code class="lang-bash">sudo apt install powerline fonts-powerline zsh-theme-powerlevel9k
+</code></pre>
+<p>To install Oh My Zsh framework:</p>
+<pre><code class="lang-bash">sh -c <span class="hljs-string">&quot;<span class="hljs-variable">$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)</span>&quot;</span>
+</code></pre>
+<p>To enable Powerlevel9k theme:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;source /usr/share/powerlevel9k/powerlevel9k.zsh-theme&quot;</span> &gt;&gt; ~/.zshrc
+</code></pre>
+<p>To install and enable Zsh Syntax Highlighting plugin:</p>
+<pre><code class="lang-bash">sudo apt install zsh-syntax-highlighting
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh&quot;</span> &gt;&gt; ~/.zshrc
+</code></pre>
+<h3 id="plugins">Plugins</h3>
+<p>Oh-My-Zsh has many plugins. You can find a list of pre-installed plugins at
+<a href="https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins" target="_blank">https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins</a></p>
 
                                 
                                 </section>
@@ -506,12 +522,12 @@ the theme(s) you&apos;d like to use.</p>
 
             
                 
-                <a href="../settings/" class="navigation navigation-prev " aria-label="Previous page: System Preferences">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Terminator">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="zsh.html" class="navigation navigation-next " aria-label="Next page: Zsh">
+                <a href="../ssh/" class="navigation navigation-next " aria-label="Next page: SSH">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -522,7 +538,7 @@ the theme(s) you&apos;d like to use.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Terminator","level":"1.5","depth":1,"next":{"title":"Zsh","level":"1.5.1","depth":2,"path":"terminator/zsh.md","ref":"terminator/zsh.md","articles":[]},"previous":{"title":"System Preferences","level":"1.4","depth":1,"path":"settings/README.md","ref":"settings/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"terminator/README.md","mtime":"2018-10-10T18:23:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-26T19:02:29.203Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Zsh","level":"1.5.1","depth":2,"next":{"title":"SSH","level":"1.6","depth":1,"path":"ssh/README.md","ref":"ssh/README.md","articles":[]},"previous":{"title":"Terminator","level":"1.5","depth":1,"path":"terminator/README.md","ref":"terminator/README.md","articles":[{"title":"Zsh","level":"1.5.1","depth":2,"path":"terminator/zsh.md","ref":"terminator/zsh.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"terminator/zsh.md","mtime":"2018-10-26T18:47:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-26T19:02:29.203Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

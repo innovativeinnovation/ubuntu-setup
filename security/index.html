@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Terminator · GitBook</title>
+        <title>Security · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="zsh.html" />
+    <link rel="next" href="../references/" />
     
     
-    <link rel="prev" href="../settings/" />
+    <link rel="prev" href="../apps/" />
     
 
     </head>
@@ -141,9 +141,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="./">
+        <li class="chapter " data-level="1.5" data-path="../terminator/">
             
-                <a href="./">
+                <a href="../terminator/">
             
                     
                     Terminator
@@ -155,9 +155,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="zsh.html">
+        <li class="chapter " data-level="1.5.1" data-path="../terminator/zsh.html">
             
-                <a href="zsh.html">
+                <a href="../terminator/zsh.html">
             
                     
                     Zsh
@@ -393,9 +393,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.18" data-path="../security/">
+        <li class="chapter active" data-level="1.18" data-path="./">
             
-                <a href="../security/">
+                <a href="./">
             
                     
                     Security
@@ -449,7 +449,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Terminator</a>
+        <a href=".." >Security</a>
     </h1>
 </div>
 
@@ -464,21 +464,72 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="terminator">Terminator</h1>
-<p><a href="https://gnometerminator.blogspot.com/p/introduction.html" target="_blank">Terminator</a> is a
-terminal emulator that is designed to make arranging terminals within a
-single window easier, with features including a number of keybindings, saving
-of layouts, and the ability to type to multiple terminals at the same time.</p>
-<h3 id="installation">Installation</h3>
-<pre><code class="lang-bash">sudo apt install terminator
+                                <h1 id="security">Security</h1>
+<h3 id="disk-encryption">Disk Encryption</h3>
+<h6 id="full-disk-encryption">Full disk encryption</h6>
+<p>The Ubuntu 18.04 installer proposes to encrypt your disk for security. Choosing the
+LVM option is optional but recommended.</p>
+<p>Every time the system starts, you will have to enter the passkey for
+the encrypted drive. Without the pass key, Ubuntu won&apos;t boot.</p>
+<h6 id="encrypt-the-home-folder">Encrypt The Home Folder</h6>
+<p>Ubuntu 18.04 doesn&apos;t include an option in the installer to encrypt the <code>home</code>
+directory. This option was removed from the Ubuntu installer because it
+uses eCryptfs, which is considered &quot;buggy, under-maintained&quot;, and the
+recommended alternative is a full disk encryption using LUKS.</p>
+<p>If you still want to encrypt your <code>home</code> folder, follow these steps.</p>
+<pre><code class="lang-bash">sudo apt install ecryptfs-utils cryptsetup
+sudo adduser foobar
+sudo usermod <span class="hljs-_">-a</span>G sudo foobar
 </code></pre>
-<h3 id="configuration">Configuration</h3>
-<p>The configuration file is located in <code>~/.config/terminator/config</code>. </p>
-<p>Configuration file includes all layouts, plugins, custom commands, etc.</p>
-<h3 id="color-schemes">Color Schemes</h3>
-<p>Edit your Terminator configuration file and add the configurations for
-the theme(s) you&apos;d like to use.</p>
-<p>See this set of <a href="https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/terminator" target="_blank">color schemes</a>.</p>
+<p>Logout and login as foobar. Then:</p>
+<pre><code class="lang-bash">sudo ecryptfs-migrate-home -u &lt;user&gt;
+</code></pre>
+<p>where <code>&lt;user&gt;</code> is your primary account. Logout from foobar and login as
+<code>&lt;user&gt;</code> (do not reboot!).</p>
+<p>Run:</p>
+<pre><code class="lang-bash">ecryptfs-unwrap-passphrase
+</code></pre>
+<p>and save this somewhere safe! Reboot and if everything is ok, you can
+safely remove the temporary user foobar as well as the backup.</p>
+<pre><code class="lang-bash">sudo deluser --remove-home foobar
+ls /home
+</code></pre>
+<p>and remove the folder <code>&lt;user&gt;.xxxxxxxx</code>.</p>
+<h3 id="firewall">Firewall</h3>
+<p>The Uncomplicated Firewall (ufw) is a frontend for iptables and is
+particularly well-suited for host-based firewalls.</p>
+<p>By default, ufw is disabled. You can check the status of your firewall with:</p>
+<pre><code class="lang-bash">sudo ufw status
+</code></pre>
+<p>To enable the firewall:</p>
+<pre><code class="lang-bash">sudo ufw <span class="hljs-built_in">enable</span>
+</code></pre>
+<p>To disable the firewall:</p>
+<pre><code class="lang-bash">sudo ufw <span class="hljs-built_in">disable</span>
+</code></pre>
+<p>To manage the firewall via a graphical user interface:</p>
+<pre><code class="lang-bash">sudo apt install gufw
+</code></pre>
+<h3 id="antivirus">Antivirus</h3>
+<p><a href="http://www.clamav.net/" target="_blank">ClamAV</a> is an open source antivirus engine for
+detecting trojans, viruses, malware &amp; other malicious threats.</p>
+<p>To install ClamAV:</p>
+<pre><code class="lang-bash">sudo apt install clamav
+</code></pre>
+<p>To manually update the threat database:</p>
+<pre><code class="lang-bash">sudo systemctl stop clamav-freshclam
+sudo freshclam
+sudo systemctl start clamav-freshclam
+</code></pre>
+<p>To scan the <code>home</code> directory:</p>
+<pre><code class="lang-bash">clamscan --infected --remove --recursive /home
+</code></pre>
+<p>To run ClamAV as a Daemon:</p>
+<pre><code class="lang-bash">sudo apt install clamav-daemon
+</code></pre>
+<p>To install the front-end (GUI) client:</p>
+<pre><code class="lang-bash">sudo apt install clamtk
+</code></pre>
 
                                 
                                 </section>
@@ -506,12 +557,12 @@ the theme(s) you&apos;d like to use.</p>
 
             
                 
-                <a href="../settings/" class="navigation navigation-prev " aria-label="Previous page: System Preferences">
+                <a href="../apps/" class="navigation navigation-prev " aria-label="Previous page: Apps">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="zsh.html" class="navigation navigation-next " aria-label="Next page: Zsh">
+                <a href="../references/" class="navigation navigation-next " aria-label="Next page: References">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -522,7 +573,7 @@ the theme(s) you&apos;d like to use.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Terminator","level":"1.5","depth":1,"next":{"title":"Zsh","level":"1.5.1","depth":2,"path":"terminator/zsh.md","ref":"terminator/zsh.md","articles":[]},"previous":{"title":"System Preferences","level":"1.4","depth":1,"path":"settings/README.md","ref":"settings/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"terminator/README.md","mtime":"2018-10-10T18:23:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-26T19:02:29.203Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Security","level":"1.18","depth":1,"next":{"title":"References","level":"1.19","depth":1,"path":"references/README.md","ref":"references/README.md","articles":[]},"previous":{"title":"Apps","level":"1.17","depth":1,"path":"apps/README.md","ref":"apps/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"security/README.md","mtime":"2018-10-26T16:46:13.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-26T19:02:29.203Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

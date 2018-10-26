@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Terminator · GitBook</title>
+        <title>Docker · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="zsh.html" />
+    <link rel="next" href="../vagrant/" />
     
     
-    <link rel="prev" href="../settings/" />
+    <link rel="prev" href="../mysql/workbench.html" />
     
 
     </head>
@@ -141,9 +141,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="./">
+        <li class="chapter " data-level="1.5" data-path="../terminator/">
             
-                <a href="./">
+                <a href="../terminator/">
             
                     
                     Terminator
@@ -155,9 +155,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="zsh.html">
+        <li class="chapter " data-level="1.5.1" data-path="../terminator/zsh.html">
             
-                <a href="zsh.html">
+                <a href="../terminator/zsh.html">
             
                     
                     Zsh
@@ -341,9 +341,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="../docker/">
+        <li class="chapter active" data-level="1.14" data-path="./">
             
-                <a href="../docker/">
+                <a href="./">
             
                     
                     Docker
@@ -449,7 +449,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Terminator</a>
+        <a href=".." >Docker</a>
     </h1>
 </div>
 
@@ -464,21 +464,48 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="terminator">Terminator</h1>
-<p><a href="https://gnometerminator.blogspot.com/p/introduction.html" target="_blank">Terminator</a> is a
-terminal emulator that is designed to make arranging terminals within a
-single window easier, with features including a number of keybindings, saving
-of layouts, and the ability to type to multiple terminals at the same time.</p>
+                                <h1 id="docker">Docker</h1>
+<p><a href="https://www.docker.com/" target="_blank">Docker</a> is an open platform for developers and
+sysadmins to build, ship, and run distributed applications, whether on
+laptops, data center VMs, or the cloud.</p>
 <h3 id="installation">Installation</h3>
-<pre><code class="lang-bash">sudo apt install terminator
+<h6 id="via-package-manager">Via package manager</h6>
+<pre><code class="lang-bash">sudo apt install docker.io docker-compose
+</code></pre>
+<h6 id="manually">Manually</h6>
+<p>Go to <a href="https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/" target="_blank">https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/</a> and
+choose <code>amd64</code>, <code>armhf</code>, <code>ppc64el</code>, or <code>s390x</code>. Download the <code>.deb</code> file
+for the Docker version you want to install.</p>
+<pre><code class="lang-bash">sudo dpkg -i /path/to/package.deb
 </code></pre>
 <h3 id="configuration">Configuration</h3>
-<p>The configuration file is located in <code>~/.config/terminator/config</code>. </p>
-<p>Configuration file includes all layouts, plugins, custom commands, etc.</p>
-<h3 id="color-schemes">Color Schemes</h3>
-<p>Edit your Terminator configuration file and add the configurations for
-the theme(s) you&apos;d like to use.</p>
-<p>See this set of <a href="https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/terminator" target="_blank">color schemes</a>.</p>
+<p>If you would like to use Docker as a non-root user, you should now consider
+adding your user to the &quot;docker&quot; group with something like:</p>
+<pre><code class="lang-bash">sudo usermod <span class="hljs-_">-a</span>G docker your-user
+</code></pre>
+<p>Remember to log out and back in for this to take effect!</p>
+<h3 id="usage">Usage</h3>
+<p>To test Docker installation:</p>
+<pre><code class="lang-bash">docker run hello-world
+</code></pre>
+<p>To list Docker images:</p>
+<pre><code class="lang-bash">docker image ls
+</code></pre>
+<p>To list all Docker containers:</p>
+<pre><code class="lang-bash">docker container ls --all
+</code></pre>
+<p>To list running containers:</p>
+<pre><code class="lang-bash">docker ps
+</code></pre>
+<p>To kill all running containers:</p>
+<pre><code class="lang-bash">docker <span class="hljs-built_in">kill</span> $(docker ps -q)
+</code></pre>
+<p>To delete all stopped containers:</p>
+<pre><code class="lang-bash">docker rm $(docker ps <span class="hljs-_">-a</span> -q)
+</code></pre>
+<p>To delete all images:</p>
+<pre><code class="lang-bash">docker rmi $(docker images -q)
+</code></pre>
 
                                 
                                 </section>
@@ -506,12 +533,12 @@ the theme(s) you&apos;d like to use.</p>
 
             
                 
-                <a href="../settings/" class="navigation navigation-prev " aria-label="Previous page: System Preferences">
+                <a href="../mysql/workbench.html" class="navigation navigation-prev " aria-label="Previous page: MySQL Workbench">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="zsh.html" class="navigation navigation-next " aria-label="Next page: Zsh">
+                <a href="../vagrant/" class="navigation navigation-next " aria-label="Next page: Vagrant">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -522,7 +549,7 @@ the theme(s) you&apos;d like to use.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Terminator","level":"1.5","depth":1,"next":{"title":"Zsh","level":"1.5.1","depth":2,"path":"terminator/zsh.md","ref":"terminator/zsh.md","articles":[]},"previous":{"title":"System Preferences","level":"1.4","depth":1,"path":"settings/README.md","ref":"settings/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"terminator/README.md","mtime":"2018-10-10T18:23:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-26T19:02:29.203Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Docker","level":"1.14","depth":1,"next":{"title":"Vagrant","level":"1.15","depth":1,"path":"vagrant/README.md","ref":"vagrant/README.md","articles":[]},"previous":{"title":"MySQL Workbench","level":"1.13.1","depth":2,"path":"mysql/workbench.md","ref":"mysql/workbench.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docker/README.md","mtime":"2018-10-24T18:48:49.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-26T19:02:29.203Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
