@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v1.6.0 / 2018-10-26
+
+  - Add Docker
+  - Add Security
+  - Add Zsh
+
 ### v1.5.0 / 2018-10-16
 
   - Add SSH
