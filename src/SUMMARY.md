@@ -5,6 +5,7 @@
   * [Installation](installation/README.md)
   * [System Preferences](settings/README.md)
   * [Terminator](terminator/README.md)
+    * [Zsh](terminator/zsh.md)
   * [SSH](ssh/README.md)
   * [Atom](atom/README.md)
   * [Git](git/README.md)
