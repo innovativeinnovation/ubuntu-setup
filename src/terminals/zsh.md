@@ -55,3 +55,7 @@ echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 
 Oh-My-Zsh has many plugins. You can find a list of pre-installed plugins at
 https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins
+
+### Screenshot
+
+![Zsh](../images/zsh.png)

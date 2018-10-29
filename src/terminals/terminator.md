@@ -23,3 +23,7 @@ Edit your Terminator configuration file and add the configurations for
 the theme(s) you'd like to use.
 
 See this set of [color schemes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/terminator).
+
+### Screenshot
+
+![Terminator](../images/terminator.png)

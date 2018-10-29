@@ -9,3 +9,5 @@ installed by default on Ubuntu. It supports colored text, a variety of
 themes, transparency, mouse interaction and multiple tabs. The GNOME terminal
 supports also multiple profiles, where users can create multiple profiles
 account and can customize configuration options.
+
+![GNOME Terminal](../images/gnome-terminal.png)
