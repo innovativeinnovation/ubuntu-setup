@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Installation · GitBook</title>
+        <title>Zsh · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../settings/" />
+    <link rel="next" href="cli-tools.html" />
     
     
-    <link rel="prev" href="../prerequisite/" />
+    <link rel="prev" href="terminator.html" />
     
 
     </head>
@@ -115,9 +115,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="../installation/">
             
-                <a href="./">
+                <a href="../installation/">
             
                     
                     Installation
@@ -141,9 +141,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../terminals/">
+        <li class="chapter " data-level="1.5" data-path="./">
             
-                <a href="../terminals/">
+                <a href="./">
             
                     
                     Terminals
@@ -155,9 +155,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../terminals/terminator.html">
+        <li class="chapter " data-level="1.5.1" data-path="terminator.html">
             
-                <a href="../terminals/terminator.html">
+                <a href="terminator.html">
             
                     
                     Terminator
@@ -168,9 +168,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../terminals/zsh.html">
+        <li class="chapter active" data-level="1.5.2" data-path="zsh.html">
             
-                <a href="../terminals/zsh.html">
+                <a href="zsh.html">
             
                     
                     Zsh
@@ -181,9 +181,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../terminals/cli-tools.html">
+        <li class="chapter " data-level="1.5.3" data-path="cli-tools.html">
             
-                <a href="../terminals/cli-tools.html">
+                <a href="cli-tools.html">
             
                     
                     CLI Tools
@@ -475,7 +475,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Installation</a>
+        <a href=".." >Zsh</a>
     </h1>
 </div>
 
@@ -490,30 +490,39 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ubuntu-1804-lts-desktop-installation">Ubuntu 18.04 LTS Desktop Installation</h1>
-<h3 id="minimum-system-requirement">Minimum System Requirement</h3>
-<p>You will need:</p>
-<ul>
-<li>2 GB RAM</li>
-<li>Dual Core Processor (2 GHz)</li>
-<li>25 GB free Hard disk space</li>
-<li>Bootable flash drive</li>
-</ul>
+                                <h1 id="zsh">Zsh</h1>
+<p><a href="http://www.zsh.org/" target="_blank">Zsh</a> is a shell designed for interactive use, although
+it is also a powerful scripting language.</p>
 <h3 id="installation">Installation</h3>
-<p>Once the system is booted using the bootable disk, click &quot;Install Ubuntu&quot; to
-continue with the installation process. Choose your favorite keyboard layout
-and click &quot;Continue&quot;. Next screen, select &quot;Normal Installation&quot;,
-&quot;Download Updates While Installing Ubuntu&quot; and &quot;Install third party software&quot;.
-Click on &quot;Continue&quot; to proceed with installation.</p>
-<p>Next the installer presents you some installation options. See the
-<a href="../security/">Security section</a> to choose the
-appropriate installation type for you.</p>
-<p>Again, click on &quot;Continue&quot; to write all the changes to the disks.</p>
-<p>Choose your favorite time zone and then click on &quot;Continue&quot;. You will be
-prompted to provide your user credentials. The installation of Ubuntu 18.04
-LTS starts and will take around 5-10 mins.</p>
-<p>Once the installation is completed, restart your system.</p>
-<p><img src="../images/ubuntu.png" alt="ubuntu 18.04 LTS Desktop"></p>
+<p>To install Zsh:</p>
+<pre><code class="lang-bash">sudo apt install zsh
+</code></pre>
+<p>To set Zsh as the default login shell:</p>
+<pre><code class="lang-bash">sudo usermod <span class="hljs-_">-s</span> /usr/bin/zsh $(whoami)
+</code></pre>
+<p>Now restart your computer and repoen your terminal.</p>
+<p>If you don&apos;t already have a <code>~/.zshrc</code> configuration, copy the recommended
+settings with:</p>
+<pre><code class="lang-bash">cp /etc/zsh/newuser.zshrc.recommended .zshrc
+</code></pre>
+<p>To install Powerline, Powerline fonts and Zsh Powerlevel9k Theme:</p>
+<pre><code class="lang-bash">sudo apt install powerline fonts-powerline zsh-theme-powerlevel9k
+</code></pre>
+<p>To install Oh My Zsh framework:</p>
+<pre><code class="lang-bash">sh -c <span class="hljs-string">&quot;<span class="hljs-variable">$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)</span>&quot;</span>
+</code></pre>
+<p>To enable Powerlevel9k theme:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;source /usr/share/powerlevel9k/powerlevel9k.zsh-theme&quot;</span> &gt;&gt; ~/.zshrc
+</code></pre>
+<p>To install and enable Zsh Syntax Highlighting plugin:</p>
+<pre><code class="lang-bash">sudo apt install zsh-syntax-highlighting
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh&quot;</span> &gt;&gt; ~/.zshrc
+</code></pre>
+<h3 id="plugins">Plugins</h3>
+<p>Oh-My-Zsh has many plugins. You can find a list of pre-installed plugins at
+<a href="https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins" target="_blank">https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins</a></p>
+<h3 id="screenshot">Screenshot</h3>
+<p><img src="../images/zsh.png" alt="Zsh"></p>
 
                                 
                                 </section>
@@ -541,12 +550,12 @@ LTS starts and will take around 5-10 mins.</p>
 
             
                 
-                <a href="../prerequisite/" class="navigation navigation-prev " aria-label="Previous page: Prerequisite">
+                <a href="terminator.html" class="navigation navigation-prev " aria-label="Previous page: Terminator">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../settings/" class="navigation navigation-next " aria-label="Next page: System Preferences">
+                <a href="cli-tools.html" class="navigation navigation-next " aria-label="Next page: CLI Tools">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -557,7 +566,7 @@ LTS starts and will take around 5-10 mins.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Installation","level":"1.3","depth":1,"next":{"title":"System Preferences","level":"1.4","depth":1,"path":"settings/README.md","ref":"settings/README.md","articles":[]},"previous":{"title":"Prerequisite","level":"1.2","depth":1,"path":"prerequisite/README.md","ref":"prerequisite/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"installation/README.md","mtime":"2018-10-30T20:31:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-30T20:31:52.746Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Zsh","level":"1.5.2","depth":2,"next":{"title":"CLI Tools","level":"1.5.3","depth":2,"path":"terminals/cli-tools.md","ref":"terminals/cli-tools.md","articles":[]},"previous":{"title":"Terminator","level":"1.5.1","depth":2,"path":"terminals/terminator.md","ref":"terminals/terminator.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"terminals/zsh.md","mtime":"2018-10-30T20:31:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-30T20:31:52.746Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

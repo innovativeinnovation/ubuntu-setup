@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Zsh · GitBook</title>
+        <title>CLI Tools · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -60,7 +60,7 @@
     <link rel="next" href="../ssh/" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="zsh.html" />
     
 
     </head>
@@ -146,7 +146,7 @@
                 <a href="./">
             
                     
-                    Terminator
+                    Terminals
             
                 </a>
             
@@ -155,12 +155,38 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.5.1" data-path="zsh.html">
+        <li class="chapter " data-level="1.5.1" data-path="terminator.html">
+            
+                <a href="terminator.html">
+            
+                    
+                    Terminator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="zsh.html">
             
                 <a href="zsh.html">
             
                     
                     Zsh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="cli-tools.html">
+            
+                <a href="cli-tools.html">
+            
+                    
+                    CLI Tools
             
                 </a>
             
@@ -449,7 +475,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Zsh</a>
+        <a href=".." >CLI Tools</a>
     </h1>
 </div>
 
@@ -464,37 +490,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="zsh">Zsh</h1>
-<p><a href="http://www.zsh.org/" target="_blank">Zsh</a> is a shell designed for interactive use, although
-it is also a powerful scripting language.</p>
-<h3 id="installation">Installation</h3>
-<p>To install Zsh:</p>
-<pre><code class="lang-bash">sudo apt install zsh
+                                <h1 id="cli-tools">CLI Tools</h1>
+<h3 id="essentials">Essentials</h3>
+<p>if you build software, development tools are required to install. It&apos;s also
+useful for building packages on your system. Development tools contain few
+general useful tools like <code>gcc</code>, <code>g++</code> and <code>make</code>.</p>
+<pre><code class="lang-bash">sudo apt install build-essential
 </code></pre>
-<p>To set Zsh as the default login shell:</p>
-<pre><code class="lang-bash">sudo usermod <span class="hljs-_">-s</span> /usr/bin/zsh $(whoami)
+<p><a href="https://curl.haxx.se/" target="_blank">curl</a> command is a tool to download or transfer
+files/data from or to a server using FTP, HTTP, HTTPS, SCP, SFTP, SMB and
+other supported protocols on Linux or Unix-like system.</p>
+<pre><code class="lang-bash">sudo apt install curl
 </code></pre>
-<p>Now restart your computer and repoen your terminal.</p>
-<p>If you don&apos;t already have a <code>~/.zshrc</code> configuration, copy the recommended
-settings with:</p>
-<pre><code class="lang-bash">cp /etc/zsh/newuser.zshrc.recommended .zshrc
+<p><a href="https://hisham.hm/htop/" target="_blank">htop</a> is a system monitoring utility.</p>
+<pre><code class="lang-bash">sudo apt install htop
 </code></pre>
-<p>To install Powerline, Powerline fonts and Zsh Powerlevel9k Theme:</p>
-<pre><code class="lang-bash">sudo apt install powerline fonts-powerline zsh-theme-powerlevel9k
+<p><a href="https://launchpad.net/ubuntu/bionic/+source/pydf" target="_blank">pydf</a> is an advanced
+command line tool and a good alternative to Linux <code>df</code>.</p>
+<pre><code class="lang-bash">sudo apt install pydf
 </code></pre>
-<p>To install Oh My Zsh framework:</p>
-<pre><code class="lang-bash">sh -c <span class="hljs-string">&quot;<span class="hljs-variable">$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)</span>&quot;</span>
+<p><a href="https://beyondgrep.com/install/" target="_blank">ack</a> is a grep-like text finder.</p>
+<pre><code class="lang-bash">sudo apt install ack
 </code></pre>
-<p>To enable Powerlevel9k theme:</p>
-<pre><code class="lang-bash"><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;source /usr/share/powerlevel9k/powerlevel9k.zsh-theme&quot;</span> &gt;&gt; ~/.zshrc
-</code></pre>
-<p>To install and enable Zsh Syntax Highlighting plugin:</p>
-<pre><code class="lang-bash">sudo apt install zsh-syntax-highlighting
-<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh&quot;</span> &gt;&gt; ~/.zshrc
-</code></pre>
-<h3 id="plugins">Plugins</h3>
-<p>Oh-My-Zsh has many plugins. You can find a list of pre-installed plugins at
-<a href="https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins" target="_blank">https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins</a></p>
+<h3 id="miscellaneous">Miscellaneous</h3>
+<p><a href="https://github.com/joeyespo/grip" target="_blank">Grip</a> - Grip is a command-line server
+application written in Python that uses the GitHub markdown API to render
+a local readme file.<br><code>sudo -H pip install grip</code></p>
+<p><a href="https://ngrok.com/" target="_blank">ngrok</a> - ngrok is a tunneling, reverse proxy that
+establishes secure tunnels from a public endpoint to a locally running
+network service while capturing all traffic for inspection and replay.</p>
 
                                 
                                 </section>
@@ -522,7 +546,7 @@ settings with:</p>
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Terminator">
+                <a href="zsh.html" class="navigation navigation-prev " aria-label="Previous page: Zsh">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -538,7 +562,7 @@ settings with:</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Zsh","level":"1.5.1","depth":2,"next":{"title":"SSH","level":"1.6","depth":1,"path":"ssh/README.md","ref":"ssh/README.md","articles":[]},"previous":{"title":"Terminator","level":"1.5","depth":1,"path":"terminator/README.md","ref":"terminator/README.md","articles":[{"title":"Zsh","level":"1.5.1","depth":2,"path":"terminator/zsh.md","ref":"terminator/zsh.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"terminator/zsh.md","mtime":"2018-10-26T18:47:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-26T19:02:29.203Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CLI Tools","level":"1.5.3","depth":2,"next":{"title":"SSH","level":"1.6","depth":1,"path":"ssh/README.md","ref":"ssh/README.md","articles":[]},"previous":{"title":"Zsh","level":"1.5.2","depth":2,"path":"terminals/zsh.md","ref":"terminals/zsh.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"terminals/cli-tools.md","mtime":"2018-10-30T20:31:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-30T20:31:52.746Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
