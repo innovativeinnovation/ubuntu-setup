@@ -7,6 +7,7 @@
   * [Terminals](terminals/README.md)
     * [Terminator](terminals/terminator.md)
     * [Zsh](terminals/zsh.md)
+    * [CLI Tools](terminals/cli-tools.md)
   * [SSH](ssh/README.md)
   * [Atom](atom/README.md)
   * [Git](git/README.md)
