@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v1.7.0 / 2018-10-30
+
+  - Add terminals section
+  - Add CLI tools
+  - Add screenshots of terminals
+
 ### v1.6.0 / 2018-10-26
 
   - Add Docker
