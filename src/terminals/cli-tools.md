@@ -37,6 +37,12 @@ sudo apt install pydf
 sudo apt install ack
 ```
 
+[OpenLDAP](https://www.openldap.org/) utilities.
+
+```bash
+sudo apt install ldap-utils
+```
+
 ### Miscellaneous
 
 [Grip](https://github.com/joeyespo/grip) - Grip is a command-line server
