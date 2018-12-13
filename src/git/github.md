@@ -17,3 +17,10 @@ xclip -sel clip < ~/.ssh/id_rsa.pub
 
 and go to your [GitHub settings](https://github.com/settings/ssh/new) to add
 the new key.
+
+### Browser Extensions
+
+Some useful and fun browser extensions to personalize your GitHub browser
+experience.
+
+See [https://github.com/collections/github-browser-extensions](https://github.com/collections/github-browser-extensions).
