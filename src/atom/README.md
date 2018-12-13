@@ -31,7 +31,8 @@ These settings are all optional, consider them suggestions.
 
 ### Themes
 
-You can find your favorite themes on https://atom.io/themes.
+You can find your favorite themes on
+[https://atom.io/themes](https://atom.io/themes).
 
 UI Theme that I use:
 
@@ -46,7 +47,8 @@ Syntax Theme that I use:
 
 ### Packages
 
-You can search packages on https://atom.io/packages.
+You can search packages on 
+[https://atom.io/packages](https://atom.io/packages).
 
 Packages that I use:
 
