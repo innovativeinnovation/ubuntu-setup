@@ -1,6 +1,15 @@
 Changelog
 =========
 
+### v1.8.0 / 2018-12-14
+
+  - Add Yarn
+  - Add OpenLDAP utilities
+  - Add browser extensions for GitHub
+  - Add book.json
+  - Split section of Node.js
+  - Fix themes and packages links for Atom
+
 ### v1.7.0 / 2018-10-30
 
   - Add terminals section
