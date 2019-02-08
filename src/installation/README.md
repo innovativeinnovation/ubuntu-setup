@@ -1,15 +1,15 @@
 # Ubuntu 18.04 LTS Desktop Installation
 
-###  Minimum System Requirement
+##  Minimum System Requirement
 
 You will need:
 
-  * 2 GB RAM
-  * Dual Core Processor (2 GHz)
-  * 25 GB free Hard disk space
-  * Bootable flash drive
+* 2 GB RAM
+* Dual Core Processor (2 GHz)
+* 25 GB free Hard disk space
+* Bootable flash drive
 
-### Installation
+## Installation
 
 Once the system is booted using the bootable disk, click "Install Ubuntu" to
 continue with the installation process. Choose your favorite keyboard layout

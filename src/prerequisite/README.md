@@ -1,7 +1,9 @@
 # How To Create A Bootable Live USB
 
 Download the latest ISO from Ubuntu Desktop:
-https://www.ubuntu.com/download/desktop
+[https://www.ubuntu.com/download/desktop][ubuntu]
+
+[ubuntu]: https://www.ubuntu.com/download/desktop
 
 You will need a USB Stick/Flash Drive with a minimum 2GB of free space.
 
