@@ -3,7 +3,7 @@
 [Node.js](https://nodejs.org/en/) is a JavaScript runtime built on Chrome's
 V8 JavaScript engine.
 
-### Installation
+## Installation
 
 Node.js is available from the NodeSource Debian and Ubuntu binary
 distributions repository.
@@ -20,7 +20,7 @@ install build tools:
 sudo apt install -y build-essential
 ```
 
-### Usage
+## Usage
 
 To check Node.js version:
 

@@ -4,7 +4,7 @@ Node Version Manager is a bash script used to manage multiple released
 Node.js versions. It allows you to perform operations like install,
 uninstall, switch version, etc.
 
-### Installation
+## Installation
 
 To install or update nvm, you can use:
 
@@ -24,7 +24,7 @@ To install a specific version of node:
 nvm install 8.9.1 # or 10.10.0, 6.14.4, etc
 ```
 
-### Usage
+## Usage
 
 To check nvm version:
 

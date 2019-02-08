@@ -4,9 +4,9 @@
 language that is concurrent, class-based, object-oriented, and specifically
 designed to have as few implementation dependencies as possible.
 
-### Installation
+## Installation
 
-###### Via package manager
+### Via package manager
 
 To install Open JDK version 11:
 
@@ -26,7 +26,7 @@ To set default Java version manually:
 sudo update-alternatives --config java
 ```
 
-###### Via SDKMAN!
+### Via SDKMAN
 
 [SDKMAN!](https://sdkman.io/) is a tool for managing parallel versions of
 multiple Software Development Kits. It provides a convenient Command Line
