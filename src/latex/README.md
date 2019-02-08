@@ -5,7 +5,7 @@ it includes features designed for the production of technical and scientific
 documentation. LaTeX is the de facto standard for the communication and
 publication of scientific documents.
 
-### Installation
+## Installation
 
 If you have plenty of space:
 
@@ -19,7 +19,7 @@ If space is limited:
 sudo apt install texlive-latex-extra
 ```
 
-### Usage
+## Usage
 
 To produce a DVI file:
 
@@ -33,13 +33,13 @@ To produce a PDF file:
 pdflatex document.tex
 ```
 
-### Editors
+## Editors
 
 A list of some LaTeX editors on Ubuntu 18.04:
 
-  * [Texmaker](http://www.xm1math.net/texmaker/) - `sudo apt install texmaker`
-  * [TeXstudio](https://www.texstudio.org/) - `sudo apt install texstudio`
-  * [Gummi](https://github.com/alexandervdm/gummi) - `sudo apt install gummi`
-  * [LyX](https://www.lyx.org/) - `sudo apt install lyx`
-  * [Kile](https://kile.sourceforge.io/) - `sudo apt install kile`
+* [Texmaker](http://www.xm1math.net/texmaker/) - `sudo apt install texmaker`
+* [TeXstudio](https://www.texstudio.org/) - `sudo apt install texstudio`
+* [Gummi](https://github.com/alexandervdm/gummi) - `sudo apt install gummi`
+* [LyX](https://www.lyx.org/) - `sudo apt install lyx`
+* [Kile](https://kile.sourceforge.io/) - `sudo apt install kile`
   

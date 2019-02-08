@@ -3,7 +3,7 @@
 [Yarn](https://yarnpkg.com/en/) is a fast, reliable, and secure dependency
 manager.
 
-### Installation
+## Installation
 
 To install yarn, you can use:
 
@@ -11,7 +11,7 @@ To install yarn, you can use:
 curl -o- -L https://yarnpkg.com/install.sh | bash
 ```
 
-### Usage
+## Usage
 
 To check yarn version:
 

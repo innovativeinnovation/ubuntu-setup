@@ -5,7 +5,7 @@ commonly installed as part of the popular LAMP (Linux, Apache, MySQL,
 PHP/Python/Perl) stack. It uses a relational database and SQL (Structured
 Query Language) to manage its data.
 
-### Installation
+## Installation
 
 ```bash
 sudo apt install mysql-server
@@ -26,7 +26,7 @@ To install the MySQL database development files:
 sudo apt install libmysqlclient-dev
 ```
 
-### Security
+## Security
 
 Run the script:
 
@@ -39,7 +39,7 @@ changes to your MySQL installation's security options.
 
 You should answer "y" (yes) to all questions.
 
-### Usage
+## Usage
 
 To log in to the MySQL server as root:
 

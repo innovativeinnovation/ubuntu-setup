@@ -1,17 +1,17 @@
-# MySQL Workbench
+# MySQL Workbench
 
 [MySQL Workbench](https://www.mysql.com/products/workbench/) is a unified
 visual tool for database architects, developers, and DBAs. MySQL Workbench
 provides data modeling, SQL development, and comprehensive administration
-tools for server configuration, user administration, backup, and much more. 
+tools for server configuration, user administration, backup, and much more.
 
-### Installation
+## Installation
 
 ```bash
 sudo apt install mysql-workbench
 ```
 
-### Configuration
+## Configuration
 
 Use the built-in Workbench Preferences to adjust settings such as targeted
 MySQL server version, font color, code completion, and others.
