@@ -4,25 +4,27 @@
 sysadmins to build, ship, and run distributed applications, whether on
 laptops, data center VMs, or the cloud.
 
-### Installation
+## Installation
 
-###### Via package manager
+### Via package manager
 
 ```bash
 sudo apt install docker.io docker-compose
 ```
 
-###### Manually
+### Manually
 
-Go to https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/ and
+Go to [download.docker.com][dockerddl] and
 choose `amd64`, `armhf`, `ppc64el`, or `s390x`. Download the `.deb` file
 for the Docker version you want to install.
+
+[dockerddl]: https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/
 
 ```bash
 sudo dpkg -i /path/to/package.deb
 ```
 
-### Configuration
+## Configuration
 
 If you would like to use Docker as a non-root user, you should now consider
 adding your user to the "docker" group with something like:
@@ -33,7 +35,7 @@ sudo usermod -aG docker your-user
 
 Remember to log out and back in for this to take effect!
 
-### Usage
+## Usage
 
 To test Docker installation:
 
