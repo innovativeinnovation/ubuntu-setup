@@ -1,9 +1,9 @@
-# Vagrant
+# Vagrant
 
 [Vagrant](https://www.vagrantup.com/) is an open-source software product for
 building and maintaining portable virtual software development environments.
 
-### Installation
+## Installation
 
 Vagrant uses [VirtualBox](https://www.virtualbox.org/) to manage the virtual
 dependencies. You can directly [download VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads)
@@ -22,7 +22,7 @@ Ubuntu's repositories:
 sudo apt install vagrant
 ```
 
-### Usage
+## Usage
 
 To create and configure the virtual machine according to the Vagrantfile:
 

@@ -4,13 +4,13 @@
 dynamic programming language including Perl 5 and Perl 6. Only Perl 5 is
 detailed here for now.
 
-### Installation
+## Installation
 
-###### Via package manager
+### Via package manager
 
 Ubuntu 18.04 ship with Perl 5.26 pre-installed.
 
-###### Via Perlbrew
+### Via Perlbrew
 
 [Perlbrew](https://perlbrew.pl/) is an admin-free perl installation
 management tool.
@@ -36,7 +36,7 @@ To show installed versions:
 perlbrew list
 ```
 
-### CPAN
+## CPAN
 
 [CPAN](https://www.cpan.org/) is the Comprehensive Perl Archive Network,
 a large collection of Perl software and documentation.

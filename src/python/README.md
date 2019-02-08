@@ -5,9 +5,9 @@ language that can be leveraged for many use cases, with strengths in
 scripting, automation, data analysis, machine learning, and back-end
 development.
 
-### Installation
+## Installation
 
-###### Via package manager
+### Via package manager
 
 Ubuntu 18.04 ship with both Python 3 and Python 2 pre-installed.
 
@@ -17,7 +17,7 @@ To install pip for Python 2 and Python 3:
 sudo apt install -y python-pip python3-pip
 ```
 
-###### Via pyenv
+### Via pyenv
 
 [pyenv](https://github.com/pyenv/pyenv) is a Python Version Management tool
 and lets you easily switch between multiple versions of Python.
@@ -57,7 +57,7 @@ To show installed versions:
 pyenv versions
 ```
 
-### pip
+## pip
 
 [pip](https://pypi.org/project/pip/) is a package management system used to
 install and manage software packages written in Python.
