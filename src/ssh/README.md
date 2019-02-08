@@ -4,11 +4,11 @@
 log onto remote systems. It is the most common way to access remote Linux
 and Unix-like servers.
 
-### Installation
+## Installation
 
 The client software is part of the default Ubuntu installation.
 
-### Generating a new SSH key
+## Generating a new SSH key
 
 Check for existing SSH keys:
 
@@ -29,7 +29,7 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 ```
 
-### Permissions
+## Permissions
 
 If you copied your keys from another computer, permissions should be like
 this:
@@ -43,12 +43,12 @@ chmod 600 ~/.ssh/id_rsa
 chmod 644 ~/.ssh/id_rsa.pub
 ```
 
-### SSH Config File
+## SSH Config File
 
 You probably log in and out of a half dozen remote servers on a daily basis.
 You can add a config file `~/.ssh/config` to simplify your life. For example:
 
-```
+```text
 Host dev
     HostName dev.example.com
     Port 22000
