@@ -3,13 +3,13 @@
 [Git](https://git-scm.com/) is a version-control system for tracking changes
 in computer files and coordinating work on those files among multiple people.
 
-### Installation
+## Installation
 
 ```bash
 sudo apt install git
 ```
 
-### Configuration
+## Configuration
 
 Every git user should first introduce himself to git, by running these
 two commands:
@@ -25,7 +25,7 @@ We can see all of the configuration items that have been set by typing:
 git config --list
 ```
 
-### Usage
+## Usage
 
 Create a new repository:
 
@@ -35,7 +35,7 @@ git init
 
 Checkout a repository:
 
-```
+```bash
 git clone /path/to/repository                 # local
 git clone username@host:/path/to/repository   # remote
 ```
@@ -66,11 +66,11 @@ Update local:
 git pull
 ```
 
-### Diff with meld
+## Diff with meld
 
 To use meld as difftool, add to your `~/.gitconfig`:
 
-```
+```text
 [diff]
     tool = meld
 [difftool]
@@ -86,7 +86,7 @@ git difftool --dir-diff HEAD .
 git difftool --dir-diff master fea-branch
 ```
 
-### Create a global `.gitignore`
+## Create a global `.gitignore`
 
 You can create a global `.gitignore` file, which is a list of rules for
 ignoring files in every Git repository on your computer.

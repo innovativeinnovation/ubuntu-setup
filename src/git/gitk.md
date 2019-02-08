@@ -5,13 +5,13 @@ displays changes in a repository or a selected set of commits. This includes
 visualizing the commit graph, showing information related to each commit, and
 the files in the trees of each revision.
 
-### Installation
+## Installation
 
 ```bash
 sudo apt install gitk
 ```
 
-### Usage
+## Usage
 
 ```bash
 gitk [<options>] [<revision range>] [--] [<path>…​]
