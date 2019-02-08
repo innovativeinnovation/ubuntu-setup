@@ -3,7 +3,7 @@
 [Zsh](http://www.zsh.org/) is a shell designed for interactive use, although
 it is also a powerful scripting language.
 
-### Installation
+## Installation
 
 To install Zsh:
 
@@ -51,11 +51,13 @@ sudo apt install zsh-syntax-highlighting
 echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 ```
 
-### Plugins
+## Plugins
 
 Oh-My-Zsh has many plugins. You can find a list of pre-installed plugins at
-https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins
+[https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins][zshplugins]
 
-### Screenshot
+[zshplugins]: https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins
+
+## Screenshot
 
 ![Zsh](../images/zsh.png)

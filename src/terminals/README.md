@@ -1,4 +1,4 @@
-# Terminals
+# Terminals
 
 One of the most important applications for us is the terminal emulator. It
 allows every user to get access to the shell. Bash is the most common shell

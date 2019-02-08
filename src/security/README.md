@@ -1,8 +1,8 @@
 # Security
 
-### Disk Encryption
+## Disk Encryption
 
-###### Full disk encryption
+### Full disk encryption
 
 The Ubuntu 18.04 installer proposes to encrypt your disk for security. Choosing the
 LVM option is optional but recommended.
@@ -10,7 +10,7 @@ LVM option is optional but recommended.
 Every time the system starts, you will have to enter the passkey for
 the encrypted drive. Without the pass key, Ubuntu won't boot.
 
-###### Encrypt The Home Folder
+### Encrypt The Home Folder
 
 Ubuntu 18.04 doesn't include an option in the installer to encrypt the `home`
 directory. This option was removed from the Ubuntu installer because it
@@ -50,7 +50,7 @@ ls /home
 
 and remove the folder `<user>.xxxxxxxx`.
 
-### Firewall
+## Firewall
 
 The Uncomplicated Firewall (ufw) is a frontend for iptables and is
 particularly well-suited for host-based firewalls.
@@ -79,7 +79,7 @@ To manage the firewall via a graphical user interface:
 sudo apt install gufw
 ```
 
-### Antivirus
+## Antivirus
 
 [ClamAV](http://www.clamav.net/) is an open source antivirus engine for
 detecting trojans, viruses, malware & other malicious threats.
