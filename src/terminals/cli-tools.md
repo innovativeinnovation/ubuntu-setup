@@ -1,6 +1,6 @@
 # CLI Tools
 
-### Essentials
+## Essentials
 
 if you build software, development tools are required to install. It's also
 useful for building packages on your system. Development tools contain few
@@ -43,7 +43,7 @@ sudo apt install ack
 sudo apt install ldap-utils
 ```
 
-### Miscellaneous
+## Miscellaneous
 
 [Grip](https://github.com/joeyespo/grip) - Grip is a command-line server
 application written in Python that uses the GitHub markdown API to render
