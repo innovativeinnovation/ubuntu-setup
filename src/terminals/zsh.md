@@ -35,6 +35,7 @@ sudo apt install powerline fonts-powerline zsh-theme-powerlevel9k
 To install Oh My Zsh framework:
 
 ```bash
+sudo apt install git
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
