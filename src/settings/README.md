@@ -10,68 +10,69 @@ sudo apt upgrade
 If this is a new computer, there are a couple tweaks you could make to the
 Settings. **These settings are all optional, consider them suggestions.**
 
-### Settings
+## Settings
 
-###### Dock
+### Dock
 
-  * Enable Auto-hide the Dock
-  * Change icon size to 32
+* Enable Auto-hide the Dock
+* Change icon size to 32
 
-###### Region & Language
+### Region & Language
 
-  * Choose the right format
+* Choose the right format
 
-###### Privacy
+### Privacy
 
-  * Screen Lock -> On
-  * Usage & History -> Off
-  * Problem Reporting -> Manual
+* Screen Lock -> On
+* Usage & History -> Off
+* Problem Reporting -> Manual
 
-### Software & update
+## Software & update
 
-###### Other Software
+### Other Software
 
 In order to get access to all the good​ stuff you will need to enable the
 Canonical Partners repositories.
 
-###### Additional Drivers
+### Additional Drivers
 
 Follow the specific instructions provided on the screen.
 
-### Gnome Tweak Tool
+## Gnome Tweak Tool
 
 ```bash
 sudo apt install gnome-tweak-tool
 ```
 
-###### Desktop
+### Desktop
 
-  * Show icons -> Off
+* Show icons -> Off
   
-###### Fonts
+### Fonts
 
-  * Monospace -> 11px
+* Monospace -> 11px
 
-###### Top Bar
+### Top Bar
 
-  * Battery Percentage -> On
-  * Date -> On
-  * Seconds -> On
+* Battery Percentage -> On
+* Date -> On
+* Seconds -> On
 
-### Gnome Shell Extensions
+## Gnome Shell Extensions
 
 ```bash
 sudo apt install chrome-gnome-shell
 ```
 
-Go to https://extensions.gnome.org/ and install the browser extension. You can
-now install any Gnome Shell Extension by turning on the switch on the web.
+Go to [https://extensions.gnome.org/](https://extensions.gnome.org/) and
+install the browser extension. You can now install any Gnome Shell Extension
+by turning on the switch on the web.
 
 Gnome Tweak Tool has a page for managing installed Gnome Shell Extensions.
 
 Must have:
 
-  * OpenWeather - Weather extension to display weather information
-  * Media Player Indicator - Control MPRIS Version 2 Capable Media Players
-  * Clipboard Indicator - Clipboard Manager extension
-  * User Themes - Load shell themes from user directory.
+* OpenWeather - Weather extension to display weather information
+* Media Player Indicator - Control MPRIS Version 2 Capable Media Players
+* Clipboard Indicator - Clipboard Manager extension
+* User Themes - Load shell themes from user directory.
