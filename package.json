@@ -12,14 +12,16 @@
   "license": "Apache-2.0",
   "repository": "https://github.com/innovativeinnovation/ubuntu-setup.git",
   "scripts": {
-    "build": "npm run prepare && rm -rf src/_book && gitbook build src/",
+    "build": "npm run lint && npm run prepare && rm -rf src/_book && gitbook build src/",
     "deploy": "npm run build && git-directory-deploy --directory src/_book --branch gh-pages",
+    "lint": "markdownlint -c .mdlrc.json src/",
     "prepare": "gitbook install",
-    "serve": "npm run prepare && gitbook serve src/"
+    "serve": "npm run lint && npm run prepare && gitbook serve src/"
   },
   "devDependencies": {
     "git-directory-deploy": "^1.5.1",
-    "gitbook-cli": "^2.3.2"
+    "gitbook-cli": "^2.3.2",
+    "markdownlint-cli": "^0.13.0"
   },
   "dependencies": {}
 }
