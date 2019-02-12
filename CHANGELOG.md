@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v1.8.1 / 2018-02-12
+
+  - Add markdownlint cli
+  - Fix oh my zsh prerequisite
+  - Format correctly all markdown files
+
 ### v1.8.0 / 2018-12-14
 
   - Add Yarn
