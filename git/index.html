@@ -538,10 +538,10 @@
                                 <h1 id="git">Git</h1>
 <p><a href="https://git-scm.com/" target="_blank">Git</a> is a version-control system for tracking changes
 in computer files and coordinating work on those files among multiple people.</p>
-<h3 id="installation">Installation</h3>
+<h2 id="installation">Installation</h2>
 <pre><code class="lang-bash">sudo apt install git
 </code></pre>
-<h3 id="configuration">Configuration</h3>
+<h2 id="configuration">Configuration</h2>
 <p>Every git user should first introduce himself to git, by running these
 two commands:</p>
 <pre><code class="lang-bash">git config --global user.name <span class="hljs-string">&quot;Your Name&quot;</span>
@@ -550,14 +550,15 @@ git config --global user.email <span class="hljs-string">&quot;you@example.com&q
 <p>We can see all of the configuration items that have been set by typing:</p>
 <pre><code class="lang-bash">git config --list
 </code></pre>
-<h3 id="usage">Usage</h3>
+<h2 id="usage">Usage</h2>
 <p>Create a new repository:</p>
 <pre><code class="lang-bash">git init
 </code></pre>
 <p>Checkout a repository:</p>
-<pre><code>git clone /path/to/repository                 # local
-git clone username@host:/path/to/repository   # remote
-</code></pre><p>Add and commit:</p>
+<pre><code class="lang-bash">git <span class="hljs-built_in">clone</span> /path/to/repository                 <span class="hljs-comment"># local</span>
+git <span class="hljs-built_in">clone</span> username@host:/path/to/repository   <span class="hljs-comment"># remote</span>
+</code></pre>
+<p>Add and commit:</p>
 <pre><code class="lang-bash">git add &lt;filename&gt;
 git add *
 git commit -m <span class="hljs-string">&quot;Commit message&quot;</span>
@@ -571,19 +572,20 @@ git commit -m <span class="hljs-string">&quot;Commit message&quot;</span>
 <p>Update local:</p>
 <pre><code class="lang-bash">git pull
 </code></pre>
-<h3 id="diff-with-meld">Diff with meld</h3>
+<h2 id="diff-with-meld">Diff with meld</h2>
 <p>To use meld as difftool, add to your <code>~/.gitconfig</code>:</p>
-<pre><code>[diff]
+<pre><code class="lang-text">[diff]
     tool = meld
 [difftool]
     prompt = false
 [difftool &quot;meld&quot;]
     cmd = meld &quot;$LOCAL&quot; &quot;$REMOTE&quot;
-</code></pre><p>Use <code>git difftool</code> in exactly the same way as you use <code>git diff</code>:</p>
+</code></pre>
+<p>Use <code>git difftool</code> in exactly the same way as you use <code>git diff</code>:</p>
 <pre><code class="lang-bash">git difftool --dir-diff HEAD .
 git difftool --dir-diff master fea-branch
 </code></pre>
-<h3 id="create-a-global-gitignore">Create a global <code>.gitignore</code></h3>
+<h2 id="create-a-global-gitignore">Create a global <code>.gitignore</code></h2>
 <p>You can create a global <code>.gitignore</code> file, which is a list of rules for
 ignoring files in every Git repository on your computer.</p>
 <p>GitHub maintains an official list of recommended <code>.gitignore</code> files for many
@@ -633,7 +635,7 @@ popular operating systems, environments, and languages:</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git","level":"1.8","depth":1,"next":{"title":"gitk","level":"1.8.1","depth":2,"path":"git/gitk.md","ref":"git/gitk.md","articles":[]},"previous":{"title":"Atom","level":"1.7","depth":1,"path":"atom/README.md","ref":"atom/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"git/README.md","mtime":"2018-10-30T20:31:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-14T17:20:27.440Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git","level":"1.8","depth":1,"next":{"title":"gitk","level":"1.8.1","depth":2,"path":"git/gitk.md","ref":"git/gitk.md","articles":[]},"previous":{"title":"Atom","level":"1.7","depth":1,"path":"atom/README.md","ref":"atom/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"git/README.md","mtime":"2019-02-08T20:12:20.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-12T17:50:42.212Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

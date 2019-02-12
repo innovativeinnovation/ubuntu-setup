@@ -539,9 +539,9 @@
 <p><a href="https://www.ssh.com/" target="_blank">SSH</a>, or Secure Shell, is a protocol used to securely
 log onto remote systems. It is the most common way to access remote Linux
 and Unix-like servers.</p>
-<h3 id="installation">Installation</h3>
+<h2 id="installation">Installation</h2>
 <p>The client software is part of the default Ubuntu installation.</p>
-<h3 id="generating-a-new-ssh-key">Generating a new SSH key</h3>
+<h2 id="generating-a-new-ssh-key">Generating a new SSH key</h2>
 <p>Check for existing SSH keys:</p>
 <pre><code class="lang-bash">ls -al ~/.ssh
 </code></pre>
@@ -552,7 +552,7 @@ and Unix-like servers.</p>
 <pre><code class="lang-bash"><span class="hljs-built_in">eval</span> <span class="hljs-string">&quot;<span class="hljs-variable">$(ssh-agent -s)</span>&quot;</span>
 ssh-add ~/.ssh/id_rsa
 </code></pre>
-<h3 id="permissions">Permissions</h3>
+<h2 id="permissions">Permissions</h2>
 <p>If you copied your keys from another computer, permissions should be like
 this:</p>
 <pre><code class="lang-bash">chmod 700 ~/.ssh
@@ -562,14 +562,15 @@ chmod 644 ~/.ssh/config
 chmod 600 ~/.ssh/id_rsa
 chmod 644 ~/.ssh/id_rsa.pub
 </code></pre>
-<h3 id="ssh-config-file">SSH Config File</h3>
+<h2 id="ssh-config-file">SSH Config File</h2>
 <p>You probably log in and out of a half dozen remote servers on a daily basis.
 You can add a config file <code>~/.ssh/config</code> to simplify your life. For example:</p>
-<pre><code>Host dev
+<pre><code class="lang-text">Host dev
     HostName dev.example.com
     Port 22000
     User william
-</code></pre><p>And then, just:</p>
+</code></pre>
+<p>And then, just:</p>
 <pre><code class="lang-bash">ssh dev
 </code></pre>
 
@@ -615,7 +616,7 @@ You can add a config file <code>~/.ssh/config</code> to simplify your life. For 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SSH","level":"1.6","depth":1,"next":{"title":"Atom","level":"1.7","depth":1,"path":"atom/README.md","ref":"atom/README.md","articles":[]},"previous":{"title":"CLI Tools","level":"1.5.3","depth":2,"path":"terminals/cli-tools.md","ref":"terminals/cli-tools.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"ssh/README.md","mtime":"2018-10-30T20:31:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-14T17:20:27.440Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"SSH","level":"1.6","depth":1,"next":{"title":"Atom","level":"1.7","depth":1,"path":"atom/README.md","ref":"atom/README.md","articles":[]},"previous":{"title":"CLI Tools","level":"1.5.3","depth":2,"path":"terminals/cli-tools.md","ref":"terminals/cli-tools.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"ssh/README.md","mtime":"2019-02-08T20:28:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-12T17:50:42.212Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

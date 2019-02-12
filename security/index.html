@@ -536,13 +536,13 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="security">Security</h1>
-<h3 id="disk-encryption">Disk Encryption</h3>
-<h6 id="full-disk-encryption">Full disk encryption</h6>
+<h2 id="disk-encryption">Disk Encryption</h2>
+<h3 id="full-disk-encryption">Full disk encryption</h3>
 <p>The Ubuntu 18.04 installer proposes to encrypt your disk for security. Choosing the
 LVM option is optional but recommended.</p>
 <p>Every time the system starts, you will have to enter the passkey for
 the encrypted drive. Without the pass key, Ubuntu won&apos;t boot.</p>
-<h6 id="encrypt-the-home-folder">Encrypt The Home Folder</h6>
+<h3 id="encrypt-the-home-folder">Encrypt The Home Folder</h3>
 <p>Ubuntu 18.04 doesn&apos;t include an option in the installer to encrypt the <code>home</code>
 directory. This option was removed from the Ubuntu installer because it
 uses eCryptfs, which is considered &quot;buggy, under-maintained&quot;, and the
@@ -566,7 +566,7 @@ safely remove the temporary user foobar as well as the backup.</p>
 ls /home
 </code></pre>
 <p>and remove the folder <code>&lt;user&gt;.xxxxxxxx</code>.</p>
-<h3 id="firewall">Firewall</h3>
+<h2 id="firewall">Firewall</h2>
 <p>The Uncomplicated Firewall (ufw) is a frontend for iptables and is
 particularly well-suited for host-based firewalls.</p>
 <p>By default, ufw is disabled. You can check the status of your firewall with:</p>
@@ -581,7 +581,7 @@ particularly well-suited for host-based firewalls.</p>
 <p>To manage the firewall via a graphical user interface:</p>
 <pre><code class="lang-bash">sudo apt install gufw
 </code></pre>
-<h3 id="antivirus">Antivirus</h3>
+<h2 id="antivirus">Antivirus</h2>
 <p><a href="http://www.clamav.net/" target="_blank">ClamAV</a> is an open source antivirus engine for
 detecting trojans, viruses, malware &amp; other malicious threats.</p>
 <p>To install ClamAV:</p>
@@ -644,7 +644,7 @@ sudo systemctl start clamav-freshclam
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Security","level":"1.18","depth":1,"next":{"title":"References","level":"1.19","depth":1,"path":"references/README.md","ref":"references/README.md","articles":[]},"previous":{"title":"Apps","level":"1.17","depth":1,"path":"apps/README.md","ref":"apps/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"security/README.md","mtime":"2018-10-30T20:31:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-14T17:20:27.440Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Security","level":"1.18","depth":1,"next":{"title":"References","level":"1.19","depth":1,"path":"references/README.md","ref":"references/README.md","articles":[]},"previous":{"title":"Apps","level":"1.17","depth":1,"path":"apps/README.md","ref":"apps/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"security/README.md","mtime":"2019-02-08T20:43:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-12T17:50:42.212Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
