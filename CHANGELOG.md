@@ -1,7 +1,7 @@
 Changelog
 =========
 
-### v1.8.1 / 2018-02-12
+### v1.8.1 / 2019-02-12
 
   - Add markdownlint cli
   - Fix oh my zsh prerequisite
