@@ -15,6 +15,8 @@
   * [GitHub](git/github.md)
   * [Bitbucket](git/bitbucket.md)
 * [Python](python/README.md)
+  * [pyenv](python/pyenv.md)
+  * [pip](python/pip.md)
 * [Node.js](node.js/README.md)
   * [nvm](node.js/nvm.md)
   * [npm](node.js/npm.md)
