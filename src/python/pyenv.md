@@ -1,4 +1,4 @@
-# Via pyenv
+# pyenv
 
 [pyenv](https://github.com/pyenv/pyenv) is a Python Version Management tool
 and lets you easily switch between multiple versions of Python.
