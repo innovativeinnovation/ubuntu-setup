@@ -2,7 +2,7 @@
 
 ## Essentials
 
-if you build software, development tools are required to install. It's also
+If you build software, development tools are required to install. It's also
 useful for building packages on your system. Development tools contain few
 general useful tools like `gcc`, `g++` and `make`.
 
