@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v1.8.2 / 2019-03-29
+
+  - Split section of Python
+  - Update version of nvm script
+  - Update dev dependencies
+  - Fix typo in CLI Tools
+
 ### v1.8.1 / 2019-02-12
 
   - Add markdownlint cli
