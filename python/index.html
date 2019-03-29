@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../node.js/" />
+    <link rel="next" href="pyenv.html" />
     
     
     <link rel="prev" href="../git/bitbucket.html" />
@@ -293,6 +293,38 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="pyenv.html">
+            
+                <a href="pyenv.html">
+            
+                    
+                    pyenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="pip.html">
+            
+                <a href="pip.html">
+            
+                    
+                    pip
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -541,47 +573,11 @@ language that can be leveraged for many use cases, with strengths in
 scripting, automation, data analysis, machine learning, and back-end
 development.</p>
 <h2 id="installation">Installation</h2>
-<h3 id="via-package-manager">Via package manager</h3>
 <p>Ubuntu 18.04 ship with both Python 3 and Python 2 pre-installed.</p>
-<p>To install pip for Python 2 and Python 3:</p>
-<pre><code class="lang-bash">sudo apt install -y python-pip python3-pip
-</code></pre>
-<h3 id="via-pyenv">Via pyenv</h3>
-<p><a href="https://github.com/pyenv/pyenv" target="_blank">pyenv</a> is a Python Version Management tool
-and lets you easily switch between multiple versions of Python.</p>
-<p>Requirements:</p>
-<pre><code class="lang-bash">sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
-libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev
-</code></pre>
-<p>To install:</p>
-<pre><code class="lang-bash">curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
-</code></pre>
-<p>and follow the instruction to load pyenv automatically.</p>
-<p>To list all available versions of Python:</p>
-<pre><code class="lang-bash">pyenv install --list
-</code></pre>
-<p>To install specific versions:</p>
-<pre><code class="lang-bash">pyenv install 2.7.15
-pyenv install 3.7.0
-</code></pre>
-<p>To show installed versions:</p>
-<pre><code class="lang-bash">pyenv versions
-</code></pre>
-<h2 id="pip">pip</h2>
-<p><a href="https://pypi.org/project/pip/" target="_blank">pip</a> is a package management system used to
-install and manage software packages written in Python.</p>
-<p>To install a package:</p>
-<pre><code class="lang-bash">pip install &lt;package&gt;
-</code></pre>
-<p>To uninstall a package:</p>
-<pre><code class="lang-bash">pip uninstall &lt;package&gt;
-</code></pre>
-<p>To upgrade a package:</p>
-<pre><code class="lang-bash">pip install --upgrade &lt;package&gt;
-</code></pre>
-<p>To output installed packages:</p>
-<pre><code class="lang-bash">pip freeze
+<h2 id="usage">Usage</h2>
+<p>To check python version:</p>
+<pre><code class="lang-bash">python --version
+python3 --version
 </code></pre>
 
                                 
@@ -615,7 +611,7 @@ install and manage software packages written in Python.</p>
                 </a>
                 
                 
-                <a href="../node.js/" class="navigation navigation-next " aria-label="Next page: Node.js">
+                <a href="pyenv.html" class="navigation navigation-next " aria-label="Next page: pyenv">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -626,7 +622,7 @@ install and manage software packages written in Python.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Python","level":"1.9","depth":1,"next":{"title":"Node.js","level":"1.10","depth":1,"path":"node.js/README.md","ref":"node.js/README.md","articles":[{"title":"nvm","level":"1.10.1","depth":2,"path":"node.js/nvm.md","ref":"node.js/nvm.md","articles":[]},{"title":"npm","level":"1.10.2","depth":2,"path":"node.js/npm.md","ref":"node.js/npm.md","articles":[]},{"title":"yarn","level":"1.10.3","depth":2,"path":"node.js/yarn.md","ref":"node.js/yarn.md","articles":[]}]},"previous":{"title":"Bitbucket","level":"1.8.3","depth":2,"path":"git/bitbucket.md","ref":"git/bitbucket.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"python/README.md","mtime":"2019-02-08T20:28:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-12T17:50:42.212Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Python","level":"1.9","depth":1,"next":{"title":"pyenv","level":"1.9.1","depth":2,"path":"python/pyenv.md","ref":"python/pyenv.md","articles":[]},"previous":{"title":"Bitbucket","level":"1.8.3","depth":2,"path":"git/bitbucket.md","ref":"git/bitbucket.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"python/README.md","mtime":"2019-03-29T17:49:53.912Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-29T18:14:04.629Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

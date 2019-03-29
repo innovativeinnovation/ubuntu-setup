@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>MySQL · Ubuntu Setup</title>
+        <title>pyenv · Ubuntu Setup</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="workbench.html" />
+    <link rel="next" href="pip.html" />
     
     
-    <link rel="prev" href="../perl/" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -283,9 +283,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="../python/">
+        <li class="chapter " data-level="1.9" data-path="./">
             
-                <a href="../python/">
+                <a href="./">
             
                     
                     Python
@@ -297,9 +297,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="../python/pyenv.html">
+        <li class="chapter active" data-level="1.9.1" data-path="pyenv.html">
             
-                <a href="../python/pyenv.html">
+                <a href="pyenv.html">
             
                     
                     pyenv
@@ -310,9 +310,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2" data-path="../python/pip.html">
+        <li class="chapter " data-level="1.9.2" data-path="pip.html">
             
-                <a href="../python/pip.html">
+                <a href="pip.html">
             
                     
                     pip
@@ -412,9 +412,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.13" data-path="./">
+        <li class="chapter " data-level="1.13" data-path="../mysql/">
             
-                <a href="./">
+                <a href="../mysql/">
             
                     
                     MySQL
@@ -426,9 +426,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.13.1" data-path="workbench.html">
+        <li class="chapter " data-level="1.13.1" data-path="../mysql/workbench.html">
             
-                <a href="workbench.html">
+                <a href="../mysql/workbench.html">
             
                     
                     MySQL Workbench
@@ -552,7 +552,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >MySQL</a>
+        <a href=".." >pyenv</a>
     </h1>
 </div>
 
@@ -567,36 +567,29 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="mysql">MySQL</h1>
-<p><a href="https://www.mysql.com/" target="_blank">MySQL</a> is an open-source database management system,
-commonly installed as part of the popular LAMP (Linux, Apache, MySQL,
-PHP/Python/Perl) stack. It uses a relational database and SQL (Structured
-Query Language) to manage its data.</p>
+                                <h1 id="pyenv">pyenv</h1>
+<p><a href="https://github.com/pyenv/pyenv" target="_blank">pyenv</a> is a Python Version Management tool
+and lets you easily switch between multiple versions of Python.</p>
 <h2 id="installation">Installation</h2>
-<pre><code class="lang-bash">sudo apt install mysql-server
+<p>Requirements:</p>
+<pre><code class="lang-bash">sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev
 </code></pre>
-<p>This will install MySQL, but will not prompt you to set a password or make
-any other configuration changes.</p>
-<p>To check whether the MySQL server is running, type:</p>
-<pre><code class="lang-bash">sudo systemctl status mysql
+<p>To install:</p>
+<pre><code class="lang-bash">curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 </code></pre>
-<p>To install the MySQL database development files:</p>
-<pre><code class="lang-bash">sudo apt install libmysqlclient-dev
-</code></pre>
-<h2 id="security">Security</h2>
-<p>Run the script:</p>
-<pre><code class="lang-bash">sudo mysql_secure_installation
-</code></pre>
-<p>This will take you through a series of prompts where you can make some
-changes to your MySQL installation&apos;s security options.</p>
-<p>You should answer &quot;y&quot; (yes) to all questions.</p>
+<p>and follow the instruction to load pyenv automatically.</p>
 <h2 id="usage">Usage</h2>
-<p>To log in to the MySQL server as root:</p>
-<pre><code class="lang-bash">sudo mysql
+<p>To list all available versions of Python:</p>
+<pre><code class="lang-bash">pyenv install --list
 </code></pre>
-<p>To stop or start the server:</p>
-<pre><code class="lang-bash">sudo systemctl stop mysql.service
-sudo systemctl start mysql.service
+<p>To install specific versions:</p>
+<pre><code class="lang-bash">pyenv install 2.7.15
+pyenv install 3.7.0
+</code></pre>
+<p>To show installed versions:</p>
+<pre><code class="lang-bash">pyenv versions
 </code></pre>
 
                                 
@@ -625,12 +618,12 @@ sudo systemctl start mysql.service
 
             
                 
-                <a href="../perl/" class="navigation navigation-prev " aria-label="Previous page: Perl">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Python">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="workbench.html" class="navigation navigation-next " aria-label="Next page: MySQL Workbench">
+                <a href="pip.html" class="navigation navigation-next " aria-label="Next page: pip">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -641,7 +634,7 @@ sudo systemctl start mysql.service
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MySQL","level":"1.13","depth":1,"next":{"title":"MySQL Workbench","level":"1.13.1","depth":2,"path":"mysql/workbench.md","ref":"mysql/workbench.md","articles":[]},"previous":{"title":"Perl","level":"1.12","depth":1,"path":"perl/README.md","ref":"perl/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"mysql/README.md","mtime":"2019-03-29T17:49:53.912Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-29T18:14:04.629Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"pyenv","level":"1.9.1","depth":2,"next":{"title":"pip","level":"1.9.2","depth":2,"path":"python/pip.md","ref":"python/pip.md","articles":[]},"previous":{"title":"Python","level":"1.9","depth":1,"path":"python/README.md","ref":"python/README.md","articles":[{"title":"pyenv","level":"1.9.1","depth":2,"path":"python/pyenv.md","ref":"python/pyenv.md","articles":[]},{"title":"pip","level":"1.9.2","depth":2,"path":"python/pip.md","ref":"python/pip.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"python/pyenv.md","mtime":"2019-03-29T17:49:53.912Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-29T18:14:04.629Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
