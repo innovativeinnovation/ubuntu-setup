@@ -22,6 +22,7 @@
   * [npm](node.js/npm.md)
   * [yarn](node.js/yarn.md)
 * [Java](java/README.md)
+  * [SDKMAN!](java/sdkman.md)
 * [Perl](perl/README.md)
 * [MySQL](mysql/README.md)
   * [MySQL Workbench](mysql/workbench.md)
