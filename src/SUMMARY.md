@@ -23,6 +23,7 @@
   * [yarn](node.js/yarn.md)
 * [Java](java/README.md)
   * [SDKMAN!](java/sdkman.md)
+  * [Ant](java/ant.md)
 * [Perl](perl/README.md)
   * [Perlbrew](perl/perlbrew.md)
   * [CPAN](perl/cpan.md)
