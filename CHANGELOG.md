@@ -1,6 +1,14 @@
 Changelog
 =========
 
+### v1.9.0 / 2019-04-07
+
+  - Add Ant
+  - Add Maven
+  - Add Gradle
+  - Split section of Java
+  - Split section of Perl
+
 ### v1.8.2 / 2019-03-29
 
   - Split section of Python
