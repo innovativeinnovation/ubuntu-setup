@@ -24,6 +24,7 @@
 * [Java](java/README.md)
   * [SDKMAN!](java/sdkman.md)
   * [Ant](java/ant.md)
+  * [Maven](java/maven.md)
   * [Gradle](java/gradle.md)
 * [Perl](perl/README.md)
   * [Perlbrew](perl/perlbrew.md)
