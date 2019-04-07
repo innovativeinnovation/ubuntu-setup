@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../perl/" />
+    <link rel="next" href="sdkman.html" />
     
     
     <link rel="prev" href="../node.js/yarn.html" />
@@ -397,6 +397,64 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="sdkman.html">
+            
+                <a href="sdkman.html">
+            
+                    
+                    SDKMAN!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="ant.html">
+            
+                <a href="ant.html">
+            
+                    
+                    Ant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="maven.html">
+            
+                <a href="maven.html">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="gradle.html">
+            
+                <a href="gradle.html">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.12" data-path="../perl/">
@@ -409,6 +467,38 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../perl/perlbrew.html">
+            
+                <a href="../perl/perlbrew.html">
+            
+                    
+                    Perlbrew
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../perl/cpan.html">
+            
+                <a href="../perl/cpan.html">
+            
+                    
+                    CPAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -572,34 +662,15 @@
 language that is concurrent, class-based, object-oriented, and specifically
 designed to have as few implementation dependencies as possible.</p>
 <h2 id="installation">Installation</h2>
-<h3 id="via-package-manager">Via package manager</h3>
 <p>To install Open JDK version 11:</p>
 <pre><code class="lang-bash">sudo apt install openjdk-11-jdk
 </code></pre>
 <p>To install Open JDK version 8:</p>
 <pre><code class="lang-bash">sudo apt install openjdk-8-jdk
 </code></pre>
+<h2 id="configuration">Configuration</h2>
 <p>To set default Java version manually:</p>
 <pre><code class="lang-bash">sudo update-alternatives --config java
-</code></pre>
-<h3 id="via-sdkman">Via SDKMAN</h3>
-<p><a href="https://sdkman.io/" target="_blank">SDKMAN!</a> is a tool for managing parallel versions of
-multiple Software Development Kits. It provides a convenient Command Line
-Interface (CLI) and API for installing, switching, removing and listing
-Candidates.</p>
-<p>To install:</p>
-<pre><code class="lang-bash">curl <span class="hljs-_">-s</span> <span class="hljs-string">&quot;https://get.sdkman.io&quot;</span> | bash
-</code></pre>
-<p>and follow the instruction to load SDKMAN! automatically.</p>
-<p>To list all available versions of Java:</p>
-<pre><code class="lang-bash">sdk list java
-</code></pre>
-<p>To install specific versions:</p>
-<pre><code class="lang-bash">sdk install java 9.0.7-zulu
-sdk install java 7.0.191-zulu
-</code></pre>
-<p>To see what is currently in use:</p>
-<pre><code class="lang-bash">sdk current java
 </code></pre>
 
                                 
@@ -633,7 +704,7 @@ sdk install java 7.0.191-zulu
                 </a>
                 
                 
-                <a href="../perl/" class="navigation navigation-next " aria-label="Next page: Perl">
+                <a href="sdkman.html" class="navigation navigation-next " aria-label="Next page: SDKMAN!">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -644,7 +715,7 @@ sdk install java 7.0.191-zulu
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Java","level":"1.11","depth":1,"next":{"title":"Perl","level":"1.12","depth":1,"path":"perl/README.md","ref":"perl/README.md","articles":[]},"previous":{"title":"yarn","level":"1.10.3","depth":2,"path":"node.js/yarn.md","ref":"node.js/yarn.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"java/README.md","mtime":"2019-03-29T17:49:53.912Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-29T18:14:04.629Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Java","level":"1.11","depth":1,"next":{"title":"SDKMAN!","level":"1.11.1","depth":2,"path":"java/sdkman.md","ref":"java/sdkman.md","articles":[]},"previous":{"title":"yarn","level":"1.10.3","depth":2,"path":"node.js/yarn.md","ref":"node.js/yarn.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"java/README.md","mtime":"2019-03-29T19:20:36.892Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-07T19:44:15.231Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

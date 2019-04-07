@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Installation · Ubuntu Setup</title>
+        <title>Ant · Ubuntu Setup</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../settings/" />
+    <link rel="next" href="maven.html" />
     
     
-    <link rel="prev" href="../prerequisite/" />
+    <link rel="prev" href="sdkman.html" />
     
 
     </head>
@@ -115,9 +115,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="../installation/">
             
-                <a href="./">
+                <a href="../installation/">
             
                     
                     Installation
@@ -386,9 +386,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="../java/">
+        <li class="chapter " data-level="1.11" data-path="./">
             
-                <a href="../java/">
+                <a href="./">
             
                     
                     Java
@@ -400,9 +400,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.11.1" data-path="../java/sdkman.html">
+        <li class="chapter " data-level="1.11.1" data-path="sdkman.html">
             
-                <a href="../java/sdkman.html">
+                <a href="sdkman.html">
             
                     
                     SDKMAN!
@@ -413,9 +413,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.2" data-path="../java/ant.html">
+        <li class="chapter active" data-level="1.11.2" data-path="ant.html">
             
-                <a href="../java/ant.html">
+                <a href="ant.html">
             
                     
                     Ant
@@ -426,9 +426,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.3" data-path="../java/maven.html">
+        <li class="chapter " data-level="1.11.3" data-path="maven.html">
             
-                <a href="../java/maven.html">
+                <a href="maven.html">
             
                     
                     Maven
@@ -439,9 +439,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.4" data-path="../java/gradle.html">
+        <li class="chapter " data-level="1.11.4" data-path="gradle.html">
             
-                <a href="../java/gradle.html">
+                <a href="gradle.html">
             
                     
                     Gradle
@@ -642,7 +642,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Installation</a>
+        <a href=".." >Ant</a>
     </h1>
 </div>
 
@@ -657,30 +657,24 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ubuntu-1804-lts-desktop-installation">Ubuntu 18.04 LTS Desktop Installation</h1>
-<h2 id="minimum-system-requirement">Minimum System Requirement</h2>
-<p>You will need:</p>
-<ul>
-<li>2 GB RAM</li>
-<li>Dual Core Processor (2 GHz)</li>
-<li>25 GB free Hard disk space</li>
-<li>Bootable flash drive</li>
-</ul>
+                                <h1 id="apache-ant">Apache Ant</h1>
+<p><a href="https://ant.apache.org/" target="_blank">Apache Ant</a> is a Java library and command-line
+tool whose mission is to drive processes described in build files as targets
+and extension points dependent upon each other.</p>
 <h2 id="installation">Installation</h2>
-<p>Once the system is booted using the bootable disk, click &quot;Install Ubuntu&quot; to
-continue with the installation process. Choose your favorite keyboard layout
-and click &quot;Continue&quot;. Next screen, select &quot;Normal Installation&quot;,
-&quot;Download Updates While Installing Ubuntu&quot; and &quot;Install third party software&quot;.
-Click on &quot;Continue&quot; to proceed with installation.</p>
-<p>Next the installer presents you some installation options. See the
-<a href="../security/">Security section</a> to choose the
-appropriate installation type for you.</p>
-<p>Again, click on &quot;Continue&quot; to write all the changes to the disks.</p>
-<p>Choose your favorite time zone and then click on &quot;Continue&quot;. You will be
-prompted to provide your user credentials. The installation of Ubuntu 18.04
-LTS starts and will take around 5-10 mins.</p>
-<p>Once the installation is completed, restart your system.</p>
-<p><img src="../images/ubuntu.png" alt="ubuntu 18.04 LTS Desktop"></p>
+<p>To install Apache Ant from Apt repository:</p>
+<pre><code class="lang-bash">sudo apt install ant
+</code></pre>
+<p>To install Apache Ant with <a href="sdkman.html">SDKMAN</a>:</p>
+<pre><code class="lang-bash">sdk install ant
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>To check Apache Ant version:</p>
+<pre><code class="lang-bash">ant -version
+</code></pre>
+<p>To view documentation:</p>
+<pre><code class="lang-bash">ant -h
+</code></pre>
 
                                 
                                 </section>
@@ -708,12 +702,12 @@ LTS starts and will take around 5-10 mins.</p>
 
             
                 
-                <a href="../prerequisite/" class="navigation navigation-prev " aria-label="Previous page: Prerequisite">
+                <a href="sdkman.html" class="navigation navigation-prev " aria-label="Previous page: SDKMAN!">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../settings/" class="navigation navigation-next " aria-label="Next page: System Preferences">
+                <a href="maven.html" class="navigation navigation-next " aria-label="Next page: Maven">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -724,7 +718,7 @@ LTS starts and will take around 5-10 mins.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Installation","level":"1.3","depth":1,"next":{"title":"System Preferences","level":"1.4","depth":1,"path":"settings/README.md","ref":"settings/README.md","articles":[]},"previous":{"title":"Prerequisite","level":"1.2","depth":1,"path":"prerequisite/README.md","ref":"prerequisite/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"installation/README.md","mtime":"2019-03-29T17:49:53.912Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-07T19:44:15.231Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Ant","level":"1.11.2","depth":2,"next":{"title":"Maven","level":"1.11.3","depth":2,"path":"java/maven.md","ref":"java/maven.md","articles":[]},"previous":{"title":"SDKMAN!","level":"1.11.1","depth":2,"path":"java/sdkman.md","ref":"java/sdkman.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"java/ant.md","mtime":"2019-04-06T19:34:52.330Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-07T19:44:15.231Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

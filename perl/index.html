@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../mysql/" />
+    <link rel="next" href="perlbrew.html" />
     
     
-    <link rel="prev" href="../java/" />
+    <link rel="prev" href="../java/gradle.html" />
     
 
     </head>
@@ -397,6 +397,64 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../java/sdkman.html">
+            
+                <a href="../java/sdkman.html">
+            
+                    
+                    SDKMAN!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../java/ant.html">
+            
+                <a href="../java/ant.html">
+            
+                    
+                    Ant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../java/maven.html">
+            
+                <a href="../java/maven.html">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../java/gradle.html">
+            
+                <a href="../java/gradle.html">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter active" data-level="1.12" data-path="./">
@@ -409,6 +467,38 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="perlbrew.html">
+            
+                <a href="perlbrew.html">
+            
+                    
+                    Perlbrew
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="cpan.html">
+            
+                <a href="cpan.html">
+            
+                    
+                    CPAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -572,27 +662,10 @@
 dynamic programming language including Perl 5 and Perl 6. Only Perl 5 is
 detailed here for now.</p>
 <h2 id="installation">Installation</h2>
-<h3 id="via-package-manager">Via package manager</h3>
 <p>Ubuntu 18.04 ship with Perl 5.26 pre-installed.</p>
-<h3 id="via-perlbrew">Via Perlbrew</h3>
-<p><a href="https://perlbrew.pl/" target="_blank">Perlbrew</a> is an admin-free perl installation
-management tool.</p>
-<p>To install:</p>
-<pre><code class="lang-bash">curl -L https://install.perlbrew.pl | bash
-</code></pre>
-<p>and follow the instruction to load Perlbrew automatically.</p>
-<p>To install specific versions:</p>
-<pre><code class="lang-bash">perlbrew install 5.28.0
-perlbrew install 5.14.4
-</code></pre>
-<p>To show installed versions:</p>
-<pre><code class="lang-bash">perlbrew list
-</code></pre>
-<h2 id="cpan">CPAN</h2>
-<p><a href="https://www.cpan.org/" target="_blank">CPAN</a> is the Comprehensive Perl Archive Network,
-a large collection of Perl software and documentation.</p>
-<p>To install a package:</p>
-<pre><code class="lang-bash">cpan install &lt;package&gt;
+<h2 id="usage">Usage</h2>
+<p>To check Perl version:</p>
+<pre><code class="lang-bash">perl -v
 </code></pre>
 
                                 
@@ -621,12 +694,12 @@ a large collection of Perl software and documentation.</p>
 
             
                 
-                <a href="../java/" class="navigation navigation-prev " aria-label="Previous page: Java">
+                <a href="../java/gradle.html" class="navigation navigation-prev " aria-label="Previous page: Gradle">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../mysql/" class="navigation navigation-next " aria-label="Next page: MySQL">
+                <a href="perlbrew.html" class="navigation navigation-next " aria-label="Next page: Perlbrew">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -637,7 +710,7 @@ a large collection of Perl software and documentation.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Perl","level":"1.12","depth":1,"next":{"title":"MySQL","level":"1.13","depth":1,"path":"mysql/README.md","ref":"mysql/README.md","articles":[{"title":"MySQL Workbench","level":"1.13.1","depth":2,"path":"mysql/workbench.md","ref":"mysql/workbench.md","articles":[]}]},"previous":{"title":"Java","level":"1.11","depth":1,"path":"java/README.md","ref":"java/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"perl/README.md","mtime":"2019-03-29T17:49:53.912Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-29T18:14:04.629Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Perl","level":"1.12","depth":1,"next":{"title":"Perlbrew","level":"1.12.1","depth":2,"path":"perl/perlbrew.md","ref":"perl/perlbrew.md","articles":[]},"previous":{"title":"Gradle","level":"1.11.4","depth":2,"path":"java/gradle.md","ref":"java/gradle.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"perl/README.md","mtime":"2019-03-29T20:05:14.983Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-07T19:44:15.231Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
