@@ -30,6 +30,7 @@
   * [Perlbrew](perl/perlbrew.md)
   * [CPAN](perl/cpan.md)
 * [Ruby](ruby/README.md)
+  * [rbenv](ruby/rbenv.md)
 * [MySQL](mysql/README.md)
   * [MySQL Workbench](mysql/workbench.md)
 * [Docker](docker/README.md)
