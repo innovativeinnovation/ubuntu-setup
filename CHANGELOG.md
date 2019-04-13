@@ -1,6 +1,14 @@
 Changelog
 =========
 
+### v1.10.0 / 2019-04-13
+
+  - Add Ruby
+  - Add rbenv
+  - Add RubyGems
+  - Add Groovy
+  - Add GNOME Screenshot
+
 ### v1.9.0 / 2019-04-07
 
   - Add Ant
