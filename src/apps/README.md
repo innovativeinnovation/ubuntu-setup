@@ -74,7 +74,7 @@ comprehension.
 * [Postman](https://www.getpostman.com/) - Postman is the complete toolchain
   for API developers.  
   `sudo snap install postman`
-* [Shutter](http://shutter-project.org/) - Shutter is a feature-rich
+* [Shutter](https://launchpad.net/shutter) - Shutter is a feature-rich
   screenshot program.  
   `sudo apt install shutter`
 * [Trimage](https://trimage.org/) - Trimage is a cross-platform GUI and
