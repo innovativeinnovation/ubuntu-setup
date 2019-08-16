@@ -33,6 +33,7 @@
   * [rbenv](ruby/rbenv.md)
   * [RubyGems](ruby/gem.md)
 * [Groovy](groovy/README.md)
+* [Lua](lua/README.md)
 * [MySQL](mysql/README.md)
   * [MySQL Workbench](mysql/workbench.md)
 * [Docker](docker/README.md)
