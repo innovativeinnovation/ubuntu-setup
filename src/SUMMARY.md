@@ -34,6 +34,7 @@
   * [RubyGems](ruby/gem.md)
 * [Groovy](groovy/README.md)
 * [Lua](lua/README.md)
+  * [LuaRocks](lua/luarocks.md)
 * [MySQL](mysql/README.md)
   * [MySQL Workbench](mysql/workbench.md)
 * [Docker](docker/README.md)
