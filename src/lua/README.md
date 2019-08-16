@@ -10,13 +10,13 @@ description.
 To install Lua version 5.3:
 
 ```bash
-sudo apt install lua5.3
+sudo apt install lua5.3 lua5.3-dev
 ```
 
 To install Lua version 5.2:
 
 ```bash
-sudo apt install lua5.2
+sudo apt install lua5.2 lua5.2-dev
 ```
 
 ## Configuration
