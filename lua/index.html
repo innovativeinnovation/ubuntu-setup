@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>System Preferences · Ubuntu Setup</title>
+        <title>Lua · Ubuntu Setup</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../terminals/" />
+    <link rel="next" href="luarocks.html" />
     
     
-    <link rel="prev" href="../installation/" />
+    <link rel="prev" href="../groovy/" />
     
 
     </head>
@@ -128,9 +128,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../settings/">
             
-                <a href="./">
+                <a href="../settings/">
             
                     
                     System Preferences
@@ -560,9 +560,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="../lua/">
+        <li class="chapter active" data-level="1.15" data-path="./">
             
-                <a href="../lua/">
+                <a href="./">
             
                     
                     Lua
@@ -574,9 +574,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.15.1" data-path="../lua/luarocks.html">
+        <li class="chapter " data-level="1.15.1" data-path="luarocks.html">
             
-                <a href="../lua/luarocks.html">
+                <a href="luarocks.html">
             
                     
                     LuaRocks
@@ -732,7 +732,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >System Preferences</a>
+        <a href=".." >Lua</a>
     </h1>
 </div>
 
@@ -747,66 +747,31 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="system-preferences">System Preferences</h1>
-<p>First thing you should do is update the system.</p>
-<pre><code class="lang-bash">sudo apt update
-sudo apt upgrade
+                                <h1 id="lua">Lua</h1>
+<p><a href="https://www.lua.org/" target="_blank">Lua</a> is a powerful, efficient, lightweight, embeddable
+scripting language. It supports procedural programming, object-oriented
+programming, functional programming, data-driven programming, and data
+description.</p>
+<h2 id="installation">Installation</h2>
+<p>To install Lua version 5.3:</p>
+<pre><code class="lang-bash">sudo apt install lua5.3 lua5.3-dev
 </code></pre>
-<p>If this is a new computer, there are a couple tweaks you could make to the
-Settings. <strong>These settings are all optional, consider them suggestions.</strong></p>
-<h2 id="settings">Settings</h2>
-<h3 id="dock">Dock</h3>
-<ul>
-<li>Enable Auto-hide the Dock</li>
-<li>Change icon size to 32</li>
-</ul>
-<h3 id="region--language">Region &amp; Language</h3>
-<ul>
-<li>Choose the right format</li>
-</ul>
-<h3 id="privacy">Privacy</h3>
-<ul>
-<li>Screen Lock -&gt; On</li>
-<li>Usage &amp; History -&gt; Off</li>
-<li>Problem Reporting -&gt; Manual</li>
-</ul>
-<h2 id="software--update">Software &amp; update</h2>
-<h3 id="other-software">Other Software</h3>
-<p>In order to get access to all the good&#x200B; stuff you will need to enable the
-Canonical Partners repositories.</p>
-<h3 id="additional-drivers">Additional Drivers</h3>
-<p>Follow the specific instructions provided on the screen.</p>
-<h2 id="gnome-tweak-tool">Gnome Tweak Tool</h2>
-<pre><code class="lang-bash">sudo apt install gnome-tweak-tool
+<p>To install Lua version 5.2:</p>
+<pre><code class="lang-bash">sudo apt install lua5.2 lua5.2-dev
 </code></pre>
-<h3 id="desktop">Desktop</h3>
-<ul>
-<li>Show icons -&gt; Off</li>
-</ul>
-<h3 id="fonts">Fonts</h3>
-<ul>
-<li>Monospace -&gt; 11px</li>
-</ul>
-<h3 id="top-bar">Top Bar</h3>
-<ul>
-<li>Battery Percentage -&gt; On</li>
-<li>Date -&gt; On</li>
-<li>Seconds -&gt; On</li>
-</ul>
-<h2 id="gnome-shell-extensions">Gnome Shell Extensions</h2>
-<pre><code class="lang-bash">sudo apt install chrome-gnome-shell
+<h2 id="configuration">Configuration</h2>
+<p>Installing lua5.3 package does not provide alternative for lua-interpreter and
+lua-compiler. You can add it with:</p>
+<pre><code class="lang-bash">sudo update-alternatives --install /usr/bin/lua lua-interpreter /usr/bin/lua5.3 130 --slave /usr/share/man/man1/lua.1.gz lua-manual /usr/share/man/man1/lua5.3.1.gz
+
+sudo update-alternatives --install /usr/bin/luac lua-compiler /usr/bin/luac5.3 130 --slave /usr/share/man/man1/luac.1.gz lua-compiler-manual /usr/share/man/man1/luac5.3.1.gz
 </code></pre>
-<p>Go to <a href="https://extensions.gnome.org/" target="_blank">https://extensions.gnome.org/</a> and
-install the browser extension. You can now install any Gnome Shell Extension
-by turning on the switch on the web.</p>
-<p>Gnome Tweak Tool has a page for managing installed Gnome Shell Extensions.</p>
-<p>Must have:</p>
-<ul>
-<li>OpenWeather - Weather extension to display weather information</li>
-<li>Media Player Indicator - Control MPRIS Version 2 Capable Media Players</li>
-<li>Clipboard Indicator - Clipboard Manager extension</li>
-<li>User Themes - Load shell themes from user directory.</li>
-</ul>
+<p>To set default Lua interpreter version manually:</p>
+<pre><code class="lang-bash">sudo update-alternatives --config lua-interpreter
+</code></pre>
+<p>To set default Lua compiler version manually:</p>
+<pre><code class="lang-bash">sudo update-alternatives --config lua-compiler
+</code></pre>
 
                                 
                                 </section>
@@ -834,12 +799,12 @@ by turning on the switch on the web.</p>
 
             
                 
-                <a href="../installation/" class="navigation navigation-prev " aria-label="Previous page: Installation">
+                <a href="../groovy/" class="navigation navigation-prev " aria-label="Previous page: Groovy">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../terminals/" class="navigation navigation-next " aria-label="Next page: Terminals">
+                <a href="luarocks.html" class="navigation navigation-next " aria-label="Next page: LuaRocks">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -850,7 +815,7 @@ by turning on the switch on the web.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"System Preferences","level":"1.4","depth":1,"next":{"title":"Terminals","level":"1.5","depth":1,"path":"terminals/README.md","ref":"terminals/README.md","articles":[{"title":"Terminator","level":"1.5.1","depth":2,"path":"terminals/terminator.md","ref":"terminals/terminator.md","articles":[]},{"title":"Zsh","level":"1.5.2","depth":2,"path":"terminals/zsh.md","ref":"terminals/zsh.md","articles":[]},{"title":"CLI Tools","level":"1.5.3","depth":2,"path":"terminals/cli-tools.md","ref":"terminals/cli-tools.md","articles":[]}]},"previous":{"title":"Installation","level":"1.3","depth":1,"path":"installation/README.md","ref":"installation/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"settings/README.md","mtime":"2019-08-10T17:18:46.074Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-20T18:45:15.430Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lua","level":"1.15","depth":1,"next":{"title":"LuaRocks","level":"1.15.1","depth":2,"path":"lua/luarocks.md","ref":"lua/luarocks.md","articles":[]},"previous":{"title":"Groovy","level":"1.14","depth":1,"path":"groovy/README.md","ref":"groovy/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"lua/README.md","mtime":"2019-08-16T18:34:33.077Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-20T18:45:15.430Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
