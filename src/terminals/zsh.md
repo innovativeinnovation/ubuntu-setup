@@ -26,11 +26,15 @@ settings with:
 cp /etc/zsh/newuser.zshrc.recommended .zshrc
 ```
 
-To install Powerline, Powerline fonts and Zsh Powerlevel9k Theme:
+## Configuration
 
-```bash
-sudo apt install powerline fonts-powerline zsh-theme-powerlevel9k
-```
+The configuration file for zsh is called `.zshrc` and lives in your home
+folder (`~/.zshrc`).
+
+## Framework
+
+[Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) is an open source,
+community-driven framework for managing your zsh configuration.
 
 To install Oh My Zsh framework:
 
@@ -39,25 +43,27 @@ sudo apt install git
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
-To enable Powerlevel9k theme:
-
-```bash
-echo "source /usr/share/powerlevel9k/powerlevel9k.zsh-theme" >> ~/.zshrc
-```
-
-To install and enable Zsh Syntax Highlighting plugin:
-
-```bash
-sudo apt install zsh-syntax-highlighting
-echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
-```
-
 ## Plugins
 
 Oh-My-Zsh has many plugins. You can find a list of pre-installed plugins at
 [https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins][zshplugins]
 
 [zshplugins]: https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins
+
+You can add plugins to your shell by adding the name of the plugin in your
+`.zshrc`.
+
+```bash
+plugins=(colored-man-pages git node npm)
+```
+
+## Themes
+
+The default theme is `robbyrussell`. In order to enable a theme, set
+`ZSH_THEME` to the name of the theme in your `~/.zshrc`.
+
+You'll find a list of themes with screenshots on the
+[Oh My Zsh Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/themes).
 
 ## Screenshot
 
