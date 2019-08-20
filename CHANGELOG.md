@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v1.11.0 / 2019-08-20
+
+  - Add Lua
+  - Clean zsh section
+  - Fix shutter link
+  - Update dev dependencies
+
 ### v1.10.0 / 2019-04-13
 
   - Add Ruby
