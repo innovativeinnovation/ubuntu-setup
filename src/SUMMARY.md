@@ -33,6 +33,7 @@
   * [rbenv](ruby/rbenv.md)
   * [RubyGems](ruby/gem.md)
 * [Groovy](groovy/README.md)
+* [Ada](ada/README.md)
 * [Lua](lua/README.md)
   * [LuaRocks](lua/luarocks.md)
 * [MySQL](mysql/README.md)
