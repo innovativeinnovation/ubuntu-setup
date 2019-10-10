@@ -11,6 +11,7 @@
 * [SSH](ssh/README.md)
 * [Editors](editors/README.md)
   * [Atom](editors/atom.md)
+  * [Visual Studio Code](editors/visual-studio-code.md)
 * [Git](git/README.md)
   * [gitk](git/gitk.md)
   * [GitHub](git/github.md)
