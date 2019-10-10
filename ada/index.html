@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>SDKMAN! · Ubuntu Setup</title>
+        <title>Ada · Ubuntu Setup</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="ant.html" />
+    <link rel="next" href="../lua/" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="../groovy/" />
     
 
     </head>
@@ -418,9 +418,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="./">
+        <li class="chapter " data-level="1.11" data-path="../java/">
             
-                <a href="./">
+                <a href="../java/">
             
                     
                     Java
@@ -432,9 +432,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.11.1" data-path="sdkman.html">
+        <li class="chapter " data-level="1.11.1" data-path="../java/sdkman.html">
             
-                <a href="sdkman.html">
+                <a href="../java/sdkman.html">
             
                     
                     SDKMAN!
@@ -445,9 +445,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.2" data-path="ant.html">
+        <li class="chapter " data-level="1.11.2" data-path="../java/ant.html">
             
-                <a href="ant.html">
+                <a href="../java/ant.html">
             
                     
                     Ant
@@ -458,9 +458,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.3" data-path="maven.html">
+        <li class="chapter " data-level="1.11.3" data-path="../java/maven.html">
             
-                <a href="maven.html">
+                <a href="../java/maven.html">
             
                     
                     Maven
@@ -471,9 +471,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.4" data-path="gradle.html">
+        <li class="chapter " data-level="1.11.4" data-path="../java/gradle.html">
             
-                <a href="gradle.html">
+                <a href="../java/gradle.html">
             
                     
                     Gradle
@@ -592,9 +592,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="../ada/">
+        <li class="chapter active" data-level="1.15" data-path="./">
             
-                <a href="../ada/">
+                <a href="./">
             
                     
                     Ada
@@ -777,7 +777,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >SDKMAN!</a>
+        <a href=".." >Ada</a>
     </h1>
 </div>
 
@@ -792,26 +792,26 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="sdkman">SDKMAN</h1>
-<p><a href="https://sdkman.io/" target="_blank">SDKMAN!</a> is a tool for managing parallel versions of
-multiple Software Development Kits. It provides a convenient Command Line
-Interface (CLI) and API for installing, switching, removing and listing
-Candidates.</p>
+                                <h1 id="ada">Ada</h1>
+<p><a href="https://www.adacore.com/about-ada" target="_blank">Ada</a> is a structured, statically typed,
+imperative, and object-oriented high-level computer programming language. It
+has built-in language support for design-by-contract, extremely strong typing,
+explicit concurrency, tasks, synchronous message passing, protected objects,
+and non-determinism. Ada improves code safety and maintainability by using
+the compiler to find errors in favour of runtime errors.</p>
 <h2 id="installation">Installation</h2>
-<p>To install:</p>
-<pre><code class="lang-bash">curl <span class="hljs-_">-s</span> <span class="hljs-string">&quot;https://get.sdkman.io&quot;</span> | bash
+<p>To install Ada:</p>
+<pre><code class="lang-bash">sudo apt install gnat
 </code></pre>
-<p>and follow the instruction to load SDKMAN! automatically.</p>
 <h2 id="usage">Usage</h2>
-<p>To list all available versions of Java:</p>
-<pre><code class="lang-bash">sdk list java
+<p>To check GNAT version:</p>
+<pre><code class="lang-bash">gnat compile --version
 </code></pre>
-<p>To install specific versions:</p>
-<pre><code class="lang-bash">sdk install java 9.0.7-zulu
-sdk install java 7.0.211-zulu
+<p>To compile a program:</p>
+<pre><code class="lang-bash">gnatmake &lt;program&gt;.adb
 </code></pre>
-<p>To see what is currently in use:</p>
-<pre><code class="lang-bash">sdk current java
+<p>To delete files produced by the compiler, binder and linker:</p>
+<pre><code class="lang-bash">gnatclean &lt;program&gt;
 </code></pre>
 
                                 
@@ -840,12 +840,12 @@ sdk install java 7.0.211-zulu
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Java">
+                <a href="../groovy/" class="navigation navigation-prev " aria-label="Previous page: Groovy">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="ant.html" class="navigation navigation-next " aria-label="Next page: Ant">
+                <a href="../lua/" class="navigation navigation-next " aria-label="Next page: Lua">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -856,7 +856,7 @@ sdk install java 7.0.211-zulu
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SDKMAN!","level":"1.11.1","depth":2,"next":{"title":"Ant","level":"1.11.2","depth":2,"path":"java/ant.md","ref":"java/ant.md","articles":[]},"previous":{"title":"Java","level":"1.11","depth":1,"path":"java/README.md","ref":"java/README.md","articles":[{"title":"SDKMAN!","level":"1.11.1","depth":2,"path":"java/sdkman.md","ref":"java/sdkman.md","articles":[]},{"title":"Ant","level":"1.11.2","depth":2,"path":"java/ant.md","ref":"java/ant.md","articles":[]},{"title":"Maven","level":"1.11.3","depth":2,"path":"java/maven.md","ref":"java/maven.md","articles":[]},{"title":"Gradle","level":"1.11.4","depth":2,"path":"java/gradle.md","ref":"java/gradle.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"java/sdkman.md","mtime":"2019-08-10T17:18:46.070Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-10T18:45:57.953Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Ada","level":"1.15","depth":1,"next":{"title":"Lua","level":"1.16","depth":1,"path":"lua/README.md","ref":"lua/README.md","articles":[{"title":"LuaRocks","level":"1.16.1","depth":2,"path":"lua/luarocks.md","ref":"lua/luarocks.md","articles":[]}]},"previous":{"title":"Groovy","level":"1.14","depth":1,"path":"groovy/README.md","ref":"groovy/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"ada/README.md","mtime":"2019-10-08T18:14:13.628Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-10T18:45:57.953Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

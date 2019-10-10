@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Atom · Ubuntu Setup</title>
+        <title>Visual Studio Code · Ubuntu Setup</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -60,7 +60,7 @@
     <link rel="next" href="../git/" />
     
     
-    <link rel="prev" href="../ssh/" />
+    <link rel="prev" href="atom.html" />
     
 
     </head>
@@ -212,9 +212,23 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7" data-path="./">
+        <li class="chapter " data-level="1.7" data-path="./">
             
                 <a href="./">
+            
+                    
+                    Editors
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="atom.html">
+            
+                <a href="atom.html">
             
                     
                     Atom
@@ -222,6 +236,24 @@
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.2" data-path="visual-studio-code.html">
+            
+                <a href="visual-studio-code.html">
+            
+                    
+                    Visual Studio Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -560,7 +592,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="../lua/">
+        <li class="chapter " data-level="1.15" data-path="../ada/">
+            
+                <a href="../ada/">
+            
+                    
+                    Ada
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../lua/">
             
                 <a href="../lua/">
             
@@ -574,7 +619,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.15.1" data-path="../lua/luarocks.html">
+        <li class="chapter " data-level="1.16.1" data-path="../lua/luarocks.html">
             
                 <a href="../lua/luarocks.html">
             
@@ -592,7 +637,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.16" data-path="../mysql/">
+        <li class="chapter " data-level="1.17" data-path="../mysql/">
             
                 <a href="../mysql/">
             
@@ -606,7 +651,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.16.1" data-path="../mysql/workbench.html">
+        <li class="chapter " data-level="1.17.1" data-path="../mysql/workbench.html">
             
                 <a href="../mysql/workbench.html">
             
@@ -624,7 +669,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.17" data-path="../docker/">
+        <li class="chapter " data-level="1.18" data-path="../docker/">
             
                 <a href="../docker/">
             
@@ -637,7 +682,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.18" data-path="../vagrant/">
+        <li class="chapter " data-level="1.19" data-path="../vagrant/">
             
                 <a href="../vagrant/">
             
@@ -650,7 +695,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.19" data-path="../latex/">
+        <li class="chapter " data-level="1.20" data-path="../latex/">
             
                 <a href="../latex/">
             
@@ -663,7 +708,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20" data-path="../apps/">
+        <li class="chapter " data-level="1.21" data-path="../apps/">
             
                 <a href="../apps/">
             
@@ -676,7 +721,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.21" data-path="../security/">
+        <li class="chapter " data-level="1.22" data-path="../security/">
             
                 <a href="../security/">
             
@@ -689,7 +734,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.22" data-path="../references/">
+        <li class="chapter " data-level="1.23" data-path="../references/">
             
                 <a href="../references/">
             
@@ -732,7 +777,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Atom</a>
+        <a href=".." >Visual Studio Code</a>
     </h1>
 </div>
 
@@ -747,55 +792,39 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="atom">Atom</h1>
-<p><a href="https://atom.io/" target="_blank">Atom</a> is a free and open-source text and source code
-editor with support for plug-ins written in Node.js, and embedded Git Control,
-developed by GitHub.</p>
+                                <h1 id="visual-studio-code">Visual Studio Code</h1>
+<p><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> is a code editor
+redefined and optimized for building and debugging modern web and cloud
+applications.</p>
 <h2 id="installation">Installation</h2>
-<pre><code class="lang-bash">sudo apt install git gconf2
-wget -O /tmp/atom.deb https://atom.io/download/deb
-sudo dpkg -i /tmp/atom.deb
+<p>Visual Studio Code is officially distributed as a Snap package in the
+Snap Store. To install:</p>
+<pre><code class="lang-bash">sudo snap install --classic code
 </code></pre>
-<h2 id="atom-package-manager-apm">Atom Package Manager (apm)</h2>
-<p>Atom Package Manager is bundled and installed automatically with Atom.</p>
 <h2 id="settings">Settings</h2>
 <p>These settings are all optional, consider them suggestions.</p>
-<h3 id="core-settings">Core Settings</h3>
+<h3 id="text-editor">Text Editor</h3>
 <ul>
-<li>Allow Pending Pane Items -&gt; Off</li>
+<li>Font Size -&gt; 12</li>
+<li>Render Whitespace -&gt; All</li>
+<li>Smooth scrolling -&gt; On</li>
+<li>Cursor blinking -&gt; Phase</li>
 </ul>
-<h3 id="editor-settings">Editor Settings</h3>
+<h3 id="explorer">Explorer</h3>
 <ul>
-<li>Font Size -&gt; 12px</li>
-<li>Show Invisibles -&gt; On</li>
+<li>Open Editors -&gt; 0</li>
 </ul>
 <h2 id="themes">Themes</h2>
 <p>You can find your favorite themes on
-<a href="https://atom.io/themes" target="_blank">https://atom.io/themes</a>.</p>
-<p>UI Theme that I use:</p>
+<a href="https://vscodethemes.com/" target="_blank">https://vscodethemes.com/</a>.</p>
+<p>Theme that I use: Dark+ Material</p>
+<h2 id="extensions">Extensions</h2>
+<p>You can search extensions on
+<a href="https://marketplace.visualstudio.com/vscode" target="_blank">https://marketplace.visualstudio.com/vscode</a>.</p>
+<p>Extensions that I use:</p>
 <ul>
-<li>Seti UI - <code>apm install seti-ui</code><ul>
-<li>Theme Color -&gt; Pink</li>
-<li>Compact Mode -&gt; On</li>
-</ul>
-</li>
-</ul>
-<p>Syntax Theme that I use:</p>
-<ul>
-<li>Seti Syntax - <code>apm install seti-syntax</code><ul>
-<li>Dynamic Theme -&gt; On</li>
-</ul>
-</li>
-</ul>
-<h2 id="packages">Packages</h2>
-<p>You can search packages on
-<a href="https://atom.io/packages" target="_blank">https://atom.io/packages</a>.</p>
-<p>Packages that I use:</p>
-<ul>
-<li><a href="https://atom.io/packages/atom-beautify" target="_blank">atom-beautify</a> - <code>apm install atom-beautify</code></li>
-<li><a href="https://atom.io/packages/editorconfig" target="_blank">editorconfig</a> - <code>apm install editorconfig</code></li>
-<li><a href="https://atom.io/packages/linter" target="_blank">linter</a> - <code>apm install linter</code></li>
-<li><a href="https://atom.io/packages/teletype" target="_blank">teletype</a> - <code>apm install teletype</code></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify" target="_blank">Beautify</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig" target="_blank">EditorConfig for VS Code</a></li>
 </ul>
 
                                 
@@ -824,7 +853,7 @@ sudo dpkg -i /tmp/atom.deb
 
             
                 
-                <a href="../ssh/" class="navigation navigation-prev " aria-label="Previous page: SSH">
+                <a href="atom.html" class="navigation navigation-prev " aria-label="Previous page: Atom">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -840,7 +869,7 @@ sudo dpkg -i /tmp/atom.deb
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Atom","level":"1.7","depth":1,"next":{"title":"Git","level":"1.8","depth":1,"path":"git/README.md","ref":"git/README.md","articles":[{"title":"gitk","level":"1.8.1","depth":2,"path":"git/gitk.md","ref":"git/gitk.md","articles":[]},{"title":"GitHub","level":"1.8.2","depth":2,"path":"git/github.md","ref":"git/github.md","articles":[]},{"title":"Bitbucket","level":"1.8.3","depth":2,"path":"git/bitbucket.md","ref":"git/bitbucket.md","articles":[]}]},"previous":{"title":"SSH","level":"1.6","depth":1,"path":"ssh/README.md","ref":"ssh/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"atom/README.md","mtime":"2019-08-10T17:18:46.059Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-20T18:45:15.430Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Visual Studio Code","level":"1.7.2","depth":2,"next":{"title":"Git","level":"1.8","depth":1,"path":"git/README.md","ref":"git/README.md","articles":[{"title":"gitk","level":"1.8.1","depth":2,"path":"git/gitk.md","ref":"git/gitk.md","articles":[]},{"title":"GitHub","level":"1.8.2","depth":2,"path":"git/github.md","ref":"git/github.md","articles":[]},{"title":"Bitbucket","level":"1.8.3","depth":2,"path":"git/bitbucket.md","ref":"git/bitbucket.md","articles":[]}]},"previous":{"title":"Atom","level":"1.7.1","depth":2,"path":"editors/atom.md","ref":"editors/atom.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"editors/visual-studio-code.md","mtime":"2019-10-10T18:29:07.246Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-10T18:45:57.953Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
