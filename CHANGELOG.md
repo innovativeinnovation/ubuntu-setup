@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v1.12.0 / 2019-10-10
+
+  - Add Ada
+  - Add Visual Studio Code
+
 ### v1.11.0 / 2019-08-20
 
   - Add Lua
