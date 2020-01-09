@@ -10,6 +10,7 @@
   * [CLI Tools](terminals/cli-tools.md)
 * [SSH](ssh/README.md)
 * [Editors](editors/README.md)
+  * [Vim](editors/vim.md)
   * [Atom](editors/atom.md)
   * [Visual Studio Code](editors/visual-studio-code.md)
 * [Git](git/README.md)
