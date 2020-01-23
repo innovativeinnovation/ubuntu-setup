@@ -9,7 +9,7 @@ uninstall, switch version, etc.
 To install or update nvm, you can use:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 ```
 
 To download, compile, and install the latest release of node, do this:
