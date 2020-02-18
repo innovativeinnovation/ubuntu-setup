@@ -69,6 +69,8 @@ comprehension.
 * [FileZilla](https://filezilla-project.org/) - FileZilla is a fast and
   reliable cross-platform FTP, FTPS and SFTP client.  
   `sudo apt install filezilla`
+* [Keybase](https://keybase.io/) - Keybase is for keeping everyone's chats
+  and files safe, from families to communities to companies.
 * [Meld](http://meldmerge.org/) - Meld is a visual diff and merge tool.  
   `sudo apt install meld`
 * [Postman](https://www.getpostman.com/) - Postman is the complete toolchain
