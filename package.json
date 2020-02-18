@@ -10,7 +10,7 @@
   ],
   "author": "William Belle <william.belle@gmail.com>",
   "license": "Apache-2.0",
-  "repository": "https://github.com/innovativeinnovation/ubuntu-setup.git",
+  "repository": "innovativeinnovation/ubuntu-setup",
   "scripts": {
     "build": "npm run lint && npm run prepare && rm -rf src/_book && gitbook build src/",
     "deploy": "npm run build && git-directory-deploy --directory src/_book --branch gh-pages",
@@ -21,7 +21,7 @@
   "devDependencies": {
     "git-directory-deploy": "^1.5.1",
     "gitbook-cli": "^2.3.2",
-    "markdownlint-cli": "^0.19.0"
+    "markdownlint-cli": "^0.22.0"
   },
   "dependencies": {}
 }
