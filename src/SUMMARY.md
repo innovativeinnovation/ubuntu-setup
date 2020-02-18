@@ -32,6 +32,7 @@
 * [Perl](perl/README.md)
   * [Perlbrew](perl/perlbrew.md)
   * [CPAN](perl/cpan.md)
+  * [cpanminus](perl/cpanm.md)
 * [Ruby](ruby/README.md)
   * [rbenv](ruby/rbenv.md)
   * [RubyGems](ruby/gem.md)
