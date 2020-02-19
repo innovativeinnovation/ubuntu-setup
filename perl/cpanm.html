@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Docker · Ubuntu Setup</title>
+        <title>cpanminus · Ubuntu Setup</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../vagrant/" />
+    <link rel="next" href="../ruby/" />
     
     
-    <link rel="prev" href="../mysql/workbench.html" />
+    <link rel="prev" href="cpan.html" />
     
 
     </head>
@@ -502,9 +502,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="../perl/">
+        <li class="chapter " data-level="1.12" data-path="./">
             
-                <a href="../perl/">
+                <a href="./">
             
                     
                     Perl
@@ -516,9 +516,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.12.1" data-path="../perl/perlbrew.html">
+        <li class="chapter " data-level="1.12.1" data-path="perlbrew.html">
             
-                <a href="../perl/perlbrew.html">
+                <a href="perlbrew.html">
             
                     
                     Perlbrew
@@ -529,9 +529,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.2" data-path="../perl/cpan.html">
+        <li class="chapter " data-level="1.12.2" data-path="cpan.html">
             
-                <a href="../perl/cpan.html">
+                <a href="cpan.html">
             
                     
                     CPAN
@@ -542,9 +542,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.3" data-path="../perl/cpanm.html">
+        <li class="chapter active" data-level="1.12.3" data-path="cpanm.html">
             
-                <a href="../perl/cpanm.html">
+                <a href="cpanm.html">
             
                     
                     cpanminus
@@ -695,9 +695,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.18" data-path="./">
+        <li class="chapter " data-level="1.18" data-path="../docker/">
             
-                <a href="./">
+                <a href="../docker/">
             
                     
                     Docker
@@ -803,7 +803,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Docker</a>
+        <a href=".." >cpanminus</a>
     </h1>
 </div>
 
@@ -818,47 +818,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="docker">Docker</h1>
-<p><a href="https://www.docker.com/" target="_blank">Docker</a> is an open platform for developers and
-sysadmins to build, ship, and run distributed applications, whether on
-laptops, data center VMs, or the cloud.</p>
+                                <h1 id="cpanminus">cpanminus</h1>
+<p><a href="https://metacpan.org/pod/App::cpanminus" target="_blank">cpanminus</a> is a script to get,
+unpack, build and install modules from CPAN.</p>
 <h2 id="installation">Installation</h2>
-<h3 id="via-package-manager">Via package manager</h3>
-<pre><code class="lang-bash">sudo apt install docker.io docker-compose
+<p>To install:</p>
+<pre><code class="lang-bash">sudo apt install -y cpanminus
 </code></pre>
-<h3 id="manually">Manually</h3>
-<p>Go to <a href="https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/" target="_blank">download.docker.com</a> and
-choose <code>amd64</code>, <code>armhf</code>, <code>ppc64el</code>, or <code>s390x</code>. Download the <code>.deb</code> file
-for the Docker version you want to install.</p>
-<pre><code class="lang-bash">sudo dpkg -i /path/to/package.deb
-</code></pre>
-<h2 id="configuration">Configuration</h2>
-<p>If you would like to use Docker as a non-root user, you should now consider
-adding your user to the &quot;docker&quot; group with something like:</p>
-<pre><code class="lang-bash">sudo usermod <span class="hljs-_">-a</span>G docker your-user
-</code></pre>
-<p>Remember to log out and back in for this to take effect!</p>
 <h2 id="usage">Usage</h2>
-<p>To test Docker installation:</p>
-<pre><code class="lang-bash">docker run hello-world
+<p>To check cpanm version:</p>
+<pre><code class="lang-bash">cpanm -V
 </code></pre>
-<p>To list Docker images:</p>
-<pre><code class="lang-bash">docker image ls
-</code></pre>
-<p>To list all Docker containers:</p>
-<pre><code class="lang-bash">docker container ls --all
-</code></pre>
-<p>To list running containers:</p>
-<pre><code class="lang-bash">docker ps
-</code></pre>
-<p>To kill all running containers:</p>
-<pre><code class="lang-bash">docker <span class="hljs-built_in">kill</span> $(docker ps -q)
-</code></pre>
-<p>To delete all stopped containers:</p>
-<pre><code class="lang-bash">docker rm $(docker ps <span class="hljs-_">-a</span> -q)
-</code></pre>
-<p>To delete all images:</p>
-<pre><code class="lang-bash">docker rmi $(docker images -q)
+<p>To install a package:</p>
+<pre><code class="lang-bash">cpanm &lt;package&gt;
 </code></pre>
 
                                 
@@ -887,12 +859,12 @@ adding your user to the &quot;docker&quot; group with something like:</p>
 
             
                 
-                <a href="../mysql/workbench.html" class="navigation navigation-prev " aria-label="Previous page: MySQL Workbench">
+                <a href="cpan.html" class="navigation navigation-prev " aria-label="Previous page: CPAN">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../vagrant/" class="navigation navigation-next " aria-label="Next page: Vagrant">
+                <a href="../ruby/" class="navigation navigation-next " aria-label="Next page: Ruby">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -903,7 +875,7 @@ adding your user to the &quot;docker&quot; group with something like:</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Docker","level":"1.18","depth":1,"next":{"title":"Vagrant","level":"1.19","depth":1,"path":"vagrant/README.md","ref":"vagrant/README.md","articles":[]},"previous":{"title":"MySQL Workbench","level":"1.17.1","depth":2,"path":"mysql/workbench.md","ref":"mysql/workbench.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"docker/README.md","mtime":"2019-08-10T17:18:46.060Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-19T19:00:29.813Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"cpanminus","level":"1.12.3","depth":2,"next":{"title":"Ruby","level":"1.13","depth":1,"path":"ruby/README.md","ref":"ruby/README.md","articles":[{"title":"rbenv","level":"1.13.1","depth":2,"path":"ruby/rbenv.md","ref":"ruby/rbenv.md","articles":[]},{"title":"RubyGems","level":"1.13.2","depth":2,"path":"ruby/gem.md","ref":"ruby/gem.md","articles":[]}]},"previous":{"title":"CPAN","level":"1.12.2","depth":2,"path":"perl/cpan.md","ref":"perl/cpan.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"perl/cpanm.md","mtime":"2020-02-18T19:09:31.310Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-19T19:00:29.813Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
