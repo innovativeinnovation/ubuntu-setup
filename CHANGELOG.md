@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v1.14.0 / 2020-02-19
+
+  - Add cpanminus
+  - Add Keybase
+  - Update nvm script version
+  - Update dev dependencies
+
 ### v1.13.0 / 2020-01-09
 
   - Add Vim
