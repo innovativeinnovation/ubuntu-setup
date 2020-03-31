@@ -45,16 +45,16 @@ sudo apt install ldap-utils
 
 ## Miscellaneous
 
-[Grip](https://github.com/joeyespo/grip) - Grip is a command-line server
-application written in Python that uses the GitHub markdown API to render
-a local readme file.  
+[GNOME Screenshot](https://github.com/GNOME/gnome-screenshot) is a utility
+used in the GNOME desktop environment for taking screenshots. To take a
+screenshot with a delay:  
+`gnome-screenshot -d 5`
+
+[Grip](https://github.com/joeyespo/grip) is a command-line server application
+written in Python that uses the GitHub markdown API to render a local readme
+file.  
 `sudo -H pip install grip`
 
-[ngrok](https://ngrok.com/) - ngrok is a tunneling, reverse proxy that
-establishes secure tunnels from a public endpoint to a locally running
-network service while capturing all traffic for inspection and replay.
-
-[GNOME Screenshot](https://github.com/GNOME/gnome-screenshot) - GNOME
-Screenshot is a utility used in the GNOME desktop environment for
-taking screenshots. To take a screenshot with a delay:  
-`gnome-screenshot -d 5`
+[ngrok](https://ngrok.com/) is a tunneling, reverse proxy that establishes
+secure tunnels from a public endpoint to a locally running network service
+while capturing all traffic for inspection and replay.
