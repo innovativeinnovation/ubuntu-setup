@@ -55,6 +55,10 @@ written in Python that uses the GitHub markdown API to render a local readme
 file.  
 `sudo -H pip install grip`
 
+[jq](https://stedolan.github.io/jq/) is a lightweight and flexible
+command-line JSON processor.  
+`sudo apt install jq`
+
 [ngrok](https://ngrok.com/) is a tunneling, reverse proxy that establishes
 secure tunnels from a public endpoint to a locally running network service
 while capturing all traffic for inspection and replay.
