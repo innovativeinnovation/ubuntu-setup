@@ -12,20 +12,29 @@ Settings. **These settings are all optional, consider them suggestions.**
 
 ## Settings
 
-### Dock
+### Appearance
 
-* Enable Auto-hide the Dock
-* Change icon size to 32
+* Auto-hide the Dock -> On
+* Icon size -> 32
+
+### Privacy
+
+#### File History & Trash
+
+* File History -> Off
+
+#### Screen Lock
+
+* Automatic Screen Lock -> On
+* Show Notifications on Lock Screen -> Off
+
+#### Diagnostics
+
+* Send error reports to Canonical -> Manual
 
 ### Region & Language
 
 * Choose the right format
-
-### Privacy
-
-* Screen Lock -> On
-* Usage & History -> Off
-* Problem Reporting -> Manual
 
 ## Software & update
 
@@ -44,10 +53,10 @@ Follow the specific instructions provided on the screen.
 sudo apt install gnome-tweak-tool
 ```
 
-### Desktop
+### Extensions
 
-* Show icons -> Off
-  
+* Desktop icons -> Off
+
 ### Fonts
 
 * Monospace -> 11px
@@ -55,8 +64,10 @@ sudo apt install gnome-tweak-tool
 ### Top Bar
 
 * Battery Percentage -> On
+* Weekday -> On
 * Date -> On
 * Seconds -> On
+* Week Numbers -> On
 
 ## Gnome Shell Extensions
 
