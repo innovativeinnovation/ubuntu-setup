@@ -84,6 +84,5 @@ Gnome Tweak Tool has a page for managing installed Gnome Shell Extensions.
 Must have:
 
 * OpenWeather - Weather extension to display weather information
-* Media Player Indicator - Control MPRIS Version 2 Capable Media Players
 * Clipboard Indicator - Clipboard Manager extension
 * User Themes - Load shell themes from user directory.
