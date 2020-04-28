@@ -9,7 +9,7 @@ Requirements:
 
 ```bash
 sudo apt install autoconf bison build-essential libssl-dev libyaml-dev \
-libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev
+libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev
 ```
 
 To install:
@@ -37,7 +37,7 @@ rbenv install -l
 To install specific versions:
 
 ```bash
-rbenv install 2.2.10
+rbenv install 2.4.10
 rbenv install 2.6.0
 ```
 
