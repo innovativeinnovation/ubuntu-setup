@@ -7,9 +7,10 @@ developed by GitHub.
 ## Installation
 
 ```bash
-sudo apt install git gconf2
-wget -O /tmp/atom.deb https://atom.io/download/deb
-sudo dpkg -i /tmp/atom.deb
+wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+sudo apt update
+sudo apt install atom
 ```
 
 ## Atom Package Manager (apm)
