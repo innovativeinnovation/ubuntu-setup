@@ -9,7 +9,7 @@ uninstall, switch version, etc.
 To install or update nvm, you can use:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
 To download, compile, and install the latest release of node, do this:
@@ -21,7 +21,7 @@ nvm install node # "node" is an alias for the latest version
 To install a specific version of node:
 
 ```bash
-nvm install 8.9.1 # or 10.10.0, 6.14.4, etc
+nvm install 10.20.1 # or 8.17.0, 14.0.0, etc
 ```
 
 ## Usage
