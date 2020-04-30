@@ -32,7 +32,7 @@ pyenv install --list
 To install specific versions:
 
 ```bash
-pyenv install 2.7.15
+pyenv install 2.7.18
 pyenv install 3.7.0
 ```
 

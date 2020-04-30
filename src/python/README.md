@@ -7,13 +7,12 @@ development.
 
 ## Installation
 
-Ubuntu 18.04 ship with both Python 3 and Python 2 pre-installed.
+Ubuntu 20.04 ship with Python 3 pre-installed.
 
 ## Usage
 
 To check python version:
 
 ```bash
-python --version
 python3 --version
 ```
