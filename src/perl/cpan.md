@@ -5,7 +5,7 @@ a large collection of Perl software and documentation.
 
 ## Installation
 
-Ubuntu 18.04 ship with CPAN installed by default.
+Ubuntu 20.04 ship with CPAN installed by default.
 
 To compile and install package from CPAN you may also need to
 install build tools:
