@@ -27,7 +27,7 @@ To install specific versions:
 
 ```bash
 sdk install java 9.0.7-zulu
-sdk install java 7.0.211-zulu
+sdk install java 13.0.3-zulu
 ```
 
 To see what is currently in use:
