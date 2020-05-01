@@ -7,9 +7,8 @@ tools for server configuration, user administration, backup, and much more.
 
 ## Installation
 
-```bash
-sudo apt install mysql-workbench
-```
+You can directly [download MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+and install it.
 
 ## Configuration
 
