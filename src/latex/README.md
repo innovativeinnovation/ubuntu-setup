@@ -35,7 +35,7 @@ pdflatex document.tex
 
 ## Editors
 
-A list of some LaTeX editors on Ubuntu 18.04:
+A list of some LaTeX editors on Ubuntu 20.04:
 
 * [Texmaker](http://www.xm1math.net/texmaker/) - `sudo apt install texmaker`
 * [TeXstudio](https://www.texstudio.org/) - `sudo apt install texstudio`
