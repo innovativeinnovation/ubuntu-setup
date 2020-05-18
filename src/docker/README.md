@@ -18,7 +18,7 @@ Go to [download.docker.com][dockerddl] and
 choose `amd64`, `armhf`, `ppc64el`, or `s390x`. Download the `.deb` file
 for the Docker version you want to install.
 
-[dockerddl]: https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/
+[dockerddl]: https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/
 
 ```bash
 sudo dpkg -i /path/to/package.deb
