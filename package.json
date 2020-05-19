@@ -1,7 +1,7 @@
 {
   "name": "ubuntu-setup",
   "private": true,
-  "version": "1.14.0",
+  "version": "2.0.0",
   "description": "Installing development environment on Ubuntu",
   "keywords": [
     "Ubuntu",
