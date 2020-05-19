@@ -821,34 +821,9 @@
                                 <h1 id="security">Security</h1>
 <h2 id="disk-encryption">Disk Encryption</h2>
 <h3 id="full-disk-encryption">Full disk encryption</h3>
-<p>The Ubuntu 18.04 installer proposes to encrypt your disk for security. Choosing the
-LVM option is optional but recommended.</p>
+<p>The Ubuntu 20.04 installer proposes to encrypt your disk for security.</p>
 <p>Every time the system starts, you will have to enter the passkey for
 the encrypted drive. Without the pass key, Ubuntu won&apos;t boot.</p>
-<h3 id="encrypt-the-home-folder">Encrypt The Home Folder</h3>
-<p>Ubuntu 18.04 doesn&apos;t include an option in the installer to encrypt the <code>home</code>
-directory. This option was removed from the Ubuntu installer because it
-uses eCryptfs, which is considered &quot;buggy, under-maintained&quot;, and the
-recommended alternative is a full disk encryption using LUKS.</p>
-<p>If you still want to encrypt your <code>home</code> folder, follow these steps.</p>
-<pre><code class="lang-bash">sudo apt install ecryptfs-utils cryptsetup
-sudo adduser foobar
-sudo usermod <span class="hljs-_">-a</span>G sudo foobar
-</code></pre>
-<p>Logout and login as foobar. Then:</p>
-<pre><code class="lang-bash">sudo ecryptfs-migrate-home -u &lt;user&gt;
-</code></pre>
-<p>where <code>&lt;user&gt;</code> is your primary account. Logout from foobar and login as
-<code>&lt;user&gt;</code> (do not reboot!).</p>
-<p>Run:</p>
-<pre><code class="lang-bash">ecryptfs-unwrap-passphrase
-</code></pre>
-<p>and save this somewhere safe! Reboot and if everything is ok, you can
-safely remove the temporary user foobar as well as the backup.</p>
-<pre><code class="lang-bash">sudo deluser --remove-home foobar
-ls /home
-</code></pre>
-<p>and remove the folder <code>&lt;user&gt;.xxxxxxxx</code>.</p>
 <h2 id="firewall">Firewall</h2>
 <p>The Uncomplicated Firewall (ufw) is a frontend for iptables and is
 particularly well-suited for host-based firewalls.</p>
@@ -927,7 +902,7 @@ sudo systemctl start clamav-freshclam
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Security","level":"1.22","depth":1,"next":{"title":"References","level":"1.23","depth":1,"path":"references/README.md","ref":"references/README.md","articles":[]},"previous":{"title":"Apps","level":"1.21","depth":1,"path":"apps/README.md","ref":"apps/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"security/README.md","mtime":"2019-08-10T17:18:46.074Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-19T19:00:29.813Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Security","level":"1.22","depth":1,"next":{"title":"References","level":"1.23","depth":1,"path":"references/README.md","ref":"references/README.md","articles":[]},"previous":{"title":"Apps","level":"1.21","depth":1,"path":"apps/README.md","ref":"apps/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"security/README.md","mtime":"2020-04-24T19:18:48.540Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-19T16:29:22.991Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

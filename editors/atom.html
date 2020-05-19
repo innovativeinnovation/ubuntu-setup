@@ -823,9 +823,10 @@
 editor with support for plug-ins written in Node.js, and embedded Git Control,
 developed by GitHub.</p>
 <h2 id="installation">Installation</h2>
-<pre><code class="lang-bash">sudo apt install git gconf2
-wget -O /tmp/atom.deb https://atom.io/download/deb
-sudo dpkg -i /tmp/atom.deb
+<pre><code class="lang-bash">wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+sudo sh -c <span class="hljs-string">&apos;echo &quot;deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main&quot; &gt; /etc/apt/sources.list.d/atom.list&apos;</span>
+sudo apt update
+sudo apt install atom
 </code></pre>
 <h2 id="atom-package-manager-apm">Atom Package Manager (apm)</h2>
 <p>Atom Package Manager is bundled and installed automatically with Atom.</p>
@@ -911,7 +912,7 @@ sudo dpkg -i /tmp/atom.deb
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Atom","level":"1.7.2","depth":2,"next":{"title":"Visual Studio Code","level":"1.7.3","depth":2,"path":"editors/visual-studio-code.md","ref":"editors/visual-studio-code.md","articles":[]},"previous":{"title":"Vim","level":"1.7.1","depth":2,"path":"editors/vim.md","ref":"editors/vim.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"editors/atom.md","mtime":"2019-10-09T18:43:21.436Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-19T19:00:29.813Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Atom","level":"1.7.2","depth":2,"next":{"title":"Visual Studio Code","level":"1.7.3","depth":2,"path":"editors/visual-studio-code.md","ref":"editors/visual-studio-code.md","articles":[]},"previous":{"title":"Vim","level":"1.7.1","depth":2,"path":"editors/vim.md","ref":"editors/vim.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"editors/atom.md","mtime":"2020-04-30T17:56:50.256Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-19T16:29:22.991Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
