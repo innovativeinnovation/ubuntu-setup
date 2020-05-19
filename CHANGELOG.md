@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v2.0.0 / 2020-05-19
+
+  - Rewrite for Ubuntu 20.04
+  - Add jq
+  - Clean cli miscellaneous subsection
+  - Update dev dependencies
+
 ### v1.14.0 / 2020-02-19
 
   - Add cpanminus
