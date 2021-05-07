@@ -1,6 +1,6 @@
 # Ubuntu 20.04 LTS Desktop Installation
 
-##  Minimum System Requirement
+## Minimum System Requirement
 
 You will need:
 

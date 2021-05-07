@@ -12,7 +12,7 @@ by running:
 gem --version
 ```
 
-## Usage
+## Usage
 
 To install a gem:
 

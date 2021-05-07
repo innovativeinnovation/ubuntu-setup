@@ -5,12 +5,12 @@ visual tool for database architects, developers, and DBAs. MySQL Workbench
 provides data modeling, SQL development, and comprehensive administration
 tools for server configuration, user administration, backup, and much more.
 
-## Installation
+## Installation
 
 You can directly [download MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 and install it.
 
-## Configuration
+## Configuration
 
 Use the built-in Workbench Preferences to adjust settings such as targeted
 MySQL server version, font color, code completion, and others.

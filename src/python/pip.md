@@ -11,7 +11,7 @@ To install pip for Python 3:
 sudo apt install -y python3-pip
 ```
 
-## Usage
+## Usage
 
 To install a package:
 
