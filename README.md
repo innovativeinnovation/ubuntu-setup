@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/innovativeinnovation/ubuntu-setup">
-    <img alt="Travis Status" src="https://travis-ci.org/innovativeinnovation/ubuntu-setup.svg?branch=master">
+  <a href="https://github.com/innovativeinnovation/ubuntu-setup/actions">
+    <img alt="Build Status" src="https://github.com/innovativeinnovation/ubuntu-setup/workflows/Build/badge.svg?branch=master">
   </a>
   <a href='https://github.com/innovativeinnovation/ubuntu-setup/tags'>
     <img alt="GitHub Tag" src="https://img.shields.io/github/tag/innovativeinnovation/ubuntu-setup.svg" />
