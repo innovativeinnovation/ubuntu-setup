@@ -35,7 +35,7 @@ You can find your favorite themes on
 
 Theme that I use: Dark+ Material
 
-## Extensions
+## Extensions
 
 You can search extensions on
 [https://marketplace.visualstudio.com/vscode](https://marketplace.visualstudio.com/vscode).

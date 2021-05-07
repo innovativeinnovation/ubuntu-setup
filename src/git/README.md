@@ -86,7 +86,7 @@ git difftool --dir-diff HEAD .
 git difftool --dir-diff master fea-branch
 ```
 
-## Create a global `.gitignore`
+## Create a global `.gitignore`
 
 You can create a global `.gitignore` file, which is a list of rules for
 ignoring files in every Git repository on your computer.

@@ -10,7 +10,7 @@ To install LuaRocks:
 sudo apt install luarocks
 ```
 
-## Usage
+## Usage
 
 To check LuaRocks version:
 

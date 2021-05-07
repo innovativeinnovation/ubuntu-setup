@@ -8,7 +8,7 @@ programming language.
 The nodejs package contains the nodejs binary as well as npm, so you don't
 need to install npm separately.
 
-## Usage
+## Usage
 
 To check npm version:
 

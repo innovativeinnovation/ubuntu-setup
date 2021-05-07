@@ -1,6 +1,6 @@
 # CLI Tools
 
-## Essentials
+## Essentials
 
 If you build software, development tools are required to install. It's also
 useful for building packages on your system. Development tools contain few
