@@ -30,11 +30,7 @@ npm run serve
 Deploy
 ------
 
-```bash
-npm run deploy
-```
-
-This will automatically deploy the `src/_book` folder on GitHub pages.
+GitHub Actions will deploy the `src/_book` folder with a tag.
 See https://innovativeinnovation.github.io/ubuntu-setup.
 
 License
