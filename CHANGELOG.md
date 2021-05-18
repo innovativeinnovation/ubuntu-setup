@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v2.1.0 / 2021-05-18
+
+  - Fix rbenv-installer url
+  - Update markdownlint-cli from 0.23.1 to 0.27.1
+  - Migrate from Travis CI to GitHub Actions
+  - Add Github Actions deploy workflow
+
 ### v2.0.0 / 2020-05-19
 
   - Rewrite for Ubuntu 20.04
