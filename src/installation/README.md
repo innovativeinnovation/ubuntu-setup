@@ -1,4 +1,4 @@
-# Ubuntu 20.04 LTS Desktop Installation
+# Ubuntu 22.04 LTS Desktop Installation
 
 ## Minimum System Requirement
 
@@ -24,10 +24,10 @@ installation type for you.
 
 Again, click on "Continue" to write all the changes to the disks.
 
-Choose your favorite time zone and then click on "Continue". You will be
-prompted to provide your user credentials. The installation of Ubuntu 20.04
+Choose your time zone and then click on "Continue". You will be
+prompted to provide your user credentials. The installation of Ubuntu 22.04
 LTS starts and will take around 5-10 mins.
 
 Once the installation is completed, restart your system.
 
-![Ubuntu 20.04 LTS Desktop](../images/ubuntu.jpg)
+![Ubuntu 22.04 LTS Desktop](../images/ubuntu.jpg)
