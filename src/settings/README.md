@@ -32,16 +32,16 @@ Settings. **These settings are all optional, consider them suggestions.**
 
 * Send error reports to Canonical -> Manual
 
+### Power
+
+* Dim screen -> Off
+* Battery Percentage -> On
+
 ### Region & Language
 
 * Choose the right format
 
 ## Software & update
-
-### Other Software
-
-In order to get access to all the good​ stuff you will need to enable the
-Canonical Partners repositories.
 
 ### Additional Drivers
 
@@ -50,36 +50,31 @@ Follow the specific instructions provided on the screen.
 ## Gnome Tweak Tool
 
 ```bash
-sudo apt install gnome-tweak-tool
+sudo apt install gnome-tweaks
 ```
-
-### Extensions
-
-* Desktop icons -> Off
 
 ### Fonts
 
-* Monospace -> 11px
+* Ubuntu Mono Regular -> 11px
 
 ### Top Bar
 
-* Battery Percentage -> On
 * Weekday -> On
 * Date -> On
 * Seconds -> On
 * Week Numbers -> On
 
-## Gnome Shell Extensions
+## Extensions
 
 ```bash
-sudo apt install chrome-gnome-shell
+sudo apt install gnome-shell-extension-prefs
 ```
 
 Go to [https://extensions.gnome.org/](https://extensions.gnome.org/) and
 install the browser extension. You can now install any Gnome Shell Extension
 by turning on the switch on the web.
 
-Gnome Tweak Tool has a page for managing installed Gnome Shell Extensions.
+Search and open the "Extensions" app to manage installed extensions.
 
 Must have:
 
