@@ -4,7 +4,7 @@
 
 ### Full disk encryption
 
-The Ubuntu 20.04 installer proposes to encrypt your disk for security.
+The Ubuntu 22.04 installer proposes to encrypt your disk for security.
 
 Every time the system starts, you will have to enter the passkey for
 the encrypted drive. Without the pass key, Ubuntu won't boot.
