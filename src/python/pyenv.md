@@ -9,14 +9,14 @@ Requirements:
 
 ```bash
 sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
-libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev
+libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev \
+xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 ```
 
 To install:
 
 ```bash
-curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+curl https://pyenv.run | bash
 ```
 
 and follow the instruction to load pyenv automatically.

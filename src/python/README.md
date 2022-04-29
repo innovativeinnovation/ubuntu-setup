@@ -7,7 +7,7 @@ development.
 
 ## Installation
 
-Ubuntu 20.04 ship with Python 3 pre-installed.
+Ubuntu 22.04 ship with Python 3 pre-installed.
 
 ## Usage
 
