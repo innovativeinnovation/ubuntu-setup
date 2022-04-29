@@ -7,8 +7,8 @@ developed by GitHub.
 ## Installation
 
 ```bash
-wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
-sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+wget -qO- https://packagecloud.io/AtomEditor/atom/gpgkey | gpg --dearmor | sudo tee /usr/share/keyrings/atom.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/atom.gpg] https://packagecloud.io/AtomEditor/atom/any/ any main" | sudo tee /etc/apt/sources.list.d/atom.list
 sudo apt update
 sudo apt install atom
 ```
