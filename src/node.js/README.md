@@ -9,7 +9,7 @@ Node.js is available from the NodeSource Debian and Ubuntu binary
 distributions repository.
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
 

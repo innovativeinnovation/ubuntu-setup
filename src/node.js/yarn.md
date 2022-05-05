@@ -1,6 +1,6 @@
 # Yarn
 
-[Yarn](https://yarnpkg.com/en/) is a fast, reliable, and secure dependency
+[Yarn](https://classic.yarnpkg.com/en/) is a fast, reliable, and secure dependency
 manager.
 
 ## Installation
@@ -8,7 +8,7 @@ manager.
 To install yarn, you can use:
 
 ```bash
-curl -o- -L https://yarnpkg.com/install.sh | bash
+npm install --global yarn
 ```
 
 ## Usage
