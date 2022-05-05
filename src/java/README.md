@@ -6,16 +6,16 @@ designed to have as few implementation dependencies as possible.
 
 ## Installation
 
-To install Open JDK version 14:
+To install Open JDK version 18:
 
 ```bash
-sudo apt install openjdk-14-jdk
+sudo apt install openjdk-18-jdk
 ```
 
-To install Open JDK version 8:
+To install Open JDK version 11:
 
 ```bash
-sudo apt install openjdk-8-jdk
+sudo apt install openjdk-11-jdk
 ```
 
 ## Configuration
