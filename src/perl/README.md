@@ -6,7 +6,7 @@ detailed here for now.
 
 ## Installation
 
-Ubuntu 20.04 ship with Perl 5.30 pre-installed.
+Ubuntu 22.04 ship with Perl 5.34 pre-installed.
 
 ## Usage
 
