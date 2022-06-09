@@ -77,7 +77,7 @@ comprehension.
   for API developers.  
   `sudo snap install postman`
 * [Shutter](https://launchpad.net/shutter) - Shutter is a feature-rich
-  screenshot program.   
+  screenshot program.  
   `sudo apt install shutter`
 * [Trimage](https://trimage.org/) - Trimage is a cross-platform GUI and
   command-line interface to optimize image files.  
