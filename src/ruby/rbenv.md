@@ -18,13 +18,7 @@ To install:
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
 ```
 
-and add rbenv to the `PATH`:
-
-```bash
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(rbenv init -)"' >> ~/.zshrc
-source ~/.zshrc
-```
+and follow the instruction to load rbenv automatically.
 
 ## Usage
 
@@ -37,8 +31,8 @@ rbenv install -l
 To install specific versions:
 
 ```bash
-rbenv install 2.4.10
-rbenv install 2.6.0
+rbenv install 2.6.10
+rbenv install 2.7.6
 ```
 
 To show installed versions:
