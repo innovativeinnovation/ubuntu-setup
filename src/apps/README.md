@@ -50,7 +50,7 @@ comprehension.
   `sudo snap install skype --classic`
 * [Telegram](https://telegram.org/) - Telegram is a cloud-based instant
   messaging and voice over IP service.  
-  `sudo snap install telegram-desktop`
+  `sudo apt install telegram-desktop`
 
 ## Password Manager
 
@@ -78,7 +78,6 @@ comprehension.
   `sudo snap install postman`
 * [Shutter](https://launchpad.net/shutter) - Shutter is a feature-rich
   screenshot program.  
-  `sudo add-apt-repository ppa:linuxuprising/shutter`  
   `sudo apt install shutter`
 * [Trimage](https://trimage.org/) - Trimage is a cross-platform GUI and
   command-line interface to optimize image files.  
