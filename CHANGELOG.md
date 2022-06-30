@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v3.0.0 / 2022-06-30
+
+  - Rewrite for Ubuntu 22.04
+  - Update markdownlint-cli from 0.27.1 to 0.29.0
+
 ### v2.1.0 / 2021-05-18
 
   - Fix rbenv-installer url
