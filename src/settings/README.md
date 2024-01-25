@@ -64,17 +64,13 @@ sudo apt install gnome-tweaks
 * Seconds -> On
 * Week Numbers -> On
 
-## Extensions
+## Gnome Shell Extensions
 
 ```bash
-sudo apt install gnome-shell-extension-prefs
+sudo apt install gnome-shell-extensions gnome-shell-extension-manager
 ```
 
-Go to [https://extensions.gnome.org/](https://extensions.gnome.org/) and
-install the browser extension. You can now install any Gnome Shell Extension
-by turning on the switch on the web.
-
-Search and open the "Extensions" app to manage installed extensions.
+Search and open the "Extensions Manager".
 
 Must have:
 
