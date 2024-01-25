@@ -6,12 +6,12 @@ applications.
 
 ## Installation
 
-Visual Studio Code is officially distributed as a Snap package in the
-Snap Store. To install:
+Install the [.deb package (64-bit)](https://code.visualstudio.com/Download),
+either through the graphical software center if it's available, or through
+the command line.
 
-```bash
-sudo snap install --classic code
-```
+Installing the .deb package will automatically install the apt repository and
+signing key to enable auto-updating using the system's package manager.
 
 ## Settings
 
