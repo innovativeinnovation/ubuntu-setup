@@ -45,6 +45,10 @@ sudo apt install ldap-utils
 
 ## Miscellaneous
 
+[ffmpeg](https://ffmpeg.org/) is a command line toolbox to manipulate, convert
+and stream multimedia content.  
+`sudo apt install ffmpeg`
+
 [GNOME Screenshot](https://github.com/GNOME/gnome-screenshot) is a utility
 used in the GNOME desktop environment for taking screenshots. To take a
 screenshot with a delay:  
