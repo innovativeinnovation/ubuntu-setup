@@ -7,6 +7,8 @@ Query Language) to manage its data.
 
 ## Installation
 
+### Server
+
 ```bash
 sudo apt install mysql-server
 ```
@@ -18,6 +20,15 @@ To check whether the MySQL server is running, type:
 
 ```bash
 sudo systemctl status mysql
+```
+
+### Client
+
+The command-line tools allow you to interact with the server and it also allows
+you to run MySQL commands in shell scripts and other programs:
+
+```bash
+sudo apt install mysql-client
 ```
 
 To install the MySQL database development files:
