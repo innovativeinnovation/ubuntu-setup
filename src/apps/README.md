@@ -15,6 +15,8 @@ comprehension.
   `sudo apt install chromium-browser`
 * [Google Chrome](https://www.google.com/intl/en/chrome/) - Chrome is a
   developer friendly browser with powerful development tools.
+* [Microsoft Edge](https://www.microsoft.com/en-us/edge) - Edge is a fast and
+  secure browser with world class performance, built-in privacy, and more.
 * [Opera](https://www.opera.com/) - Opera is an innovative browser with a
   built-in ad blocker, battery saver and free VPN.  
   `sudo snap install opera`
