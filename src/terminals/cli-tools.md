@@ -18,10 +18,10 @@ other supported protocols on Linux or Unix-like system.
 sudo apt install curl
 ```
 
-[htop](https://hisham.hm/htop/) is a system monitoring utility.
+[btop](https://github.com/aristocratos/btop) is a system monitoring utility.
 
 ```bash
-sudo apt install htop
+sudo apt install btop
 ```
 
 [pydf](https://launchpad.net/ubuntu/bionic/+source/pydf) is an advanced
