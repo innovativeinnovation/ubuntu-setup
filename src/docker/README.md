@@ -6,22 +6,14 @@ laptops, data center VMs, or the cloud.
 
 ## Installation
 
-### Via package manager
+First, you need to [set up the Docker repository][dockerapt].
+
+[dockerapt]: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
+Then, to install the latest version, run:
 
 ```bash
-sudo apt install docker.io docker-compose
-```
-
-### Manually
-
-Go to [download.docker.com][dockerddl] and
-choose `amd64`, `armhf`, `ppc64el`, or `s390x`. Download the `.deb` file
-for the Docker version you want to install.
-
-[dockerddl]: https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/
-
-```bash
-sudo dpkg -i /path/to/package.deb
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
 ## Configuration
