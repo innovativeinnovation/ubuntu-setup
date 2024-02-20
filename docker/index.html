@@ -239,20 +239,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="../editors/atom.html">
-            
-                <a href="../editors/atom.html">
-            
-                    
-                    Atom
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.3" data-path="../editors/visual-studio-code.html">
+        <li class="chapter " data-level="1.7.2" data-path="../editors/visual-studio-code.html">
             
                 <a href="../editors/visual-studio-code.html">
             
@@ -823,14 +810,9 @@
 sysadmins to build, ship, and run distributed applications, whether on
 laptops, data center VMs, or the cloud.</p>
 <h2 id="installation">Installation</h2>
-<h3 id="via-package-manager">Via package manager</h3>
-<pre><code class="lang-bash">sudo apt install docker.io docker-compose
-</code></pre>
-<h3 id="manually">Manually</h3>
-<p>Go to <a href="https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/" target="_blank">download.docker.com</a> and
-choose <code>amd64</code>, <code>armhf</code>, <code>ppc64el</code>, or <code>s390x</code>. Download the <code>.deb</code> file
-for the Docker version you want to install.</p>
-<pre><code class="lang-bash">sudo dpkg -i /path/to/package.deb
+<p>First, you need to <a href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository" target="_blank">set up the Docker repository</a>.</p>
+<p>Then, to install the latest version, run:</p>
+<pre><code class="lang-bash">sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 </code></pre>
 <h2 id="configuration">Configuration</h2>
 <p>If you would like to use Docker as a non-root user, you should now consider
@@ -903,7 +885,7 @@ adding your user to the &quot;docker&quot; group with something like:</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Docker","level":"1.18","depth":1,"next":{"title":"Vagrant","level":"1.19","depth":1,"path":"vagrant/README.md","ref":"vagrant/README.md","articles":[]},"previous":{"title":"MySQL Workbench","level":"1.17.1","depth":2,"path":"mysql/workbench.md","ref":"mysql/workbench.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"docker/README.md","mtime":"2022-06-30T18:50:30.314Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-30T18:51:30.397Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Docker","level":"1.18","depth":1,"next":{"title":"Vagrant","level":"1.19","depth":1,"path":"vagrant/README.md","ref":"vagrant/README.md","articles":[]},"previous":{"title":"MySQL Workbench","level":"1.17.1","depth":2,"path":"mysql/workbench.md","ref":"mysql/workbench.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"docker/README.md","mtime":"2024-02-20T18:38:26.277Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-20T18:39:03.654Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

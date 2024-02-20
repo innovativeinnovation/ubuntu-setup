@@ -239,20 +239,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="../editors/atom.html">
-            
-                <a href="../editors/atom.html">
-            
-                    
-                    Atom
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.3" data-path="../editors/visual-studio-code.html">
+        <li class="chapter " data-level="1.7.2" data-path="../editors/visual-studio-code.html">
             
                 <a href="../editors/visual-studio-code.html">
             
@@ -824,12 +811,18 @@ commonly installed as part of the popular LAMP (Linux, Apache, MySQL,
 PHP/Python/Perl) stack. It uses a relational database and SQL (Structured
 Query Language) to manage its data.</p>
 <h2 id="installation">Installation</h2>
+<h3 id="server">Server</h3>
 <pre><code class="lang-bash">sudo apt install mysql-server
 </code></pre>
 <p>This will install MySQL, but will not prompt you to set a password or make
 any other configuration changes.</p>
 <p>To check whether the MySQL server is running, type:</p>
 <pre><code class="lang-bash">sudo systemctl status mysql
+</code></pre>
+<h3 id="client">Client</h3>
+<p>The command-line tools allow you to interact with the server and it also allows
+you to run MySQL commands in shell scripts and other programs:</p>
+<pre><code class="lang-bash">sudo apt install mysql-client
 </code></pre>
 <p>To install the MySQL database development files:</p>
 <pre><code class="lang-bash">sudo apt install libmysqlclient-dev
@@ -892,7 +885,7 @@ sudo systemctl start mysql.service
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MySQL","level":"1.17","depth":1,"next":{"title":"MySQL Workbench","level":"1.17.1","depth":2,"path":"mysql/workbench.md","ref":"mysql/workbench.md","articles":[]},"previous":{"title":"LuaRocks","level":"1.16.1","depth":2,"path":"lua/luarocks.md","ref":"lua/luarocks.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"mysql/README.md","mtime":"2022-06-30T18:50:30.318Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-30T18:51:30.397Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"MySQL","level":"1.17","depth":1,"next":{"title":"MySQL Workbench","level":"1.17.1","depth":2,"path":"mysql/workbench.md","ref":"mysql/workbench.md","articles":[]},"previous":{"title":"LuaRocks","level":"1.16.1","depth":2,"path":"lua/luarocks.md","ref":"lua/luarocks.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"mysql/README.md","mtime":"2024-02-20T18:38:26.281Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-20T18:39:03.654Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
