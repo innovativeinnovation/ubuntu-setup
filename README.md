@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/innovativeinnovation/ubuntu-setup/actions">
-    <img alt="Build Status" src="https://github.com/innovativeinnovation/ubuntu-setup/workflows/Build/badge.svg?branch=master">
+    <img alt="Build Status" src="https://github.com/innovativeinnovation/ubuntu-setup/actions/workflows/build.yml/badge.svg?branch=master">
   </a>
   <a href='https://github.com/innovativeinnovation/ubuntu-setup/tags'>
     <img alt="GitHub Tag" src="https://img.shields.io/github/tag/innovativeinnovation/ubuntu-setup.svg" />
