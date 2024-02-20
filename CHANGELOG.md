@@ -1,6 +1,19 @@
 Changelog
 =========
 
+### v3.1.0 / 2024-02-20
+
+  - Add ffmpeg
+  - Add bat
+  - Add Microsoft Edge
+  - Add MySQL client
+  - Replace htop with btop
+  - Improve VS Code installation
+  - Improve Docker installation
+  - Update Gnome Shell Extensions
+  - Remove Atom
+  - Fix Build status badge
+
 ### v3.0.0 / 2022-06-30
 
   - Rewrite for Ubuntu 22.04
