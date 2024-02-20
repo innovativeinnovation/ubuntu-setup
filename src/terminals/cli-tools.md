@@ -37,6 +37,13 @@ sudo apt install pydf
 sudo apt install ack
 ```
 
+[bat](https://github.com/sharkdp/bat) is a cat(1) clone with syntax
+highlighting and Git integration.
+
+```bash
+sudo apt install bat
+```
+
 [OpenLDAP](https://www.openldap.org/) utilities.
 
 ```bash
