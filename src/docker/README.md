@@ -27,6 +27,24 @@ sudo usermod -aG docker your-user
 
 Remember to log out and back in for this to take effect!
 
+## Credential stores
+
+The Docker Engine can keep user credentials in an external credential store.
+Using an external store is more secure than storing credentials in the Docker
+configuration file.
+
+You can download the helpers from the `docker-credential-helpers`
+[releases page](https://github.com/docker/docker-credential-helpers/releases).
+
+You need to specify the credential store in `$HOME/.docker/config.json` to tell
+the Docker Engine to use it. For example:
+
+```json
+{
+  "credsStore": "secretservice"
+}
+```
+
 ## Usage
 
 To test Docker installation:
