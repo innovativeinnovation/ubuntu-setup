@@ -13,6 +13,7 @@
   * [Vim](editors/vim.md)
   * [Visual Studio Code](editors/visual-studio-code.md)
 * [Git](git/README.md)
+  * [Git Extras](git/git-extras.md)
   * [gitk](git/gitk.md)
   * [GitHub](git/github.md)
   * [Bitbucket](git/bitbucket.md)
