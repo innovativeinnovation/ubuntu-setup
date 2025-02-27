@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Docker · Ubuntu Setup</title>
+        <title>Git Extras · Ubuntu Setup</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../vagrant/" />
+    <link rel="next" href="gitk.html" />
     
     
-    <link rel="prev" href="../mysql/workbench.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -257,9 +257,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="../git/">
+        <li class="chapter " data-level="1.8" data-path="./">
             
-                <a href="../git/">
+                <a href="./">
             
                     
                     Git
@@ -271,9 +271,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../git/git-extras.html">
+        <li class="chapter active" data-level="1.8.1" data-path="git-extras.html">
             
-                <a href="../git/git-extras.html">
+                <a href="git-extras.html">
             
                     
                     Git Extras
@@ -284,9 +284,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../git/gitk.html">
+        <li class="chapter " data-level="1.8.2" data-path="gitk.html">
             
-                <a href="../git/gitk.html">
+                <a href="gitk.html">
             
                     
                     gitk
@@ -297,9 +297,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.3" data-path="../git/github.html">
+        <li class="chapter " data-level="1.8.3" data-path="github.html">
             
-                <a href="../git/github.html">
+                <a href="github.html">
             
                     
                     GitHub
@@ -310,9 +310,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.4" data-path="../git/bitbucket.html">
+        <li class="chapter " data-level="1.8.4" data-path="bitbucket.html">
             
-                <a href="../git/bitbucket.html">
+                <a href="bitbucket.html">
             
                     
                     Bitbucket
@@ -695,9 +695,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.18" data-path="./">
+        <li class="chapter " data-level="1.18" data-path="../docker/">
             
-                <a href="./">
+                <a href="../docker/">
             
                     
                     Docker
@@ -803,7 +803,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Docker</a>
+        <a href=".." >Git Extras</a>
     </h1>
 </div>
 
@@ -818,55 +818,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="docker">Docker</h1>
-<p><a href="https://www.docker.com/" target="_blank">Docker</a> is an open platform for developers and
-sysadmins to build, ship, and run distributed applications, whether on
-laptops, data center VMs, or the cloud.</p>
+                                <h1 id="git-extras">Git Extras</h1>
+<p><a href="https://github.com/tj/git-extras" target="_blank">Git Extras</a> is a large collection of really
+useful utilities for Git repositories.</p>
 <h2 id="installation">Installation</h2>
-<p>First, you need to <a href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository" target="_blank">set up the Docker repository</a>.</p>
-<p>Then, to install the latest version, run:</p>
-<pre><code class="lang-bash">sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-</code></pre>
-<h2 id="configuration">Configuration</h2>
-<p>If you would like to use Docker as a non-root user, you should now consider
-adding your user to the &quot;docker&quot; group with something like:</p>
-<pre><code class="lang-bash">sudo usermod <span class="hljs-_">-a</span>G docker your-user
-</code></pre>
-<p>Remember to log out and back in for this to take effect!</p>
-<h2 id="credential-stores">Credential stores</h2>
-<p>The Docker Engine can keep user credentials in an external credential store.
-Using an external store is more secure than storing credentials in the Docker
-configuration file.</p>
-<p>You can download the helpers from the <code>docker-credential-helpers</code>
-<a href="https://github.com/docker/docker-credential-helpers/releases" target="_blank">releases page</a>.</p>
-<p>You need to specify the credential store in <code>$HOME/.docker/config.json</code> to tell
-the Docker Engine to use it. For example:</p>
-<pre><code class="lang-json">{
-  <span class="hljs-string">&quot;credsStore&quot;</span>: <span class="hljs-string">&quot;secretservice&quot;</span>
-}
+<pre><code class="lang-bash">sudo apt install git-extras
 </code></pre>
 <h2 id="usage">Usage</h2>
-<p>To test Docker installation:</p>
-<pre><code class="lang-bash">docker run hello-world
-</code></pre>
-<p>To list Docker images:</p>
-<pre><code class="lang-bash">docker image ls
-</code></pre>
-<p>To list all Docker containers:</p>
-<pre><code class="lang-bash">docker container ls --all
-</code></pre>
-<p>To list running containers:</p>
-<pre><code class="lang-bash">docker ps
-</code></pre>
-<p>To kill all running containers:</p>
-<pre><code class="lang-bash">docker <span class="hljs-built_in">kill</span> $(docker ps -q)
-</code></pre>
-<p>To delete all stopped containers:</p>
-<pre><code class="lang-bash">docker rm $(docker ps <span class="hljs-_">-a</span> -q)
-</code></pre>
-<p>To delete all images:</p>
-<pre><code class="lang-bash">docker rmi $(docker images -q)
-</code></pre>
+<p>See <a href="https://github.com/tj/git-extras/blob/main/Commands.md" target="_blank">git-extras/Commands.md</a>.</p>
 
                                 
                                 </section>
@@ -894,12 +853,12 @@ the Docker Engine to use it. For example:</p>
 
             
                 
-                <a href="../mysql/workbench.html" class="navigation navigation-prev " aria-label="Previous page: MySQL Workbench">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Git">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../vagrant/" class="navigation navigation-next " aria-label="Next page: Vagrant">
+                <a href="gitk.html" class="navigation navigation-next " aria-label="Next page: gitk">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -910,7 +869,7 @@ the Docker Engine to use it. For example:</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Docker","level":"1.18","depth":1,"next":{"title":"Vagrant","level":"1.19","depth":1,"path":"vagrant/README.md","ref":"vagrant/README.md","articles":[]},"previous":{"title":"MySQL Workbench","level":"1.17.1","depth":2,"path":"mysql/workbench.md","ref":"mysql/workbench.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"docker/README.md","mtime":"2025-02-27T20:38:32.448Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-02-27T20:39:09.665Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git Extras","level":"1.8.1","depth":2,"next":{"title":"gitk","level":"1.8.2","depth":2,"path":"git/gitk.md","ref":"git/gitk.md","articles":[]},"previous":{"title":"Git","level":"1.8","depth":1,"path":"git/README.md","ref":"git/README.md","articles":[{"title":"Git Extras","level":"1.8.1","depth":2,"path":"git/git-extras.md","ref":"git/git-extras.md","articles":[]},{"title":"gitk","level":"1.8.2","depth":2,"path":"git/gitk.md","ref":"git/gitk.md","articles":[]},{"title":"GitHub","level":"1.8.3","depth":2,"path":"git/github.md","ref":"git/github.md","articles":[]},{"title":"Bitbucket","level":"1.8.4","depth":2,"path":"git/bitbucket.md","ref":"git/bitbucket.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu Setup","language":"en","gitbook":"3.2.3","description":"Installing development environment on Ubuntu","direction":"ltr"},"file":{"path":"git/git-extras.md","mtime":"2025-02-27T20:38:32.449Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-02-27T20:39:09.665Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
