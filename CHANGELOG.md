@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v3.2.0 / 2025-02-27
+
+  - Add fzf
+  - Add Docker credential stores
+  - Add Git Extras
+
 ### v3.1.0 / 2024-02-20
 
   - Add ffmpeg
